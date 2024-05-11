@@ -1,0 +1,5 @@
+Q001,Which data structure follows the Last In First Out (LIFO) principle?,A) Queue B) Stack C) Linked List D) Tree,B,10
+Q002,What is the time complexity of finding an element in a sorted array using binary search?,A) O(1) B) O(log n) C) O(n) D) O(n^2),B,10
+Q003,Which sorting algorithm has the best average-case time complexity?,A) Bubble Sort B) Quick Sort C) Selection Sort D) Merge Sort,B,10
+Q004,In which data structure are elements accessed sequentially?,A) Stack B) Queue C) Array D) Tree,C,10
+Q005,Which data structure is typically used to implement priority queues?,A) Array B) Linked List C) Heap D) Stack,C,10
