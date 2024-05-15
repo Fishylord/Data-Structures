@@ -52,5 +52,6 @@
         "iomanip": "cpp",
         "xlocmon": "cpp",
         "xloctime": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
