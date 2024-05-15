@@ -3,3 +3,98 @@ Q002,What is the time complexity of finding an element in a sorted array using b
 Q003,Which sorting algorithm has the best average-case time complexity?,A) Bubble Sort B) Quick Sort C) Selection Sort D) Merge Sort,B,10
 Q004,In which data structure are elements accessed sequentially?,A) Stack B) Queue C) Array D) Tree,C,10
 Q005,Which data structure is typically used to implement priority queues?,A) Array B) Linked List C) Heap D) Stack,C,10
+Q006,What is the worst-case time complexity of a binary search in a binary search tree?,A) O(1) B) O(log n) C) O(n) D) O(n^2),C,10
+Q007,Which data structure would you use to implement recursion efficiently?,A) Queue B) Stack C) Linked List D) Hash Table,B,10
+Q008,What does FIFO stand for in a queue?,A) First In First Out B) First In Last Out C) First Item First Out D) None of the Above,A,10
+Q009,Which data structure can be used for backtracking algorithms?,A) Queue B) Stack C) Array D) Tree,B,10
+Q010,Which data structure allows the fastest retrieval of data, assuming it is correctly structured and hashed?,A) Queue B) Stack C) Linked List D) Hash Table,D,10
+Q011,What type of tree is used in databases to manage indices?,A) Binary Tree B) B-Tree C) Red-Black Tree D) AVL Tree,B,10
+Q012,Which graph traversal algorithm uses a queue?,A) Depth-First Search (DFS) B) Breadth-First Search (BFS) C) In-Order Traversal D) None of the Above,B,10
+Q013,What is the space complexity of a recursive depth-first search on a tree?,A) O(1) B) O(log n) C) O(n) D) O(n^2),C,10
+Q014,What type of algorithm is used for sorting linked lists efficiently?,A) Bubble Sort B) Insertion Sort C) Merge Sort D) Quick Sort,C,10
+Q015,What data structure would best manage the printer spooler system?,A) Queue B) Stack C) Linked List D) Hash Table,A,10
+Q016,How would you describe an algorithm with O(n log n) time complexity?,A) Constant B) Linear C) Logarithmic D) Linearithmic,D,10
+Q017,What is an underflow condition in a data structure?,A) When it is too full B) When it is empty C) When it has only one element D) None of the Above,B,10
+Q018,What is a balanced tree?,A) A tree with minimal height B) A tree where each node has one child C) A tree where each node has no children D) A tree where each node has two children,A,10
+Q019,Which sorting method is generally stable?,A) Quick Sort B) Selection Sort C) Merge Sort D) Heap Sort,C,10
+Q020,What is the best case time complexity of insertion sort?,A) O(1) B) O(n) C) O(log n) D) O(n^2),B,10
+Q021,In graph theory, which property indicates a graph is bipartite?,A) Connected components B) No odd cycles C) Directed edges D) All vertices connected,B,10
+Q022,What algorithm finds the shortest path from a single source vertex to all other vertices in a weighted graph?,A) Kruskal's Algorithm B) Prim's Algorithm C) Dijkstra's Algorithm D) Bellman-Ford Algorithm,C,10
+Q023,What data structure is particularly efficient for the union-find operation in disjoint set data structures?,A) Array B) Tree C) Graph D) Stack,B,10
+Q024,How is an abstract data type different from a data structure?,A) ADT defines operations, data structure provides implementation B) ADT provides implementation, data structure defines types C) ADT uses only primitive types D) There is no difference,A,10
+Q025,What type of sort is a radix sort?,A) Comparison sort B) Distributive sort C) Bubble sort D) Recursive sort,B,10
+Q026,What is the typical worst-case scenario for a quicksort algorithm?,A) The list is already sorted B) The list is sorted in reverse C) The list has identical elements D) The list has no elements,A,10
+Q027,Which data structure can efficiently support random access as well as dynamic resizing?,A) Linked List B) Array C) Dynamic Array D) Stack,C,10
+Q028,In a binary tree, what is the maximum number of children each node can have?,A) 1 B) 2 C) 3 D) 4,B,10
+Q029,Which algorithm is NOT typically used in cryptography?,A) RSA B) Bubble Sort C) SHA-256 D) AES,B,10
+Q030,What is amortized analysis used for in algorithm design?,A) Predicting worst-case scenario B) Analyzing average-case scenario over a sequence of operations C) Determining best-case scenario D) Comparing two different algorithms,B,10
+Q031,What kind of data structure is typically used to implement an undo feature in a software application?,A) Queue B) Stack C) Array D) Linked List,B,10
+Q032,What is depth-first search primarily used for?,A) Finding shortest paths B) Traversing trees and graphs in a specific order C) Sorting elements D) Searching in sorted arrays,B,10
+Q033,What is a trie used for in computer science?,A) Sorting arrays B) Balancing trees C) Storing strings for efficient retrieval D) Calculating mathematical expressions,C,10
+Q034,Which data structure is primarily used in the implementation of a hash table?,A) Array B) Linked List C) Binary Tree D) Graph,A,10
+Q035,What condition must be met for a binary search to be applicable?,A) The data must be in a hash table B) The data must be in a linked list C) The data must be in a binary search tree D) The data must be sorted,D,10
+Q036,What describes an algorithm with O(n!) complexity?,A) Efficient B) Feasible C) Scalable D) Infeasible,D,10
+Q037,What operation is typically very slow in a singly linked list?,A) Accessing the head B) Accessing the middle C) Deleting the last element D) Adding an element at the end,C,10
+Q038,Which algorithm is best suited for external sorting?,A) Quick Sort B) Bubble Sort C) Merge Sort D) Insertion Sort,C,10
+Q039,What is a graph's vertex degree?,A) The number of edges coming out of the vertex B) The process of labeling vertices C) The maximum distance between any two vertices D) The number of edges connected to the vertex,D,10
+Q040,What is the primary disadvantage of using an array over a linked list?,A) Slower access time B) Less memory efficient C) Difficulty in resizing D) More complex implementation,C,10
+Q041,Which data structure is best for storing elements that need to be processed in a specific order?,A) Stack B) Queue C) Heap D) Array,B,10
+Q042,What is the difference between a stack and a queue?,A) Stack is FIFO, queue is LIFO B) Stack is LIFO, queue is FIFO C) Both are FIFO D) Both are LIFO,B,10
+Q043,What algorithm is typically used for balancing data in a database?,A) Quick Sort B) Merge Sort C) B-Tree Insertion D) Linear Search,C,10
+Q044,What is the purpose of a hash function in a hash table?,A) To sort data B) To delete data C) To distribute data uniformly across an array D) To merge data,C,10
+Q045,What is meant by 'asymptotic complexity' of an algorithm?,A) The complexity when the algorithm doesn’t terminate B) The worst-case complexity under typical conditions C) The behavior of the algorithm as the input size becomes very large D) The initial complexity of the algorithm when the program starts,C,10
+Q046,Which of the following is a disadvantage of using arrays?,A) Fixed size B) Flexible size C) Efficient random access D) Efficient insertion at end,A,10
+Q047,What type of data structure is used for breadth-first search (BFS) in a graph?,A) Stack B) Queue C) Tree D) Graph,B,10
+Q048,How does a circular queue differ from a regular queue?,A) It can only store integers B) It wraps around when the end is reached C) It does not allow dequeue operations D) It is faster in processing,B,10
+Q049,What is a binary heap?,A) A type of binary tree where each parent node has exactly two child nodes B) A complete binary tree used for priority queue implementation C) A binary tree used exclusively for search operations D) A graph used in networking,B,10
+Q050,In an AVL tree, what is the maximum difference in height between the heights of two child subtrees of any node?,A) 1 B) 2 C) 3 D) 4,A,10
+Q051,What is the time complexity for deleting an element from a heap?,A) O(1) B) O(log n) C) O(n) D) O(n log n),B,10
+Q052,Which data structure is efficient for implementing a LRU (Least Recently Used) Cache?,A) Array B) Stack C) Linked List D) Hash Table with Linked List,D,10
+Q053,What does the term 'mutable' refer to in data structures?,A) The structure cannot be changed after it is created B) The structure can be changed after it is created C) The structure uses only primitive data types D) The structure does not use any memory,C,10
+Q054,What is the big-O notation used to describe?,A) The maximum memory used by an algorithm B) The minimum time needed by an algorithm C) The upper bound on the running time of an algorithm D) The exact running time of an algorithm,C,10
+Q055,What is the advantage of a linked list over an array?,A) Better memory utilization B) Faster access time C) Efficient indexing D) Easier element insertion and deletion,D,10
+Q056,Which algorithm is used to find the minimum spanning tree in a graph?,A) Dijkstra’s Algorithm B) Floyd-Warshall Algorithm C) Prim’s Algorithm D) Bellman-Ford Algorithm,C,10
+Q057,What is the primary benefit of using a trie in search applications?,A) Space efficiency B) Quick insertion and deletion C) Fast retrieval of data D) Slow but reliable searches,C,10
+Q058,What is a disadvantage of using singly linked lists?,A) Only forward traversal is possible B) They can store unlimited data C) They are too complex D) They do not use pointers,A,10
+Q059,Which search algorithm is optimal for unsorted data?,A) Binary Search B) Linear Search C) Depth-First Search D) Breadth-First Search,B,10
+Q060,What is memoization in the context of dynamic programming?,A) Storing intermediate results B) Calculating all possible outcomes C) Using recursion to solve problems D) Optimizing recursive algorithms by removing memory overhead,A,10
+Q061,Which algorithm is typically used to detect cycles in a graph?,A) Depth-First Search (DFS) B) Breadth-First Search (BFS) C) Dijkstra's Algorithm D) Floyd-Warshall Algorithm,A,10
+Q062,What does the term 'in-place' mean in the context of sorting algorithms?,A) The algorithm uses no extra space B) The algorithm uses a constant amount of extra space C) The algorithm reuses the input array space D) The algorithm creates a new array for sorting,C,10
+Q063,Which property of a tree indicates that there are no duplicate nodes?,A) Balanced B) Complete C) Binary D) Set-based,D,10
+Q064,What is the main advantage of using a doubly linked list instead of a singly linked list?,A) Faster traversal due to more links B) Bidirectional traversal C) More compact storage D) Simpler implementation,B,10
+Q065,What algorithm would you use for real-time search operations on a constantly changing dataset?,A) Binary Search B) Linear Search C) Hashing D) Selection Sort,C,10
+Q066,Which complexity class do polynomial-time algorithms belong to?,A) P B) NP C) NP-Complete D) NP-Hard,A,10
+Q067,How does the 'Divide and Conquer' strategy work in algorithms?,A) The problem is divided into subproblems of different types B) The problem is divided into similar subproblems that are solved independently C) The problem is solved in a linear step-by-step approach D) The problem is not divided but solved using a loop,B,10
+Q068,What is meant by 'serialization' in the context of data structures?,A) Converting a data structure into a linear form for storage or transmission B) Reordering elements for optimization C) Structuring unordered data D) Creating a hierarchy from a flat data structure,A,10
+Q069,What kind of search is optimized by using a red-black tree?,A) Breadth-first search B) Depth-first search C) Binary search D) Linear search,C,10
+Q070,What is the result of a post-order traversal on a binary tree?,A) Visits the root first, then subtrees B) Visits subtrees first, then the root C) Visits nodes in ascending order D) Visits nodes in descending order,B,10
+Q071,What is the purpose of using a sentinel node in a linked list?,A) To prevent underflow B) To avoid handling special cases for empty lists C) To detect the end of the list D) To add extra storage space,B,10
+Q072,How does a min-heap differ from a max-heap?,A) In a min-heap, the smallest element is at the top; in a max-heap, the largest is at the top B) In a min-heap, the largest element is at the top; in a max-heap, the smallest is at the top C) A min-heap allows duplicate values, a max-heap does not D) A max-heap allows duplicate values, a min-heap does not,A,10
+Q073,What is a spanning tree of a graph?,A) A subtree that includes all the vertices of the graph B) A subgraph that includes all the edges of the graph C) A subtree that includes only the leaf nodes D) A subgraph that includes only the root node,A,10
+Q074,What characteristic of a sorting algorithm makes it 'stable'?,A) It maintains the relative order of records with equal keys B) It uses a minimum amount of memory C) It performs the sort in the fastest time possible D) It does not change the input array unless necessary,A,10
+Q075,What is a 'sparse graph'?,A) A graph with few edges compared to the number of vertices B) A graph with many edges compared to the number of vertices C) A graph where each vertex is connected to every other vertex D) A graph that is disconnected,A,10
+Q076,How is a priority queue implemented efficiently?,A) Using a list B) Using a stack C) Using a heap D) Using a queue,C,10
+Q077,What is tail recursion?,A) A recursive function that calls itself at the beginning B) A recursive function that calls itself at the end C) A recursion that does not use any conditional statements D) A recursion that uses multiple branches,B,10
+Q078,Which data structure is most suitable for a dictionary application?,A) Array B) Stack C) Trie D) Queue,C,10
+Q079,What algorithm is used to compress data efficiently?,A) Insertion Sort B) Huffman Coding C) Quick Sort D) Merge Sort,B,10
+Q080,What is an AVL tree primarily used for?,A) Ensuring quick updates B) Balancing heights to ensure search efficiency C) Sorting large data sets D) Implementing queues,B,10
+Q081,What type of algorithmic design pattern does the Floyd-Warshall algorithm exemplify?,A) Greedy B) Dynamic Programming C) Divide and Conquer D) Backtracking,B,10
+Q082,Which data structure is commonly used to perform recursive programming tasks?,A) Queue B) Stack C) Array D) Linked List,B,10
+Q083,What is an example of a non-linear data structure?,A) Array B) Queue C) Graph D) Stack,C,10
+Q084,Which operation is more efficient on a sorted array compared to an unsorted array?,A) Insertion B) Deletion C) Searching D) Accessing,C,10
+Q085,What is the key operation that can be optimized using a B-tree in database indexing?,A) Multiplication B) Division C) Searching D) Addition,C,10
+Q086,Which type of linked list allows for a fast and efficient way to add and remove nodes from both ends?,A) Singly linked list B) Doubly linked list C) Circular linked list D) Straight linked list,B,10
+Q087,What describes the concept of 'amortized time' in algorithm analysis?,A) Time required to complete a computation without any interruptions B) Time averaged over a sequence of operations, where the worst-case time is rare C) Time taken by a computer to start an operation D) Time taken for one-time computational setup,B,10
+Q088,What feature distinguishes a directed graph from an undirected graph?,A) Nodes in directed graphs are cyclic B) Edges in directed graphs have directions C) Directed graphs do not contain edges D) Directed graphs cannot be weighted,B,10
+Q089,What is the main advantage of using graph data structures?,A) Fixed data storage B) Ease of scalability C) Representation of complex relationships D) Simplified data processing,C,10
+Q090,What is the major drawback of using recursion in programming?,A) High memory usage due to stack frames B) Slow execution speed C) Inflexibility in data manipulation D) Limited functionality,A,10
+Q091,What are the characteristics of a full binary tree?,A) Every node has two children except for the leaves B) There is exactly one path between any two nodes C) Every leaf node is at the same level and all internal nodes have two children A,10
+Q092,How do depth-first and breadth-first search differ in their handling of nodes?,A) DFS processes all nodes before their children, BFS processes all children before their nodes B) DFS uses a stack, BFS uses a queue C) DFS can only be used on trees, BFS can be used on both trees and graphs B,10
+Q093,What makes the quicksort algorithm a popular choice despite its worst-case complexity?,A) Its in-place sorting capability B) Its average-case efficiency C) Its recursive nature D) Its stability,B,10
+Q094,What data structure is essential for managing the state space in a game like chess?,A) Queue B) Graph C) Tree D) Array,C,10
+Q095,Which of these is a fundamental operation in computational geometry algorithms?,A) Matrix operations B) Graph traversals C) Geometric hashing D) Coordinate compression,C,10
+Q096,What feature is critical for an algorithm to be classified as online?,A) It must use minimal memory B) It must handle data that arrives in real-time C) It must execute in polynomial time D) It must not use any external storage,B,10
+Q097,What advantage does a doubly linked list have over a singly linked list?,A) Simpler structure B) Less memory usage C) Easier insertion and deletion at both ends D) Higher data integrity,C,10
+Q098,What is the typical use case for using a max-heap data structure?,A) To manage memory allocation B) To schedule processes C) To implement a priority queue D) To balance load on servers,C,10
+Q099,In what scenario is a linear search more advantageous than a binary search?,A) When the list is very large B) When the list is small C) When the data is not sorted D) When the elements are numerically ordered,C,10
+Q100,What is the main characteristic of an array in programming?,A) Dynamic size B) Data elements of different types C) Fixed size D) Non-sequential storage,C,10
