@@ -1,1 +1,5 @@
-P001,Chien Kwan,21,21,F
+P001,John Doe,Q1-Q2-Q3,F-P-W,30
+P002,Jane Smith,Q4-Q5-Q6,F-F-F,45
+P003,Bob Johnson,Q7-Q8-Q9,P-W-F,25
+P004,Alice Brown,Q10-Q11-Q12,W-F-P,35
+P005,Charlie Davis,Q13-Q14-Q15,F-W-P,40
