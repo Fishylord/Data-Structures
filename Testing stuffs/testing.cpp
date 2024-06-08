@@ -6,7 +6,6 @@
 #include <algorithm>
 #include <random>
 #include <limits>
-#include <vector>
 
 using namespace std;
 
@@ -22,35 +21,22 @@ struct Player {
     string id;
     string name;
     string questionIds;
-    string cardCategories;
+    string marks;
     int totalScore;
     Player* next;
 
-    Player(const string& pid, const string& nm, const string& qIds, const string& cCategories, int score)
-        : id(pid), name(nm), questionIds(qIds), cardCategories(cCategories), totalScore(score), next(nullptr) {}
-};
-
-struct Node {
-    Question data;
-    Node* next;
+    Player(const string& pid, const string& nm, const string& qIds, const string& mks, int score)
+        : id(pid), name(nm), questionIds(qIds), marks(mks), totalScore(score), next(nullptr) {}
 };
 
 class LinkedList {
 public:
-    Node* head;
     Player* pHead;
+    int manualPlayCount;
 
-    LinkedList() : head(nullptr), pHead(nullptr) {}
+    LinkedList() : pHead(nullptr), manualPlayCount(0) {}
 
     ~LinkedList() {
-        Node* current = head;
-        while (current != nullptr) {
-            Node* next = current->next;
-            delete current;
-            current = next;
-        }
-        head = nullptr;
-
         while (pHead) {
             Player* temp = pHead;
             pHead = pHead->next;
@@ -58,107 +44,10 @@ public:
         }
     }
 
-    void addNode(Question q) {
-        Node* newNode = new Node{ q, nullptr };
-        if (head == nullptr) {
-            head = newNode;
-        }
-        else {
-            Node* temp = head;
-            while (temp->next != nullptr) {
-                temp = temp->next;
-            }
-            temp->next = newNode;
-        }
-    }
-
-    void addNodeToFront(Question q) {
-        Node* newNode = new Node{ q, head };
-        head = newNode;
-    }
-
-    Question removeFront() {
-        if (head == nullptr) {
-            throw std::runtime_error("List is empty");
-        }
-        Node* temp = head;
-        Question q = temp->data;
-        head = head->next;
-        delete temp;
-        return q;
-    }
-
-    void removeNode(int index) {
-        if (head == nullptr) {
-            throw std::runtime_error("List is empty");
-        }
-        if (index == 0) {
-            Node* temp = head;
-            head = head->next;
-            delete temp;
-            return;
-        }
-        Node* temp = head;
-        for (int i = 0; i < index - 1; ++i) {
-            if (temp->next == nullptr) {
-                throw std::runtime_error("Index out of bounds");
-            }
-            temp = temp->next;
-        }
-        Node* toDelete = temp->next;
-        temp->next = toDelete->next;
-        delete toDelete;
-    }
-
-    Question getNodeData(int index) {
-        if (head == nullptr) {
-            throw std::runtime_error("List is empty");
-        }
-        Node* temp = head;
-        for (int i = 0; i < index; ++i) {
-            if (temp->next == nullptr) {
-                throw std::runtime_error("Index out of bounds");
-            }
-            temp = temp->next;
-        }
-        return temp->data;
-    }
-
-    int getCount() const {
-        int count = 0;
-        Node* temp = head;
-        while (temp != nullptr) {
-            count++;
-            temp = temp->next;
-        }
-        return count;
-    }
-
-    void display() const {
-        Node* temp = head;
-        while (temp != nullptr) {
-            std::cout << "ID: " << temp->data.id << "\nQuestion: " << temp->data.question
-                << "\nChoices: " << temp->data.choices << "\nAnswer: " << temp->data.answer
-                << "\nMarks: " << temp->data.marks << "\n\n";
-            temp = temp->next;
-        }
-    }
-
-    void addPlayer(const string& id, const string& name, const string& questionIds, const string& cardCategories, int totalScore) {
-        Player* newPlayer = new Player(id, name, questionIds, cardCategories, totalScore);
+    void addPlayer(const string& id, const string& name, const string& questionIds, const string& marks, int totalScore) {
+        Player* newPlayer = new Player(id, name, questionIds, marks, totalScore);
         newPlayer->next = pHead;
         pHead = newPlayer;
-    }
-
-    Player* getPlayer(int index) {
-        Player* temp = pHead;
-        for (int i = 0; i < index; ++i) {
-            if (temp == nullptr) {
-                throw std::runtime_error("Index out of bounds");
-            }
-            temp = temp->next;
-        }
-        return temp;
     }
 
     int getPlayerCount() const {
@@ -169,6 +58,13 @@ public:
             temp = temp->next;
         }
         return count;
+    }
+
+    string generatePlayerID() {
+        if (manualPlayCount >= 10) {
+            return "";
+        }
+        return "P0" + to_string(81 + manualPlayCount++);
     }
 };
 
@@ -295,6 +191,55 @@ public:
     }
 };
 
+class PlayerQueue {
+public:
+    struct PlayerQueueNode {
+        Player* data;
+        PlayerQueueNode* next;
+    };
+
+    PlayerQueueNode* front;
+    PlayerQueueNode* rear;
+
+    PlayerQueue() : front(nullptr), rear(nullptr) {}
+
+    ~PlayerQueue() {
+        while (front) {
+            PlayerQueueNode* temp = front;
+            front = front->next;
+            delete temp;
+        }
+    }
+
+    void enqueue(Player* p) {
+        PlayerQueueNode* newNode = new PlayerQueueNode{ p, nullptr };
+        if (rear == nullptr) {
+            front = rear = newNode;
+        } else {
+            rear->next = newNode;
+            rear = newNode;
+        }
+    }
+
+    Player* dequeue() {
+        if (front == nullptr) {
+            throw std::runtime_error("Queue is empty");
+        }
+        PlayerQueueNode* temp = front;
+        Player* p = temp->data;
+        front = front->next;
+        if (front == nullptr) {
+            rear = nullptr;
+        }
+        delete temp;
+        return p;
+    }
+
+    bool isEmpty() const {
+        return front == nullptr;
+    }
+};
+
 class FileHandler {
 public:
     static void loadQuestions(const std::string& filename, Queue& queue) {
@@ -332,7 +277,7 @@ public:
         file.close();
     }
 
-    static void loadPlayers(const string& filename, LinkedList& list) {
+    static void loadPlayers(const string& filename, PlayerQueue& queue) {
         ifstream file(filename);
         if (!file.is_open()) {
             std::cerr << "Error opening file: " << filename << std::endl;
@@ -346,7 +291,8 @@ public:
             getline(ss, id, ',');
             getline(ss, name, ',');
 
-            list.addPlayer(id, name, "", "", 0);
+            Player* newPlayer = new Player(id, name, "", "", 0);
+            queue.enqueue(newPlayer);
         }
         file.close();
     }
@@ -371,47 +317,43 @@ void shuffleQuestions(Queue& queue) {
     delete[] questions;
 }
 
-void displayPage(const vector<Player*>& players, int page) {
+void displayPage(Player* players, int page) {
     const int pageSize = 10;
     int start = page * pageSize;
-    int end = min(start + pageSize, static_cast<int>(players.size()));
+    int end = start + pageSize;
 
-    cout << left << setw(15) << "Player ID" << setw(25) << "Name" << setw(15) << "Round 1"
-        << setw(15) << "Round 2" << setw(15) << "Round 3" << setw(15) << "Status" << setw(10) << "Marks" << endl;
-    cout << string(110, '-') << endl;
+    Player* temp = players;
+    int index = 0;
 
-    for (int i = start; i < end; ++i) {
-        const Player* player = players[i];
-        stringstream ss(player->questionIds);
-        string round1, round2, round3;
-        getline(ss, round1, '-');
-        getline(ss, round2, '-');
-        getline(ss, round3, '-');
+    cout << left << setw(15) << "Player ID" << setw(20) << "Student"
+         << setw(15) << "Round 1" << setw(15) << "Round 2" << setw(15) << "Round 3" << setw(15) << "Overall Score" << endl;
+    cout << string(100, '-') << endl;
 
-        cout << setw(15) << player->id << setw(25) << player->name << setw(15) << round1
-            << setw(15) << round2 << setw(15) << round3 << setw(15) << player->cardCategories << setw(10) << player->totalScore << endl;
-    }
-}
+    while (temp != nullptr && index < end) {
+        if (index >= start) {
+            stringstream ss(temp->questionIds);
+            string qid1, qid2, qid3;
+            getline(ss, qid1, '-');
+            getline(ss, qid2, '-');
+            getline(ss, qid3, '-');
 
-void quicksort(vector<Player*>& players, int low, int high) {
-    if (low < high) {
-        int pivotIndex = low + (high - low) / 2;
-        Player* pivotValue = players[pivotIndex];
-        swap(players[pivotIndex], players[high]);
-        int storeIndex = low;
+            stringstream mks(temp->marks);
+            string mk1, mk2, mk3;
+            getline(mks, mk1, '-');
+            getline(mks, mk2, '-');
+            getline(mks, mk3, '-');
 
-        for (int i = low; i < high; ++i) {
-            if (players[i]->totalScore > pivotValue->totalScore) {
-                swap(players[i], players[storeIndex]);
-                ++storeIndex;
-            }
+            cout << setw(15) << temp->id << setw(20) << temp->name
+                 << setw(15) << qid1 << setw(15) << qid2 << setw(15) << qid3 << setw(15) << temp->totalScore << endl;
+
+            cout << setw(15) << "" << setw(20) << ""
+                 << setw(15) << mk1 << setw(15) << mk2 << setw(15) << mk3 << endl;
         }
-        swap(players[storeIndex], players[high]);
-
-        quicksort(players, low, storeIndex - 1);
-        quicksort(players, storeIndex + 1, high);
+        index++;
+        temp = temp->next;
     }
 }
+
 
 struct BSTNode {
     Player* player;
@@ -455,28 +397,36 @@ public:
         return node;
     }
 
-    void inorder(vector<Player*>& players) {
-        inorder(root, players);
+    void inorder(Player*& head) {
+        inorder(root, head);
     }
 
-    void inorder(BSTNode* node, vector<Player*>& players) {
+    void inorder(BSTNode* node, Player*& head) {
         if (node) {
-            inorder(node->left, players);
-            players.push_back(node->player);
-            inorder(node->right, players);
+            inorder(node->left, head);
+            node->player->next = head;
+            head = node->player;
+            inorder(node->right, head);
+        }
+    }
+
+    void reverseInorder(Player*& head) {
+        reverseInorder(root, head);
+    }
+
+    void reverseInorder(BSTNode* node, Player*& head) {
+        if (node) {
+            reverseInorder(node->right, head);
+            node->player->next = head;
+            head = node->player;
+            reverseInorder(node->left, head);
         }
     }
 };
 
 void leaderboardMenu(LinkedList& playerList) {
     int page = 0;
-    vector<Player*> players;
-    Player* current = playerList.pHead;
-
-    while (current) {
-        players.push_back(current);
-        current = current->next;
-    }
+    Player* players = playerList.pHead;
 
     // Initially display the first 10 players unsorted
     displayPage(players, page);
@@ -493,17 +443,27 @@ void leaderboardMenu(LinkedList& playerList) {
         cin >> choice;
 
         switch (choice) {
-        case '1':
-            quicksort(players, 0, players.size() - 1);
+        case '1': {
+            BST bst;
+            Player* temp = players;
+            while (temp) {
+                bst.insert(temp);
+                temp = temp->next;
+            }
+            players = nullptr;
+            bst.reverseInorder(players);
             page = 0; // Reset to the first page after sorting
             displayPage(players, page);
             break;
+        }
         case '2': {
             BST bst;
-            for (Player* player : players) {
-                bst.insert(player);
+            Player* temp = players;
+            while (temp) {
+                bst.insert(temp);
+                temp = temp->next;
             }
-            players.clear();
+            players = nullptr;
             bst.inorder(players);
             page = 0; // Reset to the first page after sorting
             displayPage(players, page);
@@ -513,20 +473,14 @@ void leaderboardMenu(LinkedList& playerList) {
             cout << "Exiting Leaderboard...\n";
             break;
         case '4':
-            if ((page + 1) * 10 < players.size()) {
-                page++;
-                displayPage(players, page);
-            } else {
-                cout << "Already on the last page.\n";
-            }
+            page++;
+            displayPage(players, page);
             break;
         case '5':
             if (page > 0) {
                 page--;
-                displayPage(players, page);
-            } else {
-                cout << "Already on the first page.\n";
             }
+            displayPage(players, page);
             break;
         default:
             cout << "Invalid choice. Please try again.\n";
@@ -534,25 +488,45 @@ void leaderboardMenu(LinkedList& playerList) {
     } while (choice != '3');
 }
 
-void showChart() {
-    std::cout << "Displaying Chart...\n";
-    // Implementation for displaying charts
+string generateRandomAnswer(const string& answer) {
+    std::random_device rd;
+    std::mt19937 gen(rd());
+
+    if (answer.length() == 1) {
+        if (answer == "T" || answer == "F") {
+            std::uniform_int_distribution<> dist(0, 1);
+            return dist(gen) ? "T" : "F";
+        } else {
+            const char options[] = { 'A', 'B', 'C', 'D' };
+            std::uniform_int_distribution<> dist(0, 3);
+            return string(1, options[dist(gen)]);
+        }
+    } else {
+        const char letters[] = "ABCD";
+        std::uniform_int_distribution<> dist(0, 3);
+        string generatedAnswer;
+        for (int i = 0; i < 4; ++i) {
+            generatedAnswer += letters[dist(gen)];
+        }
+        return generatedAnswer;
+    }
 }
 
-void handleDiscardPileSelection(Stack& discardPile, LinkedList& answeredDeck, string& questionIds, string& cardCategories, int& totalScore, bool& returned) {
+void handleDiscardPileSelection(Queue& discardPile, Stack& answeredDeck, string& questionIds, string& marks, int& totalScore, bool& returned, const string& autoAnswer = "") {
     if (discardPile.isEmpty()) {
-        std::cout << "The discard pile is empty. Please choose another option.\n";
         returned = false;
         return;
     }
 
     // Get the top card from the discard pile
-    Question selectedQuestion = discardPile.pop();
+    Question selectedQuestion = discardPile.dequeue();
+    string answer = autoAnswer;
 
-    std::string answer;
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clear input buffer
-    std::cout << "Question: " << selectedQuestion.question << "\nChoices: " << selectedQuestion.choices << "\nEnter your answer (type 'SKIP' to skip or 'exit' to return to menu): ";
-    std::getline(std::cin, answer);
+    if (answer.empty()) {
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clear input buffer
+        std::cout << "Question: " << selectedQuestion.question << "\nChoices: " << selectedQuestion.choices << "\nEnter your answer (type 'SKIP' to skip or 'exit' to return to menu): ";
+        std::getline(std::cin, answer);
+    }
 
     // Convert answer and correct answer to lowercase for comparison
     std::transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
@@ -562,16 +536,11 @@ void handleDiscardPileSelection(Stack& discardPile, LinkedList& answeredDeck, st
     if (answer == "skip" || answer == "exit") {
         // Player chose to skip the question or exit
         if (answer == "skip") {
-            std::cout << "You skipped this round.\n";
-        } else {
-            std::cout << "Returning to the card selection menu.\n";
-        }
-        discardPile.push(selectedQuestion); // Add the skipped question back to the discard pile
-        if (answer == "skip") {
-            if (!cardCategories.empty()) {
-                cardCategories.append("-");
+            discardPile.enqueue(selectedQuestion); // Add the skipped question back to the discard pile
+            if (!marks.empty()) {
+                marks.append("-");
             }
-            cardCategories.append("W"); // Mark it as a wrong card since it was skipped
+            marks.append("0"); // Mark it as zero since it was skipped
         }
         returned = (answer == "exit");
     } else {
@@ -586,39 +555,31 @@ void handleDiscardPileSelection(Stack& discardPile, LinkedList& answeredDeck, st
             }
 
             int earnedMarks = (0.8 * correctCount * selectedQuestion.marks) / correctAnswer.length();
-            std::cout << "You got " << correctCount << " out of " << correctAnswer.length() << " correct. You earned " << earnedMarks << " points.\n";
             totalScore += earnedMarks;
-            if (correctCount > 0) {
-                answeredDeck.addNodeToFront(selectedQuestion); // Add to answered deck if correct
-                if (!cardCategories.empty()) {
-                    cardCategories.append("-");
-                }
-                cardCategories.append("P"); // Mark it as a correct card
-            } else {
-                discardPile.push(selectedQuestion); // Add to discard pile if incorrect
-                if (!cardCategories.empty()) {
-                    cardCategories.append("-");
-                }
-                cardCategories.append("W"); // Mark it as a wrong card
+            answeredDeck.push(selectedQuestion); // Add to answered deck
+            std::cout << "You got " << correctCount << " out of " << correctAnswer.length() << " correct. You earned " << earnedMarks << " points.\n";
+            if (!marks.empty()) {
+                marks.append("-");
             }
+            marks.append(to_string(earnedMarks));
         } else {
             // Handle non-fill-in-the-blank questions
             if (answer == correctAnswer) {
                 int earnedMarks = static_cast<int>(selectedQuestion.marks * 0.8); // Earn fewer points for discarded pile
-                std::cout << "Correct! You earned " << earnedMarks << " points.\n";
                 totalScore += earnedMarks;
-                answeredDeck.addNodeToFront(selectedQuestion); // Add to answered deck if correct
-                if (!cardCategories.empty()) {
-                    cardCategories.append("-");
+                answeredDeck.push(selectedQuestion); // Add to answered deck
+                std::cout << "Correct! You earned " << earnedMarks << " points.\n";
+                if (!marks.empty()) {
+                    marks.append("-");
                 }
-                cardCategories.append("P"); // Mark it as a correct card
+                marks.append(to_string(earnedMarks));
             } else {
                 std::cout << "Incorrect. The correct answer is: " << selectedQuestion.answer << "\n";
-                discardPile.push(selectedQuestion); // Add to discard pile if incorrect
-                if (!cardCategories.empty()) {
-                    cardCategories.append("-");
+                discardPile.enqueue(selectedQuestion); // Add to discard pile if incorrect
+                if (!marks.empty()) {
+                    marks.append("-");
                 }
-                cardCategories.append("W"); // Mark it as a wrong card
+                marks.append("0"); // Mark it as zero since it was incorrect
             }
         }
 
@@ -630,12 +591,15 @@ void handleDiscardPileSelection(Stack& discardPile, LinkedList& answeredDeck, st
     }
 }
 
-void handleUnansweredPileSelection(Queue& unansweredDeck, LinkedList& answeredDeck, Stack& discardPile, string& questionIds, string& cardCategories, int& totalScore) {
+void handleUnansweredPileSelection(Queue& unansweredDeck, Stack& answeredDeck, Queue& discardPile, string& questionIds, string& marks, int& totalScore, const string& autoAnswer = "") {
     Question currentQuestion = unansweredDeck.dequeue();
-    std::string answer;
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clear input buffer
-    std::cout << "Question: " << currentQuestion.question << "\nChoices: " << currentQuestion.choices << "\nEnter your answer (type 'SKIP' to skip): ";
-    std::getline(std::cin, answer);
+    string answer = autoAnswer;
+
+    if (answer.empty()) {
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clear input buffer
+        std::cout << "Question: " << currentQuestion.question << "\nChoices: " << currentQuestion.choices << "\nEnter your answer (type 'SKIP' to skip): ";
+        std::getline(std::cin, answer);
+    }
 
     // Convert answer and correct answer to lowercase for comparison
     std::transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
@@ -644,12 +608,11 @@ void handleUnansweredPileSelection(Queue& unansweredDeck, LinkedList& answeredDe
 
     if (answer == "skip") {
         // Player chose to skip the question
-        std::cout << "You skipped this round.\n";
-        discardPile.push(currentQuestion); // Add the skipped question to the discard pile
-        if (!cardCategories.empty()) {
-            cardCategories.append("-");
+        discardPile.enqueue(currentQuestion); // Add the skipped question to the discard pile
+        if (!marks.empty()) {
+            marks.append("-");
         }
-        cardCategories.append("W"); // Mark it as a wrong card since it was skipped
+        marks.append("0"); // Mark it as zero since it was skipped
     } else {
         if (currentQuestion.answer.length() > 1) { // Assuming fill-in-the-blank answers have length > 1
             // Calculate partial correctness for fill-in-the-blank questions
@@ -662,38 +625,30 @@ void handleUnansweredPileSelection(Queue& unansweredDeck, LinkedList& answeredDe
             }
 
             int earnedMarks = (correctCount * currentQuestion.marks) / correctAnswer.length();
-            std::cout << "You got " << correctCount << " out of " << correctAnswer.length() << " correct. You earned " << earnedMarks << " points.\n";
             totalScore += earnedMarks;
-            if (correctCount > 0) {
-                answeredDeck.addNodeToFront(currentQuestion); // Add to answered deck if correct
-                if (!cardCategories.empty()) {
-                    cardCategories.append("-");
-                }
-                cardCategories.append("F"); // Mark it as a correct card
-            } else {
-                discardPile.push(currentQuestion); // Add to discard pile if incorrect
-                if (!cardCategories.empty()) {
-                    cardCategories.append("-");
-                }
-                cardCategories.append("W"); // Mark it as a wrong card
+            answeredDeck.push(currentQuestion); // Add to answered deck
+            std::cout << "You got " << correctCount << " out of " << correctAnswer.length() << " correct. You earned " << earnedMarks << " points.\n";
+            if (!marks.empty()) {
+                marks.append("-");
             }
+            marks.append(to_string(earnedMarks));
         } else {
             // Handle non-fill-in-the-blank questions
             if (answer == correctAnswer) {
-                std::cout << "Correct! You earned " << currentQuestion.marks << " points.\n";
                 totalScore += currentQuestion.marks;
-                answeredDeck.addNodeToFront(currentQuestion); // Add to answered deck if correct
-                if (!cardCategories.empty()) {
-                    cardCategories.append("-");
+                answeredDeck.push(currentQuestion); // Add to answered deck
+                std::cout << "Correct! You earned " << currentQuestion.marks << " points.\n";
+                if (!marks.empty()) {
+                    marks.append("-");
                 }
-                cardCategories.append("F"); // Mark it as a correct card
+                marks.append(to_string(currentQuestion.marks));
             } else {
                 std::cout << "Incorrect. The correct answer is: " << currentQuestion.answer << "\n";
-                discardPile.push(currentQuestion); // Add to discard pile if incorrect
-                if (!cardCategories.empty()) {
-                    cardCategories.append("-");
+                discardPile.enqueue(currentQuestion); // Add to discard pile if incorrect
+                if (!marks.empty()) {
+                    marks.append("-");
                 }
-                cardCategories.append("W"); // Mark it as a wrong card
+                marks.append("0"); // Mark it as zero since it was incorrect
             }
         }
     }
@@ -719,7 +674,12 @@ bool isNameExists(const LinkedList& playerList, const std::string& name) {
     return false;
 }
 
-void handleUserInteraction(Queue& unansweredDeck, LinkedList& answeredDeck, Stack& discardPile, LinkedList& playerList) {
+void handleUserInteraction(Queue& unansweredDeck, Stack& answeredDeck, Queue& discardPile, LinkedList& playerList) {
+    if (playerList.manualPlayCount >= 10) {
+        std::cout << "Max Manual Play, generate Autoplay to Complete simulation\n";
+        return;
+    }
+
     std::string name;
     bool nameExists;
 
@@ -734,7 +694,13 @@ void handleUserInteraction(Queue& unansweredDeck, LinkedList& answeredDeck, Stac
         }
     } while (nameExists);
 
-    std::string questionIds, cardCategories;
+    std::string playerID = playerList.generatePlayerID();
+    if (playerID.empty()) {
+        std::cout << "Max Manual Play, generate Autoplay to Complete simulation\n";
+        return;
+    }
+
+    std::string questionIds, marks;
     int totalScore = 0;
 
     for (int i = 0; i < 3; ) {
@@ -746,17 +712,21 @@ void handleUserInteraction(Queue& unansweredDeck, LinkedList& answeredDeck, Stac
             std::cin >> choice;
 
             if (choice == 'd') {
-                handleDiscardPileSelection(discardPile, answeredDeck, questionIds, cardCategories, totalScore, returned);
+                handleDiscardPileSelection(discardPile, answeredDeck, questionIds, marks, totalScore, returned);
                 if (!returned) {
                     validChoice = true;
                 }
             }
             else if (choice == 'u') {
-                handleUnansweredPileSelection(unansweredDeck, answeredDeck, discardPile, questionIds, cardCategories, totalScore);
+                handleUnansweredPileSelection(unansweredDeck, answeredDeck, discardPile, questionIds, marks, totalScore);
                 validChoice = true;
             }
             else if (choice == 's') {
                 std::cout << "You skipped this round.\n";
+                if (!marks.empty()) {
+                    marks.append("-");
+                }
+                marks.append("0"); // Mark it as zero since it was skipped
                 validChoice = true;
             }
             else {
@@ -769,22 +739,49 @@ void handleUserInteraction(Queue& unansweredDeck, LinkedList& answeredDeck, Stac
         }
     }
 
-    // Add the player to the player list with question IDs and F/P indicators
-    playerList.addPlayer("ID", name, questionIds, cardCategories, totalScore);
+    // Add the player to the player list with question IDs and marks
+    playerList.addPlayer(playerID, name, questionIds, marks, totalScore);
 }
 
-void startGame(Queue& unansweredDeck, LinkedList& answeredDeck, Stack& discardPile, LinkedList& playerList) {
+void autoplay(Queue& unansweredDeck, Stack& answeredDeck, Queue& discardPile, LinkedList& playerList, Player* autoPlayer) {
+    std::string questionIds, marks;
+    int totalScore = 0;
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dist(0, 1);
+
+    for (int i = 0; i < 3; ++i) {
+        bool validChoice = false;
+        bool returned = false;
+        while (!validChoice) {
+            bool pickDiscard = dist(gen);
+            if (pickDiscard && !discardPile.isEmpty()) {
+                string autoAnswer = generateRandomAnswer(discardPile.peek().answer);
+                handleDiscardPileSelection(discardPile, answeredDeck, questionIds, marks, totalScore, returned, autoAnswer);
+                validChoice = true;
+            } else if (!unansweredDeck.isEmpty()) {
+                string autoAnswer = generateRandomAnswer(unansweredDeck.peek().answer);
+                handleUnansweredPileSelection(unansweredDeck, answeredDeck, discardPile, questionIds, marks, totalScore, autoAnswer);
+                validChoice = true;
+            }
+        }
+    }
+
+    playerList.addPlayer(autoPlayer->id, autoPlayer->name, questionIds, marks, totalScore);
+}
+
+void startGame(Queue& unansweredDeck, Stack& answeredDeck, Queue& discardPile, LinkedList& playerList) {
     std::cout << "Starting Game...\n";
     handleUserInteraction(unansweredDeck, answeredDeck, discardPile, playerList);
 }
 
-void mainMenu(Queue& unansweredDeck, LinkedList& answeredDeck, Stack& discardPile, LinkedList& playerList) {
+void mainMenu(Queue& unansweredDeck, Stack& answeredDeck, Queue& discardPile, LinkedList& playerList, PlayerQueue& autoplayPlayers) {
     char choice;
     do {
         std::cout << "Main Menu:\n";
         std::cout << "1. Game\n";
-        std::cout << "2. Leaderboard\n";
-        std::cout << "3. Additional\n";
+        std::cout << "2. Leaderboarda\n";
+        std::cout << "3. Autoplay\n";
         std::cout << "0. Exit\n";
         std::cout << "Enter your choice: ";
         std::cin >> choice;
@@ -797,7 +794,12 @@ void mainMenu(Queue& unansweredDeck, LinkedList& answeredDeck, Stack& discardPil
             leaderboardMenu(playerList);
             break;
         case '3':
-            // Additional functionalities can be added here
+            while (!autoplayPlayers.isEmpty()) {
+                Player* autoPlayer = autoplayPlayers.dequeue();
+                autoplay(unansweredDeck, answeredDeck, discardPile, playerList, autoPlayer);
+                delete autoPlayer; // Clean up the autoPlayer
+            }
+            std::cout << "Autoplay simulation completed.\n";
             break;
         case '0':
             std::cout << "Exiting...\n";
@@ -809,11 +811,12 @@ void mainMenu(Queue& unansweredDeck, LinkedList& answeredDeck, Stack& discardPil
 }
 
 int main() {
-    Queue unansweredDeck;
-    LinkedList answeredDeck, playerList;
-    Stack discardPile;
+    Queue unansweredDeck, discardPile;
+    Stack answeredDeck;
+    LinkedList playerList;
     std::string questionFilename = "question.txt";
     std::string playerFilename = "player.txt";
+    PlayerQueue autoplayPlayers;
 
     try {
         FileHandler::loadQuestions(questionFilename, unansweredDeck);
@@ -828,20 +831,20 @@ int main() {
     shuffleQuestions(unansweredDeck);
 
     try {
-        FileHandler::loadPlayers(playerFilename, playerList);
-        std::cout << "Players loaded successfully.\n";
+        FileHandler::loadPlayers(playerFilename, autoplayPlayers);
+        std::cout << "Player names loaded successfully for autoplay.\n";
     }
     catch (const std::runtime_error& e) {
-        std::cerr << "Error loading players: " << e.what() << std::endl;
+        std::cerr << "Error loading player names: " << e.what() << std::endl;
         return 1;
     }
 
     // Move 12 questions from unansweredDeck to discardPile
     for (int i = 0; i < 12; ++i) {
-        discardPile.push(unansweredDeck.dequeue());
+        discardPile.enqueue(unansweredDeck.dequeue());
     }
 
-    mainMenu(unansweredDeck, answeredDeck, discardPile, playerList);
+    mainMenu(unansweredDeck, answeredDeck, discardPile, playerList, autoplayPlayers);
 
     return 0;
 }
