@@ -451,7 +451,7 @@ void leaderboardMenu(LinkedList& playerList) {
                 temp = temp->next;
             }
             players = nullptr;
-            bst.reverseInorder(players);
+            bst.inorder(players);
             page = 0; // Reset to the first page after sorting
             displayPage(players, page);
             break;
@@ -464,7 +464,7 @@ void leaderboardMenu(LinkedList& playerList) {
                 temp = temp->next;
             }
             players = nullptr;
-            bst.inorder(players);
+            bst.reverseInorder(players);
             page = 0; // Reset to the first page after sorting
             displayPage(players, page);
             break;
