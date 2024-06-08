@@ -239,13 +239,19 @@ void shuffleQuestions(LinkedList& list) {
 
 void displayLeaderboard(const LinkedList& list) {
     const Player* player = list.pHead;
-    cout << left << setw(15) << "Player ID" << setw(25) << "Name"
-        << setw(30) << "Question IDs" << setw(20) << "Card Categories" << setw(10) << "Score" << endl;
-    cout << string(100, '-') << endl;
+    cout << left << setw(15) << "Player ID" << setw(25) << "Name" << setw(15) << "Round 1"
+        << setw(15) << "Round 2" << setw(15) << "Round 3" << setw(15) << "Status" << setw(10) << "Marks" << endl;
+    cout << string(110, '-') << endl;
 
     while (player != nullptr) {
-        cout << setw(15) << player->id << setw(25) << player->name
-            << setw(30) << player->questionIds << setw(20) << player->cardCategories << setw(10) << player->totalScore << endl;
+        stringstream ss(player->questionIds);
+        string round1, round2, round3;
+        getline(ss, round1, '-');
+        getline(ss, round2, '-');
+        getline(ss, round3, '-');
+
+        cout << setw(15) << player->id << setw(25) << player->name << setw(15) << round1
+            << setw(15) << round2 << setw(15) << round3 << setw(15) << player->cardCategories << setw(10) << player->totalScore << endl;
         player = player->next;
     }
 }
@@ -270,36 +276,39 @@ void handleDiscardPileSelection(LinkedList& discardPile, LinkedList& answeredDec
     std::cout << "Question: " << selectedQuestion.question << "\nChoices: " << selectedQuestion.choices << "\nEnter your answer (type 'SKIP' to skip or 'exit' to return to menu): ";
     std::getline(std::cin, answer);
 
-    if (answer == "SKIP" || answer == "exit") {
+    // Convert answer and correct answer to lowercase for comparison
+    std::transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+    std::string correctAnswer = selectedQuestion.answer;
+    std::transform(correctAnswer.begin(), correctAnswer.end(), correctAnswer.begin(), ::tolower);
+
+    if (answer == "skip" || answer == "exit") {
         // Player chose to skip the question or exit
-        if (answer == "SKIP") {
+        if (answer == "skip") {
             std::cout << "You skipped this round.\n";
-        }
-        else {
+        } else {
             std::cout << "Returning to the main menu.\n";
         }
         discardPile.addNode(selectedQuestion); // Add the skipped question back to the discard pile
-        if (answer == "SKIP") {
+        if (answer == "skip") {
             if (!cardCategories.empty()) {
                 cardCategories.append("-");
             }
             cardCategories.append("W"); // Mark it as a wrong card since it was skipped
         }
         returned = true;
-    }
-    else {
+    } else {
         if (selectedQuestion.answer.length() > 1) { // Assuming fill-in-the-blank answers have length > 1
             // Calculate partial correctness for fill-in-the-blank questions
             int correctCount = 0;
-            int minLength = std::min(answer.length(), selectedQuestion.answer.length());
+            int minLength = std::min(answer.length(), correctAnswer.length());
             for (int i = 0; i < minLength; ++i) {
-                if (answer[i] == selectedQuestion.answer[i]) {
+                if (answer[i] == correctAnswer[i]) {
                     ++correctCount;
                 }
             }
 
-            int earnedMarks = (0.8 * correctCount * selectedQuestion.marks) / selectedQuestion.answer.length();
-            std::cout << "You got " << correctCount << " out of " << selectedQuestion.answer.length() << " correct. You earned " << earnedMarks << " points.\n";
+            int earnedMarks = (0.8 * correctCount * selectedQuestion.marks) / correctAnswer.length();
+            std::cout << "You got " << correctCount << " out of " << correctAnswer.length() << " correct. You earned " << earnedMarks << " points.\n";
             totalScore += earnedMarks;
             if (correctCount > 0) {
                 answeredDeck.addNodeToFront(selectedQuestion); // Add to answered deck if correct
@@ -307,18 +316,16 @@ void handleDiscardPileSelection(LinkedList& discardPile, LinkedList& answeredDec
                     cardCategories.append("-");
                 }
                 cardCategories.append("P"); // Mark it as a correct card
-            }
-            else {
+            } else {
                 discardPile.addNode(selectedQuestion); // Add to discard pile if incorrect
                 if (!cardCategories.empty()) {
                     cardCategories.append("-");
                 }
                 cardCategories.append("W"); // Mark it as a wrong card
             }
-        }
-        else {
+        } else {
             // Handle non-fill-in-the-blank questions
-            if (answer == selectedQuestion.answer) {
+            if (answer == correctAnswer) {
                 int earnedMarks = static_cast<int>(selectedQuestion.marks * 0.8); // Earn fewer points for discarded pile
                 std::cout << "Correct! You earned " << earnedMarks << " points.\n";
                 totalScore += earnedMarks;
@@ -327,8 +334,7 @@ void handleDiscardPileSelection(LinkedList& discardPile, LinkedList& answeredDec
                     cardCategories.append("-");
                 }
                 cardCategories.append("P"); // Mark it as a correct card
-            }
-            else {
+            } else {
                 std::cout << "Incorrect. The correct answer is: " << selectedQuestion.answer << "\n";
                 discardPile.addNode(selectedQuestion); // Add to discard pile if incorrect
                 if (!cardCategories.empty()) {
@@ -346,6 +352,7 @@ void handleDiscardPileSelection(LinkedList& discardPile, LinkedList& answeredDec
 }
 
 
+
 void handleUnansweredPileSelection(LinkedList& unansweredDeck, LinkedList& answeredDeck, LinkedList& discardPile, string& questionIds, string& cardCategories, int& totalScore) {
     Question currentQuestion = unansweredDeck.removeFront();
     std::string answer;
@@ -353,7 +360,12 @@ void handleUnansweredPileSelection(LinkedList& unansweredDeck, LinkedList& answe
     std::cout << "Question: " << currentQuestion.question << "\nChoices: " << currentQuestion.choices << "\nEnter your answer (type 'SKIP' to skip): ";
     std::getline(std::cin, answer);
 
-    if (answer == "SKIP") {
+    // Convert answer and correct answer to lowercase for comparison
+    std::transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
+    std::string correctAnswer = currentQuestion.answer;
+    std::transform(correctAnswer.begin(), correctAnswer.end(), correctAnswer.begin(), ::tolower);
+
+    if (answer == "skip") {
         // Player chose to skip the question
         std::cout << "You skipped this round.\n";
         discardPile.addNode(currentQuestion); // Add the skipped question to the discard pile
@@ -361,20 +373,19 @@ void handleUnansweredPileSelection(LinkedList& unansweredDeck, LinkedList& answe
             cardCategories.append("-");
         }
         cardCategories.append("W"); // Mark it as a wrong card since it was skipped
-    }
-    else {
+    } else {
         if (currentQuestion.answer.length() > 1) { // Assuming fill-in-the-blank answers have length > 1
             // Calculate partial correctness for fill-in-the-blank questions
             int correctCount = 0;
-            int minLength = std::min(answer.length(), currentQuestion.answer.length());
+            int minLength = std::min(answer.length(), correctAnswer.length());
             for (int i = 0; i < minLength; ++i) {
-                if (answer[i] == currentQuestion.answer[i]) {
+                if (answer[i] == correctAnswer[i]) {
                     ++correctCount;
                 }
             }
 
-            int earnedMarks = (correctCount * currentQuestion.marks) / currentQuestion.answer.length();
-            std::cout << "You got " << correctCount << " out of " << currentQuestion.answer.length() << " correct. You earned " << earnedMarks << " points.\n";
+            int earnedMarks = (correctCount * currentQuestion.marks) / correctAnswer.length();
+            std::cout << "You got " << correctCount << " out of " << correctAnswer.length() << " correct. You earned " << earnedMarks << " points.\n";
             totalScore += earnedMarks;
             if (correctCount > 0) {
                 answeredDeck.addNodeToFront(currentQuestion); // Add to answered deck if correct
@@ -382,18 +393,16 @@ void handleUnansweredPileSelection(LinkedList& unansweredDeck, LinkedList& answe
                     cardCategories.append("-");
                 }
                 cardCategories.append("F"); // Mark it as a correct card
-            }
-            else {
+            } else {
                 discardPile.addNode(currentQuestion); // Add to discard pile if incorrect
                 if (!cardCategories.empty()) {
                     cardCategories.append("-");
                 }
                 cardCategories.append("W"); // Mark it as a wrong card
             }
-        }
-        else {
+        } else {
             // Handle non-fill-in-the-blank questions
-            if (answer == currentQuestion.answer) {
+            if (answer == correctAnswer) {
                 std::cout << "Correct! You earned " << currentQuestion.marks << " points.\n";
                 totalScore += currentQuestion.marks;
                 answeredDeck.addNodeToFront(currentQuestion); // Add to answered deck if correct
@@ -401,8 +410,7 @@ void handleUnansweredPileSelection(LinkedList& unansweredDeck, LinkedList& answe
                     cardCategories.append("-");
                 }
                 cardCategories.append("F"); // Mark it as a correct card
-            }
-            else {
+            } else {
                 std::cout << "Incorrect. The correct answer is: " << currentQuestion.answer << "\n";
                 discardPile.addNode(currentQuestion); // Add to discard pile if incorrect
                 if (!cardCategories.empty()) {
@@ -419,16 +427,22 @@ void handleUnansweredPileSelection(LinkedList& unansweredDeck, LinkedList& answe
     questionIds.append(currentQuestion.id); // Append the question ID to the player's list
 }
 
+
 bool isNameExists(const LinkedList& playerList, const std::string& name) {
+    std::string lowerName = name;
+    std::transform(lowerName.begin(), lowerName.end(), lowerName.begin(), ::tolower);
     Player* temp = playerList.pHead;
     while (temp != nullptr) {
-        if (temp->name == name) {
+        std::string playerName = temp->name;
+        std::transform(playerName.begin(), playerName.end(), playerName.begin(), ::tolower);
+        if (playerName == lowerName) {
             return true;
         }
         temp = temp->next;
     }
     return false;
 }
+
 
 void handleUserInteraction(LinkedList& unansweredDeck, LinkedList& answeredDeck, LinkedList& discardPile, LinkedList& playerList) {
     std::string name;
@@ -480,6 +494,7 @@ void handleUserInteraction(LinkedList& unansweredDeck, LinkedList& answeredDeck,
     // Add the player to the player list with question IDs and F/P indicators
     playerList.addPlayer("ID", name, questionIds, cardCategories, totalScore);
 }
+
 
 void startGame(LinkedList& unansweredDeck, LinkedList& answeredDeck, LinkedList& discardPile, LinkedList& playerList) {
     std::cout << "Starting Game...\n";
