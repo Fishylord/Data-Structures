@@ -1,0 +1,211 @@
+In distributed systems,each processor has its own _____.,A) local memory B) clock C) both local memory and clock D) none,C
+Which of the following is NOT one of the axes in M.J. Flynn's taxonomy of parallel computers?,A) instruction streams B) data streams C) input/output streams D) communication streams,D
+Which category includes the oldest and traditional form of computer?,A) SISD B) SIMD C) MISD D) MIMD,A
+Which category was predicted by Flynn's Taxonomy and very few examples actually existed?,A) SISD B) SIMD C) MISD D) MIMD,C
+Parallel overhead can include factors such as ____.,A) task start-up time B) synchronizations C) processor speed D) data communications,D
+Coarse granularity is where relatively large amounts of computational work are done between communication events.,A) True B) False,A
+A task is typically a program or program-like set of instructions that is executed by a ________.,A) processor B) clock C) memory D) monitor,A
+Identify the INCORRECT representation.,A) SISD - Single Instruction Single Data B) SIMD - Single Instruction Many Data C) MISD - Multiple Instruction Single Data D) MIMD - Multiple Instruction Multiple Data,B
+SIMD can have varieties such as ____.,A) Processor Arrays B) Memory LinkedList C) Vector Pipeline D) Time Stack,A
+Indicators to measure observed speedup is based on ____.,A) wall clock time of serial execution B) amount of tasks executed C) amount of memory used D) wall clock time of parallel execution,D
+What is Von Neumann architecture primarily known for?,A) Parallel processing B) Separation of program and data C) Distributed computing D) Real-time processing,B
+Which of the following architectures is an example of Flynn's SIMD classification?,A) Intel 8086 processor B) NVIDIA GeForce GPU C) ARM Cortex-A series processor D) IBM System/360,B
+Parallelism in computing refers to:,A) The ability to perform multiple tasks simultaneously B) The use of multi-core processors C) Execution of instructions in parallel D) Faster execution of tasks,A
+What is the primary characteristic of SISD?,A) Single instruction stream,single data stream B) Single instruction stream,multiple data streams C) Multiple instruction streams,single data stream D) Multiple instruction streams,multiple data streams,A
+In SIMD architecture,what do all processing units do?,A) Execute the same instruction on different data elements B) Execute different instructions on the same data stream C) Execute different instructions on different data elements D) Execute the same instruction on the same data element,A
+Which type of granularity involves fine computational work between communication events?,A) Coarse granularity B) Fine granularity C) Medium granularity D) Micro granularity,B
+What does MIMD stand for?,A) Multiple Instruction Multiple Data B) Many Instruction Many Data C) Multiple Instruction Memory Data D) Many Instruction Memory Data,A
+What is the role of synchronization in parallel computing?,A) To allow independent execution B) To coordinate tasks and ensure correct execution order C) To increase communication overhead D) To manage memory,B
+What is the key advantage of parallel computing?,A) Simplifies programming B) Reduces hardware cost C) Increases processing speed by executing tasks simultaneously D) Minimizes data redundancy,C
+What does the term 'wall clock time' refer to in parallel computing?,A) CPU time B) Real-world elapsed time C) Memory access time D) Task execution time,B
+In a distributed system what is the purpose of local memory for each processor?,A) To share data with other processors B) To store data independently for each processor C) To synchronize tasks D) To manage network connections,B
+Which Flynn classification involves a single instruction stream and multiple data streams?,A) SISD B) SIMD C) MISD D) MIMD,B
+What is the main challenge in managing data locality in a shared memory model?,A) Ensuring all processors have access to the same data B) Minimizing communication overhead C) Coordinating task execution D) Managing data placement and access efficiently,D
+How does task start-up time affect parallel overhead?,A) It decreases overall execution time B) It increases the efficiency of parallel tasks C) It contributes to the total overhead D) It has no effect on parallel overhead,C
+What type of processing is the Von Neumann architecture not designed for?,A) Parallel processing B) Sequential processing C) Stored-program concept D) Data processing,A
+In a distributed system what component is responsible for task execution?,A) Processor B) Memory C) Network D) Monitor,A
+Which architecture in Flynn's taxonomy is most suitable for vector processing?,A) SISD B) SIMD C) MISD D) MIMD,B
+What does 'coarse granularity' imply in parallel computing?,A) Large amounts of computational work between communication events B) Small amounts of computational work between communication events C) Medium amounts of computational work between communication events D) Minimal computational work between communication events,A
+What is the primary focus of data parallelism?,A) Distributing tasks across multiple processors B) Executing different instructions on the same data C) Performing the same operation on different parts of a dataset D) Synchronizing tasks to prevent conflicts,C
+Which architecture type executes a single instruction stream on a single data stream?,A) SISD B) SIMD C) MISD D) MIMD,A
+Why is observed speedup important in parallel computing?,A) It measures the total memory usage B) It indicates the efficiency of parallel execution compared to serial execution C) It determines the number of processors used D) It calculates the task start-up time,B
+What is the role of a clock in distributed systems?,A) Synchronizing task execution B) Measuring network speed C) Storing data locally D) Managing processor speed,A
+What is the defining characteristic of MISD architecture?,A) Multiple instruction streams,single data stream B) Single instruction stream,multiple data streams C) Multiple instruction streams,multiple data streams D) Single instruction stream,single data stream,A
+What is the main advantage of using SIMD in graphics processing?,A) Allows different instructions for each data element B) Executes the same instruction across multiple data elements simultaneously C) Minimizes the need for synchronization D) Reduces the amount of required memory,B
+Which component in parallel computing is responsible for coordinating task execution to ensure correctness?,A) Synchronization B) Memory C) Network D) Processor,A
+How does data communication impact parallel overhead?,A) It increases the efficiency of parallel tasks B) It contributes to the total overhead C) It reduces the amount of computational work D) It has no effect on parallel overhead,B
+What type of parallelism is achieved by using multiple processors to execute different parts of a program simultaneously?,A) Data parallelism B) Task parallelism C) Instruction parallelism D) Memory parallelism,B
+What is the impact of software overhead imposed by parallel compilers on parallel computing?,A) It simplifies task execution B) It adds to the total parallel overhead C) It reduces synchronization needs D) It minimizes data communication,B
+Which of the following is NOT one of the axes in M.J. Flynn's taxonomy of parallel computers?,A) instruction streams B) data streams C) input/output streams D) communication streams,C
+Which category includes the oldest and traditional form of computer?,A) SISD B) SIMD C) MISD D) MIMD,A
+Which category was predicted by Flynn's Taxonomy and very few examples actually existed?,A) SISD B) SIMD C) MISD D) MIMD,C
+In distributed systems,each processor has its own _____.,A) local memory B) clock C) both local memory and clock D) none,C
+Parallel overhead can include factors such as ____.,A) task start-up time B) synchronizations C) processor speed D) data communications,D
+Coarse granularity is where relatively large amounts of computational work are done between communication events.,A) True B) False,A
+A task is typically a program or program-like set of instructions that is executed by a ________.,A) processor B) clock C) memory D) monitor,A
+Identify the INCORRECT representation.,A) SISD - Single Instruction Single Data B) SIMD - Single Instruction Many Data C) MISD - Multiple Instruction Single Data D) MIMD - Multiple Instruction Multiple Data,B
+SIMD can have varieties such as ____.,A) Processor Arrays B) Memory LinkedList C) Vector Pipeline D) Time Stack,A
+Indicators to measure observed speedup is based on ____.,A) wall clock time of serial execution B) amount of tasks executed C) amount of memory used D) wall clock time of parallel execution,D
+Observed speedup can be measured in terms of _____,[Blank],wall-clock time of sequential execution/wall-clock time of parallel execution
+Von Neumann architecture is characterized by the _____ of program and data in the same memory.,[Blank],separation
+In Flynn's classification SIMD stands for Single Instruction Multiple _____,[Blank],data
+Task parallelism involves breaking down a task into smaller sub-tasks that can be executed _____,[Blank],simultaneously
+The main advantage of parallel computing is the _____ execution of tasks.,[Blank],concurrent
+A central processing unit (CPU) gets instructions and/or data from memory,decodes the instructions and then _____ performs them.,[Blank],executes
+_____ refers to relatively large amounts of computational work are done between communication events.,[Blank],Coarse granularity
+_____ can be defined as the technique of ensuring that only one process or thread can access a shared resource at a time.,[Blank],Mutual exclusion
+_____ is the act of coordinating or controlling the order of execution of tasks to ensure correct operation.,[Blank],Synchronization
+A _____ is a mechanism that ensures mutual exclusion in concurrent programming by allowing only one thread to access a resource at a time.,[Blank],lock
+_____ is a condition where two or more threads are unable to proceed because each is waiting for the other to release a resource.,[Blank],Deadlock
+_____ is the method of dividing a computational task into smaller tasks that can be processed in parallel.,[Blank],Task parallelism
+In Flynn's classification,_____ stands for Single Instruction Multiple Data.,[Blank],SIMD
+_____ is characterized by the separation of program and data in the same memory.,[Blank],Von Neumann architecture
+In a distributed system each processor typically has its own _____,[Blank],local memory
+_____ overhead includes the time spent coordinating tasks rather than performing useful computation.,[Blank],Parallel
+The _____ refers to the time elapsed from the start to the completion of a task,including any waiting time.,[Blank],wall-clock time
+_____ refers to the fine-grained control required to manage multiple threads or processes accessing shared resources.,[Blank],Synchronization
+The primary characteristic of _____ is the execution of a single instruction stream on a single data stream.,[Blank],SISD
+_____ involves executing the same instruction on different data elements simultaneously.,[Blank],SIMD
+_____ is a type of overhead caused by the additional time required to start and stop tasks in parallel computing.,[Blank],Task start-up time
+_____ is the smallest unit of work in a parallel computing system.,[Blank],Task
+_____ parallelism involves dividing a computational task into parts that can be processed simultaneously by multiple processors.,[Blank],Data
+In Flynn's taxonomy _____ stands for Multiple Instruction Multiple Data.,[Blank],MIMD
+The main challenge in managing _____ in a shared memory model is ensuring efficient access to data.,[Blank],data locality
+_____ is the mechanism that ensures only one process or thread can access a shared resource at a time.,[Blank],Mutual exclusion
+_____ can lead to performance issues in parallel computing if not properly managed.,[Blank],Synchronization
+The _____ model uses separate memory for each processor and requires explicit communication between processors.,[Blank],Distributed memory
+_____ refers to the coordination required to ensure tasks in a parallel computing environment execute correctly.,[Blank],Synchronization
+A _____ is a concurrent programming construct used to manage access to shared resources.,[Blank],lock
+_____ can be measured in terms of wall-clock time of sequential execution divided by wall-clock time of parallel execution.,[Blank],Observed speedup
+In a parallel computing environment _____ refers to the ability to perform multiple tasks at the same time.,[Blank],parallelism
+_____ is the key advantage of using multiple processors to execute different parts of a program simultaneously.,[Blank],Increased processing speed
+The role of _____ in a distributed system is to ensure that all tasks execute in the correct order.,[Blank],synchronization
+In a shared memory model _____ refers to the challenge of ensuring efficient access to shared data.,[Blank],data locality
+_____ is a condition where two or more threads cannot proceed because each is waiting for the other to release a resource.,[Blank],Deadlock
+_____ parallelism involves dividing a task into smaller subtasks that can be executed simultaneously.,[Blank],Task
+A _____ can process instructions and data stored in its local memory independently of other processors.,[Blank],processor
+_____ is a type of parallelism that focuses on distributing tasks across multiple processors.,[Blank],Task parallelism
+_____ involves the execution of different instructions on different data elements simultaneously.,[Blank],MIMD
+_____ ensures that tasks in a parallel computing environment do not interfere with each other.,[Blank],Synchronization
+The _____ architecture is characterized by storing both program instructions and data in the same memory.,[Blank],Von Neumann
+In parallel computing _____ can significantly impact performance if not properly managed.,[Blank],parallel overhead
+The main advantage of _____ is the concurrent execution of tasks leading to faster processing times.,[Blank],parallel computing
+(long)Define the term 'massively parallel' in parallel programming.,[Blank],- Massively parallel refers to systems with a large number of processors or processing units working simultaneously on different parts of a computation. \n - These systems are designed to handle very large-scale computations by dividing tasks among many processors. \n - The goal is to achieve significant speedup and efficiency for complex computational problems.
+(long)What is scalability in a parallel system and what factors contribute towards scalability?,[Blank],- Scalability refers to the ability of a parallel system to achieve increased performance proportional to the addition of more processors. \n - Factors contributing to scalability include the efficiency of task distribution,communication overhead,and the ability to balance the workload across all processors. \n - Effective memory management and minimizing parallel overhead also play crucial roles in achieving good scalability.
+(long)Describe the concepts of Flynn's taxonomy.,[Blank],- Flynn's taxonomy classifies computer architectures based on the number of concurrent instruction and data streams. \n - The four categories are Single Instruction Single Data (SISD),Single Instruction Multiple Data (SIMD),Multiple Instruction Single Data (MISD),and Multiple Instruction Multiple Data (MIMD). \n - This classification helps in understanding and designing parallel computing systems.
+(long)Explain the concept of mutual exclusion in concurrent programming.,[Blank],- Mutual exclusion is a principle that ensures that multiple processes or threads do not access a critical section of code simultaneously. \n - This is essential to prevent race conditions,where the outcome of a computation depends on the unpredictable timing of events. \n - Mechanisms such as locks,semaphores,and monitors are commonly used to achieve mutual exclusion.
+(long)What are the primary challenges of parallel computing?,[Blank],- One of the main challenges is effectively dividing the workload among processors to ensure balanced computation. \n - Communication overhead can significantly impact performance,especially in distributed systems. \n - Synchronization issues,such as ensuring the correct sequence of operations,are also critical to address in parallel computing.
+(long)Define task parallelism and its benefits.,[Blank],- Task parallelism involves dividing a computational task into smaller,independent tasks that can be executed concurrently. \n - This approach can lead to significant performance improvements by utilizing multiple processors effectively. \n - Benefits include faster execution times and improved resource utilization.
+(long)What is the significance of synchronization in parallel computing?,[Blank],- Synchronization ensures that parallel tasks execute in the correct order,maintaining data consistency and integrity. \n - It helps prevent race conditions,where the outcome of computations depends on the sequence of operations. \n - Techniques such as barriers,locks,and condition variables are used to achieve synchronization.
+(long)Describe the concept of data parallelism.,[Blank],- Data parallelism involves performing the same operation on different parts of a dataset simultaneously. \n - This type of parallelism is particularly effective for tasks that can be divided into smaller,identical operations,such as matrix multiplication. \n - It can lead to significant performance improvements by distributing the workload across multiple processors.
+(long)Explain the role of a distributed memory model in parallel computing.,[Blank],- In a distributed memory model,each processor has its own local memory,and processors communicate by passing messages. \n - This model is suitable for systems where processors are located in different physical locations,such as clusters. \n - It helps in scaling parallel applications as each processor can operate independently,reducing memory contention.
+(long)What is the difference between coarse and fine granularity in parallel computing?,[Blank],- Coarse granularity refers to performing large amounts of computational work between communication events,reducing the communication overhead. \n - Fine granularity involves smaller,more frequent communication between tasks,which can lead to higher overhead but potentially better load balancing. \n - The choice between coarse and fine granularity depends on the specific application and the architecture of the parallel system.
+(long)What is the role of a semaphore in concurrent programming?,[Blank],- A semaphore is a synchronization primitive used to control access to a common resource by multiple processes in a concurrent system. \n - It works by maintaining a counter that represents the number of available resources or permits. \n - Semaphores can be used to signal between processes and enforce mutual exclusion.
+(long)Explain the concept of deadlock in concurrent systems.,[Blank],- Deadlock occurs when two or more processes are unable to proceed because each is waiting for the other to release a resource. \n - This situation creates a cycle of dependencies that prevents any of the processes from advancing. \n - Deadlock prevention and detection strategies are essential to manage this issue in concurrent systems.
+(long)Describe the advantages and disadvantages of using a shared memory model.,[Blank],- Advantages of a shared memory model include simplified data sharing and reduced communication overhead since processes can directly read and write to a common memory space. \n - Disadvantages include challenges in managing data consistency and ensuring synchronization to prevent race conditions. \n - This model can also lead to scalability issues as the number of processors increases.
+(long)What is the purpose of load balancing in parallel computing?,[Blank],- Load balancing aims to distribute the computational workload evenly across all processors to optimize resource utilization and minimize execution time. \n - Effective load balancing prevents some processors from being idle while others are overloaded. \n - It involves strategies such as dynamic task allocation and work stealing to achieve balanced workload distribution.
+(long)Explain the significance of barriers in parallel computing.,[Blank],- Barriers are synchronization points where all parallel tasks must arrive before any can proceed. \n - They ensure that tasks are coordinated and that a specific stage of computation is completed before moving on to the next. \n - Barriers help in maintaining data consistency and preventing race conditions in parallel applications.
+In Java multi-threading a thread can be created by:,A) Extending Thread class B) Implementing Runnable interface C) Using either extend Thread or implementing Runnable interface D) None of the options,C
+What is the default thread priority in Java:,A) 1 B) 2 C) 3 D) 4 E) 5 F) 6 G) 7 H) 8 I) 9 J) 10,E
+Which method is implemented from Runnable interface:,A) run() B) start() C) execute() D) call(),A
+Which method is called internally by Thread start() method:,A) execute() B) run() C) launch() D) main(),B
+Min and Max priority of a thread in Java multithreading are:,A) 1,10 B) 0,10 C) 0,255 D) 0,1,A
+Thread synchronization in a process will be required when:,A) All threads sharing the same address space B) All threads sharing the same global variables C) All threads sharing the same files D) All of the options,D
+Execution of Java thread begins on which method call:,A) start() B) run() C) execute() D) call(),A
+Which method is used to check the thread state:,A) run() B) alive() C) check() D) isAlive(),D
+The life cycle of a thread is controlled by:,A) JRE B) JDK C) JVM D) JAR,C
+What does the sleep() method do in a thread?,A) Puts the thread in a waiting state B) Terminates the thread C) Starts the thread D) Pauses the thread,D
+How can a thread be made a daemon thread?,A) By calling setDaemon(true) B) By calling setDaemon(false) C) By calling run() D) By calling start(),A
+What is the purpose of the join() method in threads?,A) To terminate a thread B) To wait for a thread to die C) To start a thread D) To suspend a thread,B
+What happens when the yield() method is called in a thread?,A) The thread continues running B) The thread is suspended C) The thread moves to a ready state D) The thread terminates,C
+What does the interrupt() method do in a thread?,A) Stops the thread immediately B) Requests the thread to stop C) Pauses the thread D) Resumes the thread,B
+What state does a thread enter when it has finished executing?,A) New B) Runnable C) Blocked D) Terminated,D
+Which keyword is used to synchronize methods in Java?,A) synchronized B) static C) final D) volatile,A
+How can deadlock be prevented in Java multithreading?,A) By using synchronized blocks B) By avoiding nested locks C) By using the join() method D) By using the sleep() method,B
+What does the wait() method do in a synchronized block?,A) Puts the thread in a waiting state B) Terminates the thread C) Starts the thread D) Pauses the thread,A
+Which method notifies all waiting threads in a synchronized block?,A) notify() B) notifyAll() C) wait() D) signal(),B
+Which interface must be implemented for a class to be executed by a thread?,A) Runnable B) Callable C) Serializable D) Cloneable,A
+What is the use of the synchronized keyword in Java?,A) To prevent thread interference B) To ensure atomicity C) To control access to a shared resource D) All of the options,D
+Which thread method is used to pause the execution of the current thread?,A) sleep() B) wait() C) yield() D) suspend(),A
+Which method in Java can be used to wait for a thread to complete?,A) sleep() B) wait() C) join() D) yield(),C
+What is the result of calling thread.join()?,A) The thread is suspended B) The thread is terminated C) The thread waits for another thread to complete D) The thread continues running,C
+What is the main purpose of using the volatile keyword in Java multithreading?,A) To ensure visibility of changes to variables across threads B) To ensure atomicity of operations C) To prevent thread interference D) To pause thread execution,A
+Which method is used to make a thread give up the CPU and allow other threads to execute?,A) sleep() B) wait() C) yield() D) join(),C
+What is a race condition in multithreading?,A) When two threads race to complete a task first B) When two threads access shared resources concurrently leading to unpredictable results C) When a thread is in a running state D) When a thread is in a waiting state,B
+How is thread safety achieved in Java?,A) By using synchronized blocks or methods B) By using atomic variables C) By avoiding shared state D) All of the options,D
+What is a daemon thread in Java?,A) A thread that runs in the background to perform tasks such as garbage collection B) A thread with the highest priority C) A thread that can never be terminated D) A thread that starts other threads,A
+What does the term "thread pool" mean?,A) A collection of worker threads that efficiently execute asynchronous callbacks B) A group of threads that work together on the same task C) A single thread executing multiple tasks D) A pool where threads are terminated,A
+How does the synchronized block work in Java?,A) By locking the object it is applied to B) By locking the class it is applied to C) By locking all the threads D) By locking the method it is applied to,A
+What is the primary advantage of using a thread pool?,A) Reuse of existing threads to reduce overhead B) Increase in thread priority C) Simplification of thread management D) Both A and C,D
+What does the term "liveness" refer to in the context of threads?,A) The state where a thread is guaranteed to make progress B) The state where a thread is deadlocked C) The state where a thread is terminated D) The state where a thread is waiting,A
+What is the purpose of the ReentrantLock class in Java?,A) To provide explicit locking mechanisms for complex synchronization B) To replace the synchronized keyword C) To implement deadlock detection D) To provide atomic variable operations,A
+Which method is used to start the execution of a thread in Java?,A) run() B) start() C) execute() D) launch(),B
+How can thread priority be changed in Java?,A) By using the setPriority() method B) By using the getPriority() method C) By using the changePriority() method D) By using the adjustPriority() method,A
+Flynn's Taxonomy classifies computer architectures based on dimensions of:,A) Single and Multiple B) Wait and Notify C) Acquire and Release D) Data and Instruction,D
+Which of the following statements is correct:,A) Calling start() method will result in new thread is created. B) Thread start() method will invoke the run() method internally. C) Thread run() method cannot be called directly. D) tryLock() method will lock all the code written below it.,B
+Which thread will be executed first if two threads have the same priority:,A) They will fall in starvation and none will be executed. B) Both will be executed simultaneously. C) It depends on the CPU. D) They will be executed upon first come first serve basis.,C
+Which method is used to make the main thread wait for the child threads:,A) sleep() B) wait() C) block() D) join(),D
+Which of the following are the significance of the volatile keyword in Java:,A) The Java memory model ensures that all threads see a consistent value for the variable. B) The Java memory model ensures that all threads see a cached value for the variable. C) volatile ensures variables are stored in main memory. D) volatile ensures variables are stored in cache memory.,A
+Which of the following methods need to be used together in multiple threads:,A) start() and run() B) wait() and notify() C) lock() and unlock() D) run() and join(),B
+Which of the following Flynn's Taxonomy adopted varieties such as processor arrays and vector pipelines:,A) SISD B) SIMD C) MISD D) MIMD,B
+JPPF architecture does not consists of:,A) clients B) servers C) nodes D) packets,D
+Which Java method is used to stop a thread?,A) stop() B) terminate() C) interrupt() D) halt(),A
+Which method checks if the thread is alive?,A) check() B) alive() C) isAlive() D) isRunning(),C
+What does the synchronized keyword in Java ensure?,A) Single-threaded execution of a block or method B) Multi-threaded access to a variable C) Priority scheduling of threads D) Creation of a new thread,A
+What does the wait() method in Java do?,A) Stops a thread B) Causes a thread to wait until another thread invokes notify() or notifyAll() C) Starts a thread D) Puts a thread to sleep,B
+Which Java class is used for thread synchronization?,A) Thread B) Runnable C) Lock D) Semaphore,C
+What does the notify() method do in a synchronized block?,A) Notifies all waiting threads B) Notifies a single waiting thread C) Terminates the thread D) Starts a new thread,B
+What is the purpose of the join() method in Java threads?,A) To start a thread B) To wait for a thread to complete C) To synchronize two threads D) To terminate a thread,B
+Which keyword in Java is used to prevent concurrent access to a method?,A) volatile B) synchronized C) transient D) static,B
+What is a thread pool in Java?,A) A collection of worker threads for executing tasks B) A group of threads with the same priority C) A method for thread synchronization D) A mechanism for thread communication,A
+What is the result of calling the start() method on a thread?,A) The thread begins execution B) The thread is terminated C) The thread sleeps for a specified time D) The thread waits for another thread,A
+What does the yield() method do in Java threading?,A) Causes the current thread to pause and allow other threads to execute B) Stops the thread permanently C) Terminates the thread D) Puts the thread to sleep,A
+What is the difference between the start() and run() methods in Java threads?,A) start() creates a new thread,run() does not B) run() creates a new thread,start() does not C) Both methods start the thread D) Both methods stop the thread,A
+What happens when a thread's run() method is called directly?,A) A new thread is created B) The thread runs in the current call stack C) The thread is terminated D) The thread is put to sleep,B
+What is the purpose of the Lock interface in Java?,A) To provide explicit locking mechanisms for synchronization B) To start a thread C) To terminate a thread D) To create a new thread,A
+Which of the following is true about the ReentrantLock class in Java?,A) It allows a thread to re-acquire the lock it holds B) It prevents a thread from acquiring the lock more than once C) It does not support fairness D) It cannot be interrupted,A
+What does the getState() method of a thread return?,A) The priority of the thread B) The current state of the thread C) The name of the thread D) The ID of the thread,B
+What is the primary advantage of using the volatile keyword in Java?,A) It ensures visibility of changes to variables across threads B) It prevents thread interference C) It synchronizes method execution D) It sets thread priority,A
+Which Java method is used to check if a thread holds a specific lock?,A) holdsLock() B) isLocked() C) checkLock() D) hasLock(),A
+What is a deadlock in the context of multithreading?,A) When a thread completes execution B) When two or more threads are waiting for each other to release resources C) When a thread starts execution D) When a thread is paused,B
+Which of the following is not a state of a thread in Java?,A) New B) Runnable C) Blocked D) Finished,D
+How can a thread be made to release its lock in Java?,A) By calling unlock() method B) By calling release() method C) By calling stop() method D) By calling terminate() method,A
+What does the term "livelock" refer to in concurrent programming?,A) When threads are active but unable to make progress B) When threads are in a deadlock state C) When threads are terminated D) When threads are running normally,A
+What is the use of the AtomicInteger class in Java?,A) To perform atomic operations on integer values B) To synchronize method execution C) To create new threads D) To manage thread priorities,A
+How is thread safety ensured using the synchronized keyword?,A) By preventing concurrent access to a block or method B) By allowing multiple threads to access the same block C) By terminating the thread after execution D) By changing the thread priority,A
+Which of the following methods is used to pause the execution of the current thread?,A) sleep() B) wait() C) yield() D) stop(),A
+What is the significance of the Condition interface in Java concurrency?,A) To provide thread communication within a Lock B) To create new threads C) To terminate threads D) To change thread priorities,A
+What does the method tryLock() do in Java concurrency?,A) Attempts to acquire the lock without waiting B) Puts the thread to sleep C) Terminates the thread D) Waits indefinitely for the lock,A
+When a Thread calls wait() on any Object,it must have the monitor on the Object that it will leave and goes in wait state until any other thread calls _____ on this Object.,[Blank],notify()
+We can use Thread class _____ method to pause the execution of Thread for a certain time.,[Blank],sleep()
+_____ operations are performed in a single unit of task without interference from other operations. These operations are necessary in a multi-threaded environment to avoid data inconsistency.,[Blank],Atomic
+_____ method of Thread class is used to find out the priority given to a thread.,[Blank],getPriority()
+When a thread calls the notify() method on an object,it must have the monitor on that object to _____.,[Blank],notify waiting threads
+The _____ method is used to start the execution of a thread in Java.,[Blank],start()
+To stop a thread immediately,the _____ method can be called.,[Blank],stop()
+In a multi-threaded environment,_____ ensures that only one thread executes a block of code at a time.,[Blank],synchronization
+The _____ keyword in Java is used to declare a variable that can be accessed by multiple threads.,[Blank],volatile
+The _____ method causes the currently executing thread to sleep for a specified number of milliseconds.,[Blank],sleep()
+The _____ interface must be implemented by any class whose instances are intended to be executed by a thread.,[Blank],Runnable
+When two or more threads try to access the same resource simultaneously it can lead to a _____.,[Blank],race condition
+The _____ method checks if the current thread is still alive.,[Blank],isAlive()
+A thread in Java can be in one of several states,including new,runnable,blocked,waiting,timed waiting,and _____.,[Blank],terminated
+The _____ method is used to wait for a thread to die.,[Blank],join()
+The Java memory model ensures that each thread keeps its own working copy of variables and updates the main memory when the _____ keyword is used.,[Blank],volatile
+The _____ method of the Thread class is used to find out the name of a thread.,[Blank],getName()
+The _____ method in Java allows a thread to temporarily pause and allow other threads to execute.,[Blank],yield()
+To avoid deadlock it is important to acquire multiple locks in a _____ order.,[Blank],consistent
+The _____ method is used to interrupt a thread that is in a waiting or sleeping state.,[Blank],interrupt()
+The _____ method causes the currently executing thread to wait until another thread invokes the notify() method.,[Blank],wait()
+The _____ keyword can be used to ensure that a method or block of code is accessed by only one thread at a time.,[Blank],synchronized
+The _____ method of the Thread class is used to set the priority of a thread.,[Blank],setPriority()
+When a thread has finished executing,it enters the _____ state.,[Blank],terminated
+A _____ is a low-level synchronization primitive that allows threads to wait for a condition to be met.,[Blank],semaphore
+The _____ method of the Thread class is used to check if a thread has been interrupted.,[Blank],isInterrupted()
+The _____ method of the Object class is used to wake up a single thread that is waiting on the object's monitor.,[Blank],notify()
+The _____ method of the Object class is used to wake up all threads that are waiting on the object's monitor.,[Blank],notifyAll()
+A _____ is a higher-level synchronization construct that is used to enforce mutual exclusion and coordinate access to a shared resource.,[Blank],lock
+The _____ method of the Thread class is used to retrieve the identifier of a thread.,[Blank],getId()
+To make a thread a daemon thread the _____ method is used before starting the thread.,[Blank],setDaemon()
+In Java the _____ interface provides a way to pass a block of code to be executed by a thread.,[Blank],Callable
+A thread that runs in the background and performs tasks such as garbage collection is known as a _____ thread.,[Blank],daemon

@@ -823,7 +823,7 @@ void mainMenu(Queue& unansweredDeck, Stack& answeredDeck, Queue& discardPile, Li
     do {
         std::cout << "Main Menu:\n";
         std::cout << "1. Game\n";
-        std::cout << "2. Leaderboarda\n";
+        std::cout << "2. Leaderboard\n";
         std::cout << "3. Autoplay\n";
         std::cout << "0. Exit\n";
         std::cout << "Enter your choice: ";

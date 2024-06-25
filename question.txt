@@ -1,5 +1,395 @@
-Q001,Which data structure follows the Last In First Out (LIFO) principle?,A) Queue B) Stack C) Linked List D) Tree,B,10
-Q002,What is the time complexity of finding an element in a sorted array using binary search?,A) O(1) B) O(log n) C) O(n) D) O(n^2),B,10
-Q003,Which sorting algorithm has the best average-case time complexity?,A) Bubble Sort B) Quick Sort C) Selection Sort D) Merge Sort,B,10
-Q004,In which data structure are elements accessed sequentially?,A) Stack B) Queue C) Array D) Tree,C,10
-Q005,Which data structure is typically used to implement priority queues?,A) Array B) Linked List C) Heap D) Stack,C,10
+Describe concurrent programs and their advantages,A) Perform multiple computations in parallel B) Perform sequential computations C) Use a single thread D) Perform a single computation,A
+Describe parallel programs and their advantages,A) Perform multiple computations sequentially B) Perform computations at the same time C) Use a single processor D) Perform a single computation,B
+What is a Concurrent Program?,A) Has a single thread of control B) Has multiple threads of control C) Performs computations sequentially D) Uses a single processor,B
+What is a Sequential Program?,A) Has a single thread of control B) Has multiple threads of control C) Performs computations in parallel D) Uses multiple processors,A
+Concurrent Software involves,A) Single machine interactions B) Multiple interacting components C) Single thread interactions D) Single processor usage,B
+Why Concurrent Programming?,A) Performance loss B) Increased throughput C) Increased latency D) Reduced responsiveness,B
+Advantages of Concurrency include,A) Speed and availability B) Increased latency C) Single-threaded execution D) Sequential processing,A
+Concurrency vs. Parallelism,A) Concurrency requires multiple processors B) Parallelism can be implemented on a single processing unit C) Concurrency includes techniques like time-slicing D) Parallelism does not require hardware support,C
+Do I Need to Know About Concurrent Programming?,A) No,it's not common B) Yes,it is widespread and essential C) No,it is error-free D) Yes,it is not challenging,B
+Parallel Overhead involves,A) Reducing task coordination time B) Time required to coordinate parallel tasks C) Eliminating synchronization time D) Single-thread execution,B
+What is Multitasking?,A) Performing a single task B) Performing multiple tasks concurrently C) Performing tasks sequentially D) Using a single processor,B
+Implicit Concurrency refers to,A) Specified by the program designer B) Independent processing steps C) Sequential execution D) Single-threaded execution,B
+Explicit Concurrency is,A) Specified by the program designer B) Implicit in the program C) Sequentially executed D) Not specified by the program designer,A
+Multiple Computers can run,A) Only sequential programs B) Concurrent or parallel programs C) Only single-thread programs D) Single processor programs,B
+What is a Distributed Program?,A) Uses a single processor B) Executes on parallel hardware C) Executes on a network of autonomous processors D) Executes on a single machine,C
+Challenges of Concurrency include,A) Easy to get right B) No synchronization issues C) Communication and synchronization problems D) Single-threaded execution,C
+Threads in Java,A) Do not require run-time stacks B) Are system objects containing the state of execution C) Do not support concurrency D) Use a single thread of control,B
+Communication Abstractions in concurrency,A) Only synchronous communication B) Only asynchronous communication C) Synchronous and asynchronous communication D) No communication abstractions,C
+Concurrency Control includes,A) No locking B) Locking and mutual exclusion C) Only atomicity D) No concurrency control,B
+Serial Computing involves,A) Multiple CPUs B) Single CPU executing instructions sequentially C) Multiple processors executing instructions D) Distributed systems,B
+Parallel Computing involves,A) Single CPU executing instructions sequentially B) Multiple compute resources solving problems concurrently C) Only local resources D) No use of networks,B
+Primary Reasons for Parallel Computing include,A) Increasing wall clock time B) Reducing wall clock time C) Solving smaller problems D) Reducing concurrency,B
+Limitations of Serial Computing include,A) Unlimited transmission speeds B) No limits to miniaturization C) Economic limitations of making faster processors D) Infinite processing power,C
+The Future of Parallel Computing includes,A) Decreasing parallelism B) Increasing parallelism C) Reducing distributed systems D) Single-threaded architectures,B
+The start() method in Java,A) Stops the thread B) Begins execution of the thread C) Checks if a thread is running D) Suspends the thread,B
+The stop() method in Java,A) Begins execution of the thread B) Terminates the thread C) Checks if a thread is running D) Suspends the thread,B
+The isAlive() method in Java,A) Stops the thread B) Begins execution of the thread C) Checks if a thread is running D) Suspends the thread,C
+The yield() method in Java,A) Temporarily pauses the thread B) Stops the thread C) Begins execution of the thread D) Terminates the thread,A
+The sleep() method in Java,A) Stops the thread B) Begins execution of the thread C) Suspends the thread for a specified time D) Checks if a thread is running,C
+Thread Life-Cycle states in Java include,A) Created,Runnable,Terminated B) Created,Stopped,Running C) Created,Executed,Terminated D) Created,Started,Running,A
+Concurrency is essential for,A) Single-threaded applications B) Improving performance responsiveness and throughput C) Reducing performance D) Sequential processing,B
+Parallelism takes advantage of,A) Single processing units B) Multiple processing units C) Sequential execution D) Single-threaded execution,B
+Concurrency provides,A) Single-threaded control B) Sequential processing C) Multiple threads of control D) Single processing units,C
+Concurrent programming requires,A) No coordination B) Careful coordination to avoid race conditions C) Single-threaded execution D) No synchronization,B
+The primary reasons for parallel computing include,A) Single-thread execution B) Reducing wall clock time and solving larger problems C) Single CPU execution D) Not providing concurrency,B
+Limitations of serial computing involve,A) No physical constraints B) Transmission speeds limited by speed of light C) No limits to miniaturization D) Infinite economic feasibility,B
+Concurrency control in Java includes,A) No locking B) Locking and mutual exclusion C) Single-threaded control D) No concurrency control,B
+Thread states in Java include,A) Created,Alive,Runnable,Non-Runnable,Terminated B) Created,Stopped,Executed C) Created,Running,Stopped D) Created,Started,Terminated,A
+What is Abstraction?,A) Hiding data B) General quality consideration C) Sequential execution D) Low-level detail,A
+Purpose of Abstraction?,A) Adds complexity B) Manages complexity C) Removes high-level logic D) Hides data,B
+Role of Abstraction in systems and libraries?,A) Defines computational resources B) Focuses on hardware details C) Executes common instruction sets D) Uses logic gates,A
+Levels of Abstraction include?,A) Operating systems B) Programming languages C) Instruction sets D) All of the above,D
+Justification of Abstraction includes?,A) Slows down development B) Focus on high-level logic C) Ignores practical details D) Lowers efficiency,B
+What is Encapsulation?,A) Dividing software into a public specification and hidden implementation B) Sequential execution C) General quality consideration D) Managing complexity,A
+Purpose of Encapsulation?,A) Makes software inflexible B) Hides data representation changes C) Lowers abstraction level D) Adds complexity,D
+Example of Encapsulation?,A) Java classes with public fields B) Java classes with private fields and public methods C) Assembly language D) Logic gates,B
+Concurrency in abstraction?,A) Focuses on low-level details B) High-level reasoning about dynamic behavior C) Sequential execution D) Managing complexity,B
+What is Interleaving?,A) Sequential execution of atomic statements B) Concurrent execution of atomic statements C) Single-thread execution D) General quality consideration,B
+Role of Process Control Block (PCB)?,A) Hides data B) Manages process state C) Defines computational resources D) Executes common instruction sets,B
+Example of Interleaving?,A) Sequential execution B) p1|q1|p2|q2 C) Single-thread execution D) General quality consideration,B
+What is a Trivial Concurrent Program?,A) Sequential program B) Simple concurrent program C) Complex system D) Single-thread execution,C
+What is Arbitrary Interleaving?,A) Focuses on timing B) Abstracts away time C) Sequential execution D) Adds complexity,B
+Purpose of Arbitrary Interleaving?,A) Adds complexity B) Reduces robustness C) Ensures robustness D) Focuses on execution timing,C
+Definition of Atomic Statements?,A) Interleaved execution B) Executed to completion without interleaving C) Sequential execution D) Adds complexity,B
+What is Safety in concurrency?,A) Ensures good state B) Avoids bad state C) Focuses on timing D) Adds complexity,B
+What is Liveness in concurrency?,A) Ensures eventual termination B) Avoids bad state C) Adds complexity D) Sequential execution,A
+Liveness in Concurrent Programs?,A) Concerned with ongoing systems B) Ensures eventual termination C) Adds complexity D) Sequential execution,B
+Role of Abstraction in concurrent programming?,A) Adds complexity B) Manages complexity C) Sequential execution D) Lowers efficiency,B
+Purpose of Encapsulation in development?,A) Makes software inflexible B) Allows flexibility C) Lowers abstraction level D) Adds complexity,B
+Interleaving in concurrent execution?,A) Sequential execution B) Focuses on execution order C) Adds complexity D) Hides data,B
+Role of APIs in abstraction?,A) Provides low-level details B) Defines computational resources C) Executes common instruction sets D) Uses logic gates,A
+Levels of Abstraction in programming languages?,A) Abstracts hardware details B) Focuses on low-level details C) Uses logic gates D) Executes common instruction sets,A
+What are Instruction Sets?,A) Abstracts low-level details B) Executed by CPUs C) Uses high-level programming D) Hides data,B
+Purpose of Logic Gates in abstraction?,A) Abstracts high-level programming B) Provides low-level details C) Manages complexity D) Uses logic gates,B
+Role of Speed in abstraction?,A) Adds complexity B) Manages signal coordination C) Focuses on low-level details D) Hides data,D
+Practicality in abstraction?,A) Adds complexity B) Ensures focus on high-level logic C) Focuses on low-level details D) Hides data,B
+Role of Public Specification in encapsulation?,A) Hides data representation B) Focuses on high-level logic C) Adds complexity D) Manages process state,A
+Purpose of Private Fields in encapsulation?,A) Hides implementation details B) Adds complexity C) Sequential execution D) Manages process state,A
+Concurrency designed for?,A) Low-level reasoning B) High-level reasoning C) Sequential execution D) Hides data,B
+Interleaving defined as?,A) Sequential execution B) Concurrent execution of atomic statements C) Low-level reasoning D) Hides data,B
+Role of Control Pointer in PCB?,A) Manages process state B) Focuses on high-level logic C) Adds complexity D) Sequential execution,A
+Example of Concurrent Program?,A) Sequential execution B) p1,q1,p2,q2 C) Single-thread execution D) General quality consideration,B
+Trivial Concurrent Program definition?,A) Sequential program B) Simple concurrent program C) Complex system D) Single-thread execution,B
+Arbitrary Interleaving concept?,A) Adds complexity B) Abstracts away time C) Sequential execution D) Focuses on execution timing,B
+Atomic Statements execution?,A) Interleaved execution B) Executed to completion without interleaving C) Sequential execution D) Adds complexity,B
+Safety ensures?,A) Good state B) Avoids bad state C) Focuses on timing D) Adds complexity,B
+What is Round Robin?,A) CPU scheduling algorithm B) Process synchronization method C) Asynchronous programming model D) Mutual exclusion technique,A
+Definition of Time Slice/Quantum in Round Robin?,A) Large unit of time B) Small unit of time C) Priority queue D) FIFO queue,B
+Role of Ready Queue in Round Robin?,A) Priority based B) Circular queue C) LIFO queue D) Blocking queue,B
+Principle of Round Robin?,A) Priority scheduling B) Non-preemptive C) Equal time slices D) First-come-first-serve,C
+What is FCFS Scheduler?,A) Last-In-First-Out B) Round Robin variation C) First-In-First-Out D) Priority scheduling,C
+Characteristics of FCFS?,A) High performance B) Easy to implement C) Complex to understand D) Improves response time,B
+What is LIFO?,A) First-In-First-Out B) Round Robin C) Last-In-First-Out D) Priority scheduling,C
+Characteristics of LIFO?,A) Older processes starve B) Poor response time C) Non-preemptive D) Equal time slices,A
+What is Priority scheduling?,A) Equal time slices B) FIFO method C) Based on process priority D) Circular queue,C
+Difference between Process and Thread?,A) Process is within a thread B) Thread is within a process C) Process is a single path of execution D) Thread is an application instance,B
+Processes in OS are represented by?,A) Only code B) Code data and state C) Single stack D) Single thread,B
+Threads in a process are managed by?,A) Shared stack B) Separate stacks C) Single queue D) Single register,B
+Need for Synchronization?,A) To improve speed B) To prevent data corruption C) To increase complexity D) To implement LIFO,B
+Example of Synchronization issue?,A) Writing to a file by multiple threads B) Single thread execution C) FIFO queue D) Priority scheduling,A
+What are Monitors?,A) CPU scheduling algorithm B) Process synchronization method C) Asynchronous programming model D) Mutual exclusion technique,B
+Purpose of Monitors?,A) Improve performance B) Synchronize thread actions C) Execute FIFO queue D) Implement LIFO,B
+What is Mutual Exclusion?,A) Allows concurrent access B) Prevents race conditions C) Improves performance D) Executes priority scheduling,B
+Definition of Asynchronicity?,A) Blocking programming model B) Event-driven non-blocking model C) Single-threaded execution D) FIFO queue,B
+Implementation of Asynchronicity in Java?,A) Using monitors B) Using Future or FutureTask C) Using LIFO D) Using FCFS,B
+Mainclass.java demonstrates?,A) Creating and managing threads B) Synchronization issues C) Priority scheduling D) LIFO execution,A
+What is a Scheduler?,A) A type of process B) Manages execution of processes C) A path of execution within a process D) A code representation,B
+Function of a Scheduler?,A) Executes threads B) Manages process priority C) Implements mutual exclusion D) Executes LIFO,B
+Definition of a Process?,A) A path of execution within a thread B) An executing instance of an application C) A CPU scheduling algorithm D) A synchronization method,B
+What is a Thread?,A) An application instance B) A CPU scheduling algorithm C) A path of execution within a process D) A synchronization method,C
+Example of Round Robin scheduling?,A) Priority execution B) Equal time slices in circular order C) Single thread execution D) Last-In-First-Out,B
+Characteristic of Priority scheduling?,A) FIFO execution B) Equal time slices C) Based on process priority D) Circular queue,C
+Need for Mutual Exclusion?,A) Prevent race conditions B) Increase complexity C) Execute FIFO D) Implement LIFO,A
+Role of FutureTask in Java?,A) Execute blocking tasks B) Execute asynchronous tasks C) Manage process priority D) Synchronize thread actions,B
+Purpose of Asynchronous programming?,A) Blocking model B) Non-blocking event-driven model C) Single-threaded execution D) FIFO queue,B
+Role of Time Slice in Round Robin?,A) Large unit of time B) Prevents starvation C) Small unit of time D) Executes priority scheduling,C
+Example of LIFO problem?,A) Starvation of older processes B) Equal time slices C) High performance D) Easy to implement,A
+What does Round Robin ensure?,A) Priority scheduling B) Non-preemptive execution C) Equal time slices in circular order D) First-come-first-serve,C
+Mainclass.java includes?,A) Methods to create,start,and manage threads B) Priority scheduling C) Mutual exclusion techniques D) Asynchronous programming,A
+Characteristics of FCFS Scheduler?,A) Easy to understand B) High performance C) Complex to implement D) Non-preemptive,A
+Role of Synchronization?,A) Increase complexity B) Handle concurrent resource access C) Implement LIFO D) Manage process priority,B
+Definition of Mutual Exclusion?,A) Ensures concurrent access B) Prevents race conditions C) Executes FIFO queue D) Implements priority scheduling,B
+What does Asynchronous programming leverage?,A) Single CPU core B) Multiple CPU cores C) FIFO execution D) LIFO execution,B
+What is Interference?,A) When multiple threads corrupt the shared state B) Ensuring only one thread accesses the resource C) Synchronous execution D) Parallel processing,A
+Definition of Mutual Exclusion?,A) Multiple threads access shared resources simultaneously B) Ensures only one thread accesses the shared resource at a time C) Execution of threads in parallel D) Sharing resources between threads,B
+Scenario of Ornamental Garden Problem involves?,A) Single thread accessing resources B) Two turnstiles with a shared counter C) Parallel processing of threads D) Synchronous execution of threads,B
+Role of Turnstile Thread?,A) Initializes the garden applet B) Simulates visitor arrivals and increments the counter C) Monitors mutual exclusion D) Prevents interference,B
+What is a Counter Object in the garden scenario?,A) Represents individual visitors B) Tracks the number of visitors C) Initializes turnstile threads D) Ensures mutual exclusion,B
+How does Interference occur?,A) Threads executing in parallel B) Threads reading and writing shared data simultaneously C) Synchronous execution of methods D) Using separate counters for each thread,B
+Example of Interference?,A) Counter incremented correctly B) Counter value less than expected due to simultaneous increments C) Proper synchronization D) Accurate visitor count,B
+Concurrent Method Activation in Java?,A) Method activations are atomic B) Methods executed sequentially C) Threads can interleave execution of method code D) Ensures mutual exclusion,C
+How to prevent Interference in Java?,A) Using non-synchronized methods B) Allowing multiple threads to modify shared objects C) Synchronizing methods that modify shared objects D) Avoiding shared objects,C
+Purpose of synchronized keyword in Java?,A) To execute methods in parallel B) To prevent threads from accessing shared resources C) To ensure only one thread executes the method at a time D) To allow interference,C
+Interference occurs due to?,A) Proper synchronization B) Simultaneous modification of shared data C) Sequential execution D) Atomic method activation,B
+Role of Garden Applet in the scenario?,A) Prevents interference B) Initializes and starts turnstile threads C) Ensures mutual exclusion D) Modifies the counter object,B
+Impact of Interleaving on concurrent threads?,A) No impact B) Causes interference and inconsistent states C) Ensures mutual exclusion D) Synchronous execution,B
+What is a shared object in concurrency?,A) Object accessed by multiple threads B) Object accessed by a single thread C) Object that prevents interference D) Object that ensures mutual exclusion,A
+Method to prevent interference?,A) Using atomic methods B) Using non-synchronized methods C) Using synchronized methods D) Avoiding method activation,C
+Example of lost increments due to interference?,A) Counter incremented as expected B) Counter value higher than expected C) Counter value less than expected due to simultaneous increments D) Accurate visitor count,C
+Definition of synchronized method in Java?,A) Method allowing multiple threads to execute simultaneously B) Method ensuring only one thread can execute it at a time C) Method that prevents mutual exclusion D) Method causing interference,B
+Role of mutual exclusion in concurrency?,A) Allows multiple threads to access resources B) Prevents race conditions by allowing only one thread to access resources at a time C) Causes interference D) Ensures parallel execution,B
+What causes inconsistent states in shared objects?,A) Proper synchronization B) Interference from multiple threads C) Single thread execution D) Mutual exclusion,B
+Purpose of Garden Applet in the case study?,A) To prevent interference B) To initialize and start turnstile threads C) To ensure mutual exclusion D) To modify the counter object,B
+Example of synchronized method use?,A) Allowing multiple threads to modify shared data B) Preventing threads from accessing shared resources C) Ensuring only one thread modifies the counter at a time D) Avoiding the use of shared objects,C
+How does Java ensure mutual exclusion?,A) By allowing interference B) By synchronizing methods that modify shared objects C) By using non-synchronized methods D) By avoiding shared resources,B
+Impact of interference on visitor count in the case study?,A) Accurate visitor count B) Visitor count less than expected C) No impact on visitor count D) Visitor count more than expected,B
+What is the shared counter object used for in the case study?,A) To track individual visitor activities B) To keep track of the total number of visitors C) To prevent interference D) To ensure mutual exclusion,B
+Interleaving in Java method activations?,A) Methods are executed atomically B) Threads can interleave their execution of method code C) Methods are executed sequentially D) Ensures mutual exclusion,B
+How can threads cause interference?,A) By executing methods sequentially B) By modifying shared data simultaneously C) By avoiding shared objects D) By using synchronized methods,B
+Role of synchronized keyword?,A) Allows multiple threads to execute methods simultaneously B) Ensures only one thread can execute the method at a time C) Causes interference D) Avoids mutual exclusion,B
+What ensures only one thread accesses the shared resource?,A) Interference B) Mutual exclusion C) Interleaving D) Synchronous execution,B
+Impact of interleaving on method code execution?,A) Causes interference B) Ensures mutual exclusion C) Executes methods atomically D) Prevents threads from modifying shared data,A
+Purpose of synchronized methods?,A) To prevent mutual exclusion B) To allow interference C) To ensure only one thread modifies shared objects at a time D) To avoid the use of shared objects,C
+What are Monitors in concurrent programming?,A) High-level synchronization constructs B) Low-level threading models C) Methods for sequential execution D) Algorithms for data sorting,A
+Purpose of Monitors?,A) Enhance data sorting B) Ensure safe access to shared resources C) Improve thread speed D) Manage memory allocation,B
+Definition of Conditional Synchronization?,A) Synchronizing without conditions B) Managing thread access based on specific conditions C) Unconditional thread execution D) Parallel processing,B
+Role of wait() method?,A) Keep the thread running B) Release monitor lock and wait C) Acquire monitor lock D) Terminate thread,B
+Function of notify() method?,A) Put thread to sleep B) Wake up a single waiting thread C) Terminate all threads D) Release monitor lock,B
+Purpose of notifyAll() method?,A) Notify one thread B) Stop all threads C) Wake up all waiting threads D) Release monitor lock,C
+How do monitors ensure mutual exclusion?,A) Allow multiple threads simultaneously B) Use multiple monitors C) Permit only one thread to access at a time D) Execute threads in sequence,C
+What is the carpark problem?,A) Managing car repairs B) Controlling carpark entry and exit based on capacity C) Parking cars in a sequence D) Monitoring car speeds,A
+Thread behavior in a monitor?,A) Continues execution without locking B) Acquires and releases mutual exclusion lock C) Ignores monitor state D) Executes sequentially,B
+Effect of wait() method in Java?,A) Keeps the lock B) Releases lock and waits C) Terminates thread D) Executes immediately,B
+Role of AtomicCounter?,A) Manage string operations B) Simplify thread-safe integer operations C) Sort data alphabetically D) Handle floating-point operations,B
+Difference between Java Lock and synchronized?,A) Locks provide more control B) Locks are easier to use C) Synchronization is more flexible D) Synchronization manages memory,A
+Feature of tryLock()?,A) Blocks indefinitely B) Attempts to acquire lock without blocking C) Terminates thread D) Ensures thread priority,B
+Example usage of Locks in Java?,A) Sorting algorithms B) Doctor and patients simulation C) Data encryption D) File reading,D
+Condition synchronization is managed by?,A) Unconditional execution B) wait(),notify(),and notifyAll() methods C) Data sorting algorithms D) Thread termination methods,B
+When is the notifyAll() method used?,A) To stop all threads B) To wake up all waiting threads C) To release all locks D) To terminate the monitor,B
+Purpose of synchronized methods?,A) Ensure data is sorted B) Implement monitors C) Release thread locks D) Improve thread speed,C
+Carpark problem simulates?,A) Traffic flow B) Car arrivals and departures C) Car maintenance D) Parking fees,B
+Effect of notify() method?,A) Wakes up one waiting thread B) Stops all threads C) Terminates the monitor D) Continues thread execution,A
+Role of synchronized keyword in Java?,A) Sort data B) Implement mutual exclusion C) Manage memory D) Terminate threads,B
+How do locks provide more control?,A) By blocking threads indefinitely B) By offering features like tryLock() and fairness policies C) By releasing all locks D) By improving thread speed,B
+What is mutual exclusion?,A) Allowing all threads to access simultaneously B) Ensuring only one thread accesses shared resource at a time C) Ignoring thread states D) Executing threads in parallel,B
+Purpose of using locks in Java?,A) To manage thread synchronization with more flexibility B) To simplify thread operations C) To terminate threads D) To enhance data sorting,A
+How does conditional synchronization work?,A) By executing threads unconditionally B) By managing thread access based on specific conditions C) By blocking all threads D) By sorting data,B
+Role of wait() method in conditional synchronization?,A) To acquire lock B) To release lock and wait for notify C) To terminate thread D) To execute without waiting,B
+Scenario of doctor and patients example?,A) Managing patient records B) Simulating patient visits using locks C) Sorting patient data D) Monitoring patient health,B
+When to use notifyAll() method?,A) When all threads need to be awakened B) When only one thread needs waking C) When terminating threads D) When sorting data,A
+What is the purpose of monitors?,A) To sort data B) To ensure safe access to shared resources C) To execute threads in parallel D) To terminate thread execution,B
+How does synchronized keyword help in concurrency?,A) By allowing multiple threads simultaneously B) By ensuring mutual exclusion C) By sorting data D) By managing memory,B
+What is the effect of wait() method?,A) Releases monitor lock and waits B) Acquires lock C) Terminates thread D) Continues execution without waiting,A
+Why use AtomicCounter?,A) For thread-safe integer operations B) For sorting data C) For managing floating-point operations D) For terminating threads,A
+Example of conditional synchronization?,A) Sorting algorithms B) Carpark problem C) Memory management D) Data encryption,B
+What does tryLock() method do?,A) Acquires lock without blocking B) Blocks indefinitely C) Releases all locks D) Terminates threads,A
+When is notify() method used?,A) To wake up a single waiting thread B) To stop all threads C) To release all locks D) To execute thread immediately,A
+Purpose of synchronized methods in Java?,A) To ensure mutual exclusion B) To execute threads in parallel C) To terminate threads D) To manage memory,A
+How do monitors support condition synchronization?,A) By ignoring thread conditions B) By managing access based on conditions C) By terminating threads D) By sorting data,B
+Role of Java locks?,A) To provide more control over synchronization B) To simplify thread operations C) To manage memory D) To sort data,A
+What is the primary function of a Semaphore?,A) Manage access to shared resources B) Sort data alphabetically C) Execute sequentially D) Monitor thread speed,A
+How does the down(s) operation work in a Semaphore?,A) Increments s B) Sorts data C) Decrements s if s > 0,otherwise blocks D) Monitors thread execution,C
+What does the up(s) operation in a Semaphore do?,A) Decrements s B) Increments s and possibly wakes a waiting process C) Terminates the process D) Blocks the thread,B
+What is a Bounded Buffer?,A) An infinite buffer B) A buffer with a fixed number of slots C) A buffer that sorts data D) A buffer that monitors thread execution,B
+Why is mutual exclusion important in a Bounded Buffer?,A) To allow multiple threads to access simultaneously B) To sort data C) To prevent overfilling or underflowing D) To monitor thread speed,C
+What problem can arise from Nested Monitors?,A) Faster execution B) Data sorting issues C) Thread speed monitoring D) Deadlocks if not managed correctly,D
+How can deadlocks in Nested Monitors be avoided?,A) By ignoring semaphores B) Sorting data first C) Monitoring thread speed D) Delaying the acquisition of monitor locks until after semaphore operations,D
+What is Deadlock?,A) A state where all threads execute simultaneously B) A state of data sorting C) A state where no progress can be made due to circular wait conditions D) A state of thread speed monitoring,C
+Which condition is necessary for Deadlock?,A) Infinite resources B) No wait-for cycle C) Preemption D) Incremental acquisition,D
+What is the Producer-Consumer Problem?,A) Sorting data alphabetically B) Monitoring thread speed C) Adding and removing items from a buffer D) Executing sequentially,C
+What is the Printer-Scanner Problem?,A) Using a single printer B) Using a shared printer and scanner by two processes C) Sorting printer data D) Monitoring printer speed,B
+What is the Dining Philosophers Problem?,A) Philosophers sorting data B) Philosophers monitoring thread speed C) Philosophers needing two forks to eat D) Philosophers executing sequentially,C
+How can the Dining Philosophers Problem be solved?,A) By having all philosophers pick up the same fork B) By sorting forks C) By monitoring fork usage D) By introducing asymmetry in fork picking,D
+What does a Semaphore manage in Java?,A) Data sorting B) Thread speed C) Access to shared resources D) Sequential execution,C
+What is a Nested Monitor?,A) A monitor within another monitor B) A data sorting method C) A thread speed monitor D) A sequential execution method,A
+What is a Serially Reusable Resource?,A) A resource that can be used by multiple threads simultaneously B) A resource that sorts data C) A resource that is used by one thread at a time and then reused D) A resource that monitors thread speed,C
+How does Incremental Acquisition contribute to Deadlock?,A) By allowing infinite resources B) By sorting data incrementally C) By monitoring thread speed D) By acquiring resources one at a time,D
+What is the role of Condition Synchronization in Monitors?,A) To sort data B) To monitor thread speed C) To manage access conditions for threads D) To execute sequentially,C
+How does a monitor ensure mutual exclusion?,A) By allowing multiple threads to access simultaneously B) By sorting data C) By monitoring thread speed D) By permitting only one thread to access the encapsulated data at a time,D
+Why is the concept of Wait-for Cycle important in Deadlock?,A) It allows multiple threads to execute B) It sorts data C) It monitors thread speed D) It prevents deadlock by avoiding circular wait,D
+What is the main issue with Nested Monitors?,A) Faster execution B) Improved thread monitoring C) Better data sorting D) Potential for deadlocks,D
+How can semaphores help in Nested Monitors?,A) By sorting data B) By speeding up threads C) By managing access to shared resources D) By executing sequentially,C
+What does careful design in Nested Monitors involve?,A) Ignoring semaphore operations B) Monitoring thread speed C) Sorting data first D) Delaying monitor lock acquisition,D
+What is an integer variable that manages access to shared resources?,A) Monitor B) Lock C) Semaphore D) Thread,C
+What is the function of the up() method in a semaphore?,A) Blocks the thread B) Decrements the semaphore C) Terminates the process D) Increments the semaphore and possibly wakes a waiting process,D
+What does the down() method in a semaphore do?,A) Increments the semaphore B) Terminates the process C) Decrements the semaphore if it is greater than zero,otherwise blocks D) Wakes all threads,C
+Why is the Bounded Buffer problem important?,A) It is related to data sorting B) It monitors thread speed C) It involves synchronizing access to a shared buffer D) It executes threads sequentially,C
+What is a key characteristic of deadlock?,A) Infinite resources B) Preemption C) Circular wait conditions D) No wait-for cycle,C
+Why is mutual exclusion crucial in concurrent programming?,A) It allows multiple threads to access shared resources B) It prevents data sorting issues C) It speeds up thread execution D) It ensures only one thread accesses a shared resource at a time,D
+What problem does the Producer-Consumer Problem address?,A) Sorting data alphabetically B) Monitoring thread speed C) Synchronizing access to a shared buffer D) Sequential execution,C
+What scenario does the Printer-Scanner Problem illustrate?,A) Using a single resource B) Sorting data C) Using shared resources that lead to deadlock D) Monitoring resource usage,C
+How does the Dining Philosophers Problem demonstrate deadlock?,A) By sorting forks B) By monitoring philosophers C) By philosophers waiting for two forks to eat D) By executing philosophers sequentially,C
+How can asymmetry help in the Dining Philosophers Problem?,A) By sorting forks B) By executing philosophers sequentially C) By monitoring fork usage D) By having philosophers pick up forks in an asymmetric order,D
+What is the purpose of a Semaphore in Java?,A) To sort data B) To monitor thread speed C) To execute sequentially D) To manage access to shared resources,D
+What is Deadlock?,A) A situation where processes wait indefinitely for each other B) A process termination method C) A data sorting issue D) A thread speed problem,A
+Which condition is necessary for Deadlock?,A) Infinite resources B) Serially reusable resources C) Preemption D) Sequential execution,B
+What does Incremental Acquisition refer to in Deadlock?,A) Holding resources while waiting for additional ones B) Forcibly taking resources from processes C) Releasing resources voluntarily D) Executing processes sequentially,A
+What does No Pre-emption mean in Deadlock?,A) Resources can be forcibly taken from processes B) Resources must be released voluntarily C) Processes acquire resources incrementally D) Resources are reused serially,B
+What is a Wait-for Cycle?,A) A chain of processes waiting for each other in a circular manner B) A sequential execution of processes C) A data sorting method D) A thread speed monitoring cycle,A
+What is the Printer-Scanner Problem?,A) A single process using both resources B) Two processes needing a shared printer and scanner C) Processes waiting for infinite resources D) A data sorting issue,B
+What can cause Deadlock in the Dining Philosophers Problem?,A) Philosophers picking up forks in sequence B) Philosophers waiting indefinitely for the second fork C) Philosophers eating simultaneously D) Philosophers not using forks,B
+How can asymmetry prevent Deadlock in the Dining Philosophers Problem?,A) By sorting forks B) By having philosophers pick up forks in an asymmetric order C) By monitoring fork usage D) By executing philosophers sequentially,B
+What is a strategy for Deadlock Avoidance?,A) Allowing circular wait B) Asymmetry in resource acquisition C) Infinite resource allocation D) Sequential execution,B
+What is the purpose of Resource Hierarchies?,A) To sort resources B) To ensure resources are acquired in a predefined order C) To allow preemption D) To monitor thread speed,B
+How can timeouts help in Deadlock Avoidance?,A) By allowing infinite waiting B) By terminating processes immediately C) By allowing processes to back off and retry D) By sorting data,C
+What is Deadlock Detection and Recovery?,A) Ignoring deadlocks B) Regularly checking for deadlocks and taking corrective actions C) Allowing processes to wait indefinitely D) Sorting processes,B
+Which strategy can prevent Deadlock?,A) Infinite resource allocation B) Circular waiting C) Resource hierarchies D) Ignoring deadlocks,C
+What does the term 'serially reusable resources' mean?,A) Resources used simultaneously by all processes B) Resources used by one process at a time C) Resources sorted in a sequence D) Resources monitored for thread speed,B
+Why is 'no pre-emption' a condition for Deadlock?,A) Because resources can be forcibly taken from processes B) Because resources must be released voluntarily C) Because processes wait indefinitely D) Because resources are sorted,B
+What scenario does the Printer-Scanner Problem illustrate?,A) Using a single resource B) Using shared resources that lead to deadlock C) Sorting data D) Monitoring resource usage,B
+What is the effect of the Wait-for Cycle?,A) Allows processes to execute B) Prevents deadlock by avoiding circular wait C) Causes deadlock due to circular waiting D) Sorts data in a sequence,C
+How can the Dining Philosophers Problem be solved?,A) By having all philosophers pick up the same fork B) By introducing asymmetry in fork picking C) By sorting forks D) By monitoring fork usage,B
+What is a necessary condition for Deadlock?,A) Infinite resources B) Incremental acquisition C) Preemption D) No wait-for cycle,B
+How does Incremental Acquisition contribute to Deadlock?,A) By allowing infinite resources B) By acquiring resources one at a time C) By sorting data incrementally D) By monitoring thread speed,B
+What is the role of Condition Synchronization in Deadlock?,A) To sort data B) To manage access conditions for threads C) To monitor thread speed D) To execute sequentially,B
+Why is mutual exclusion crucial in Deadlock?,A) It allows multiple threads to access shared resources B) It prevents data sorting issues C) It ensures only one thread accesses a shared resource at a time D) It speeds up thread execution,C
+What is the purpose of Resource Hierarchies in Deadlock?,A) To sort resources B) To ensure resources are acquired in a predefined order C) To allow preemption D) To monitor thread speed,B
+How can timeouts help in Deadlock Avoidance?,A) By allowing infinite waiting B) By terminating processes immediately C) By allowing processes to back off and retry D) By sorting data,C
+What is Deadlock Detection and Recovery?,A) Ignoring deadlocks B) Regularly checking for deadlocks and taking corrective actions C) Allowing processes to wait indefinitely D) Sorting processes,B
+What is a key characteristic of deadlock?,A) Infinite resources B) Circular wait conditions C) Preemption D) No wait-for cycle,B
+Why is mutual exclusion crucial in concurrent programming?,A) It allows multiple threads to access shared resources B) It prevents data sorting issues C) It ensures only one thread accesses a shared resource at a time D) It speeds up thread execution,C
+What problem does the Producer-Consumer Problem address?,A) Sorting data alphabetically B) Synchronizing access to a shared buffer C) Monitoring thread speed D) Sequential execution,B
+What scenario does the Printer-Scanner Problem illustrate?,A) Using a single resource B) Using shared resources that lead to deadlock C) Sorting data D) Monitoring resource usage,B
+How does the Dining Philosophers Problem demonstrate deadlock?,A) By sorting forks B) By philosophers waiting for two forks to eat C) By monitoring philosophers D) By executing philosophers sequentially,B
+How can asymmetry help in the Dining Philosophers Problem?,A) By sorting forks B) By having philosophers pick up forks in an asymmetric order C) By monitoring fork usage D) By executing philosophers sequentially,B
+What is the purpose of a Semaphore in Deadlock avoidance?,A) To sort data B) To monitor thread speed C) To execute sequentially D) To manage access to shared resources,D
+What is Deadlock Avoidance?,A) Allowing deadlocks to occur B) Sorting data C) Ignoring deadlocks D) Implementing strategies to prevent deadlocks,D
+What does the term 'serially reusable resources' mean?,A) Resources used simultaneously by all processes B) Resources monitored for thread speed C) Resources sorted in a sequence D) Resources used by one process at a time,D
+How does Deadlock occur in a concurrent system?,A) Processes execute without waiting B) Processes sort data C) Processes release resources voluntarily D) Processes wait indefinitely for resources held by each other,D
+What is Safety in concurrent systems?,A) Ensuring all tasks complete B) Ensuring nothing bad happens during execution C) Ensuring all tasks start D) Ensuring data sorting,B
+What is an example of a Safety property?,A) All tasks start simultaneously B) A printer is accessed exclusively by one process at a time C) Data is sorted alphabetically D) All tasks complete,B
+What is Liveness in concurrent systems?,A) Ensuring all tasks start B) Ensuring something good eventually happens C) Ensuring data sorting D) Ensuring no tasks start,B
+What is an example of a Liveness property?,A) Data is sorted alphabetically B) Every car eventually crosses a single-lane bridge C) No tasks complete D) All tasks start,B
+In the Dining Philosophers Problem,what is a Safety property?,A) A fork is shared between philosophers B) A fork is held by one philosopher at a time C) All philosophers eat simultaneously D) Philosophers do not eat,B
+In the Dining Philosophers Problem,what is a Liveness property?,A) Philosophers never eat B) Philosophers always eat simultaneously C) Philosophers eventually get to eat D) Philosophers share forks,C
+What is a centralized solution for the Dining Philosophers Problem?,A) Philosophers manage their own forks B) Use a central fork manager C) All philosophers eat simultaneously D) No philosophers eat,B
+What is a decentralized solution for the Dining Philosophers Problem?,A) Philosophers do not eat B) Use a central fork manager C) Philosophers handle their own forks D) All philosophers eat simultaneously,C
+In the Single Lane Bridge Problem what is a Safety property?,A) Cars move in opposite directions simultaneously B) Cars do not cross the bridge C) Cars move in one direction at a time D) All cars cross simultaneously,C
+In the Single Lane Bridge Problem what is a Liveness property?,A) No cars cross the bridge B) Every car eventually crosses the bridge C) Cars move in opposite directions simultaneously D) Cars do not wait,B
+What is the role of Threads in concurrent programming?,A) Manage access to shared resources B) Perform tasks C) Ensure mutual exclusion D) Handle data sorting,B
+What is the role of Monitors in concurrent programming?,A) Perform tasks B) Manage access to shared resources C) Ensure liveness D) Sort data,B
+How can Mutual Exclusion be ensured in Java?,A) Allow multiple threads simultaneously B) Use synchronized methods C) Ignore thread interference D) Allow data corruption,B
+What is the purpose of Atomic Operations?,A) Ensure thread-safe operations B) Sort data C) Allow thread interference D) Execute tasks sequentially,A
+What does Fairness ensure in concurrent systems?,A) All actions execute infinitely often B) Some actions never execute C) Data is sorted D) No tasks start,A
+What is Congestion Handling?,A) Allowing data corruption B) Introducing mechanisms to prevent starvation C) Ignoring thread interference D) Sorting data,B
+Why is mutual exclusion important for safety?,A) It ensures threads can access shared resources simultaneously B) It prevents interference by ensuring only one thread accesses a resource at a time C) It allows data corruption D) It ensures all threads are blocked,B
+What is a key concept of liveness?,A) Preventing tasks from executing B) Ensuring good states are eventually reached C) Blocking all tasks D) Ignoring thread interference,B
+What does Fairness aim to prevent?,A) Ensuring only some actions execute B) Starvation C) Infinite waiting D) Blocking all tasks,B
+How does introducing asymmetry help in the Dining Philosophers Problem?,A) Ensures all philosophers starve B) Prevents deadlock by allowing philosophers to pick forks in an asymmetric order C) Allows data corruption D) Blocks all philosophers,B
+What is the main focus of Safety in concurrent programming?,A) Ensuring tasks never start B) Preventing bad states during execution C) Allowing data corruption D) Blocking all tasks,B
+What is the main focus of Liveness in concurrent programming?,A) Ensuring tasks never start B) Ensuring good states are eventually reached C) Allowing data corruption D) Blocking all tasks,B
+What is the purpose of using synchronized methods?,A) Allowing data corruption B) Ensuring mutual exclusion C) Blocking all tasks D) Preventing tasks from executing,B
+What does progress ensure in concurrent systems?,A) Actions are eventually executed B) All tasks are blocked C) Data is sorted D) Tasks never complete,A
+How can fairness be implemented in concurrent systems?,A) By allowing starvation B) By ensuring all actions have the opportunity to execute infinitely often C) By blocking all tasks D) By allowing data corruption,B
+What is an example of ensuring safety in a printer system?,A) Allowing multiple processes to access the printer simultaneously B) Ensuring only one process accesses the printer at a time C) Ignoring thread interference D) Allowing data corruption,B
+How can liveness be ensured in a single-lane bridge problem?,A) Ensuring no cars cross the bridge B) Ensuring every car eventually crosses the bridge C) Blocking all cars D) Allowing data corruption,B
+What is a key challenge in achieving both safety and liveness?,A) Allowing data corruption B) Balancing mutual exclusion with progress C) Blocking all tasks D) Ignoring thread interference,B
+What is the purpose of using atomic classes?,A) Ensuring thread-safe operations B) Allowing data corruption C) Blocking all tasks D) Preventing tasks from executing,A
+How can congestion handling improve liveness?,A) By allowing starvation B) By introducing mechanisms to prevent one class of actions from being starved C) By blocking all tasks D) By ignoring thread interference,B
+What is a safety property in the single-lane bridge problem?,A) Cars moving in opposite directions should not be on the bridge simultaneously B) Cars should move in opposite directions C) Cars should wait indefinitely D) Cars should never cross the bridge,A
+What is a liveness property in the single-lane bridge problem?,A) Cars should never cross the bridge B) Cars should wait indefinitely C) Every car should eventually get to cross the bridge D) Cars should move in opposite directions,C
+Why is fairness important in concurrent systems?,A) To ensure some actions never execute B) To prevent starvation and ensure all actions have a chance to execute C) To allow data corruption D) To block all tasks,B
+What is an example of a fairness mechanism?,A) Ignoring some actions B) Introducing priority mechanisms to prevent starvation C) Blocking all tasks D) Allowing data corruption,B
+Who is the Von Neumann Architecture named after?,A) Albert Einstein B) Alan Turing C) John von Neumann D) Isaac Newton,C
+What concept is the Von Neumann Architecture based on?,A) Distributed Computing B) Cloud Computing C) Stored-program D) Network Computing,C
+What does the CPU do in the Von Neumann Architecture?,A) Only executes instructions B) Only stores data C) Only fetches instructions D) Fetches,decodes,and executes instructions,D
+Which of the following is part of the basic design of the Von Neumann Architecture?,A) GPU B) Network Interface C) Sound Card D) Memory,D
+Which component stores both program instructions and data in the Von Neumann Architecture?,A) CPU B) ALU C) GPU D) Memory,D
+What does Flynn's Classical Taxonomy classify?,A) Serial computers B) Cloud services C) Database systems D) Parallel computers,D
+Which Flynn classification is a traditional serial computer?,A) SIMD B) MIMD C) SISD D) MISD,C
+Which Flynn classification involves all processing units executing the same instruction on different data elements?,A) SIMD B) MIMD C) MISD D) SISD,A
+Which Flynn classification involves each processor executing different instructions on different data elements?,A) SIMD B) MISD C) SISD D) MIMD,D
+What does the term 'task' refer to in parallel computing?,A) A discrete section of computational work B) A type of memory C) A synchronization method D) A communication method,A
+What is a parallel task?,A) A task that requires sequential execution B) A task that cannot be divided C) A task that can be executed by multiple processors safely D) A task that uses distributed memory,C
+What is serial execution?,A) Concurrent execution of program statements B) Execution of multiple tasks C) Sequential execution of program statements D) Execution of tasks in parallel,C
+What is parallel execution?,A) Sequential execution of program statements B) Concurrent execution of program statements by multiple tasks C) Execution by a single processor D) Execution without synchronization,B
+What type of memory model allows all processors to access common physical memory directly?,A) Distributed Memory B) Cache Memory C) Virtual Memory D) Shared Memory,D
+What type of memory model requires communication to access memory on other processors?,A) Shared Memory B) Cache Memory C) Virtual Memory D) Distributed Memory,D
+What does 'synchronization' mean in parallel computing?,A) Execution of tasks in isolation B) Use of a single processor C) Coordination of parallel tasks to ensure correct execution order D) Independent execution of tasks,C
+What is 'granularity' in parallel computing?,A) Measure of computation to communication ratio B) Measure of communication to computation ratio C) Type of memory model D) Type of synchronization method,A
+What is 'observed speedup'?,A) Ratio of parallel execution time to serial execution time B) Ratio of serial execution time to parallel execution time C) Difference between parallel and serial execution time D) Speed of a single processor,B
+What is 'parallel overhead'?,A) Time spent doing useful work B) Time spent in serial execution C) Time spent in communication only D) Time spent coordinating parallel tasks,D
+What does 'massively parallel' refer to?,A) Systems with shared memory only B) Systems with low scalability C) Systems with a single processor D) Systems with a high number of processors,D
+What does 'scalability' mean in the context of parallel computing?,A) Ability to decrease speedup with more processors B) Requirement of shared memory C) Inability to handle large tasks D) Ability to show proportional speedup with additional processors,D
+What distinguishes the Von Neumann architecture from other architectures?,A) Use of GPUs B) Lack of memory C) Stored-program concept D) Use of multiple CPUs,C
+What is the Flynn classification that involves multiple processing units executing different instructions on the same data stream?,A) SIMD B) SISD C) MISD D) MIMD,C
+What does the term 'communication' refer to in parallel computing?,A) Execution of tasks B) Storage of data C) Exchange of data between parallel tasks D) Use of a single processor,C
+What does the term 'Flynn's Taxonomy' refer to?,A) A classification of database systems B) A type of memory model C) A type of synchronization method D) A classification of parallel computers,D
+Which Flynn classification involves multiple processors executing different instructions on different data elements?,A) SIMD B) MISD C) SISD D) MIMD,D
+What is the primary function of the CPU in the Von Neumann architecture?,A) Store data B) Execute stored program instructions C) Manage memory D) Handle input/output operations,B
+Which memory model is characterized by each processor accessing local memory?,A) Shared Memory B) Distributed Memory C) Virtual Memory D) Cache Memory,B
+What is an example of a communication method in parallel computing?,A) Direct memory access B) Task scheduling C) File I/O D) Network communication,D
+What is an example of a synchronization method in parallel computing?,A) Locking mechanisms B) Task division C) Data replication D) Instruction pipelining,A
+What does 'granularity' measure in parallel computing?,A) Computation to communication ratio B) Memory usage C) Processor speed D) Task size,A
+What does 'scalability' affect in parallel computing systems?,A) Processor speed B) Network bandwidth C) Proportional speedup with additional processors D) Memory capacity,C
+What does 'observed speedup' compare?,A) Parallel execution time to serial execution time B) Serial execution time to parallel execution time C) Processor speed D) Memory access time,B
+What is 'parallel overhead' in parallel computing?,A) Time spent in useful computation B) Time spent in idle state C) Time spent in serial execution D) Time spent coordinating parallel tasks,D
+What characterizes massively parallel systems?,A) Single processor systems B) Low scalability C) Single memory model D) High number of processors,D
+Which memory model allows direct access to common physical memory?,A) Distributed Memory B) Cache Memory C) Virtual Memory D) Shared Memory,D
+Which Flynn classification involves executing the same instruction on different data elements?,A) SIMD B) MIMD C) MISD D) SISD,A
+What is a primary advantage of the Shared Memory Model in parallel programming?,A) Eliminates data locality issues B) Simplifies program development C) Requires explicit data communication D) Suitable for distributed memory systems,B
+Which concept describes the Shared Memory Model?,A) Each task uses its own local memory B) Tasks share a common address space C) Tasks perform different operations on the same dataset D) Multiple programs are executed by different tasks,B
+What is a disadvantage of the Shared Memory Model?,A) It requires message passing B) It uses different local memory for each task C) It complicates data locality management D) It focuses on data distribution,C
+How do native compilers implement the Shared Memory Model?,A) By using message passing libraries B) By translating variables into global memory addresses C) By utilizing array processing D) By extending Fortran with data parallel constructs,B
+What defines the Threads Model?,A) A single process with multiple concurrent execution paths B) Tasks communicate by sending and receiving messages C) Tasks perform the same operation on different partitions D) A single program executed by all tasks,A
+What is necessary to prevent multiple threads from updating the same global address simultaneously in the Threads Model?,A) Data distribution B) Data locality management C) Synchronization D) Message passing,C
+Which library-based implementation of the Threads Model requires explicit parallel coding?,A) OpenMP B) Pthreads C) MPI D) High Performance Fortran,B
+Which compiler directive-based implementation of the Threads Model supports C/C++ and Fortran?,A) MPI B) Pthreads C) Fortran 90/95 D) OpenMP,D
+What describes the concept of the Message Passing Model?,A) Tasks share a common address space B) Tasks use their own local memory and communicate by sending messages C) A single process with multiple execution paths D) Tasks perform the same operation on different dataset partitions,B
+Which model is suitable for distributed memory systems?,A) Shared Memory Model B) Threads Model C) Message Passing Model D) Data Parallel Model,C
+What is a common implementation of the Message Passing Model that provides portability and efficiency?,A) POSIX Threads B) OpenMP C) MPI D) Fortran 90/95,C
+What concept does the Data Parallel Model describe?,A) Tasks use their own local memory B) Tasks share a common address space C) Tasks perform the same operation on different partitions of a dataset D) A single process with multiple execution paths,C
+What is an advantage of the Data Parallel Model?,A) Suitable for distributed memory systems B) Eliminates the need for synchronization C) Simplifies parallelism by focusing on data distribution D) Requires explicit parallel coding,C
+Which Fortran version provides array processing and dynamic memory allocation?,A) Fortran 77 B) Fortran 90/95 C) High Performance Fortran D) POSIX Threads,B
+What extends Fortran 90 with data parallel constructs and directives?,A) Fortran 77 B) POSIX Threads C) High Performance Fortran D) OpenMP,C
+Which model combines two or more parallel programming models?,A) Single Program Multiple Data (SPMD) B) Multiple Program Multiple Data (MPMD) C) Hybrid Model D) Data Parallel Model,C
+What describes the Single Program Multiple Data (SPMD) model?,A) Multiple programs executed by different tasks B) Tasks share a common address space C) A single program executed by all tasks D) Tasks perform the same operation on different dataset partitions,C
+What describes the Multiple Program Multiple Data (MPMD) model?,A) A single program executed by all tasks B) Multiple programs executed by different tasks C) Tasks share a common address space D) Tasks perform the same operation on different partitions,B
+What is ubiquitous in computing,present in hardware devices,computational problems,algorithms,and software?,A) Message Passing B) Parallelism C) Data Distribution D) Synchronization,B
+What do current high-performance computers execute over?,A) 100 gigaFLOPS B) 200 petaFLOPS C) 1 teraFLOP D) 10 exaFLOPS,B
+What remains a key challenge in maximizing computing performance until new production technology is developed?,A) Message Passing B) Synchronization C) Data Locality D) Parallelism,C
+What is the primary concept of the Shared Memory Model?,A) Tasks use their own local memory B) Tasks share a common address space and access it asynchronously C) Tasks perform different operations on the same dataset D) A single program executed by all tasks,B
+Which parallel programming model simplifies development by eliminating explicit data communication?,A) Threads Model B) Message Passing Model C) Shared Memory Model D) Data Parallel Model,C
+What is required in the Threads Model to prevent concurrent updates to the same data?,A) Message Passing B) Data Parallelism C) Synchronization D) Hybrid Modeling,C
+Which model uses tasks that perform the same operation on different parts of a dataset?,A) Message Passing Model B) Data Parallel Model C) Threads Model D) Shared Memory Model,B
+What is a significant advantage of the Data Parallel Model?,A) Data locality management B) Focuses on data distribution C) Uses shared memory D) Requires synchronization,B
+Which implementation provides a standard for message passing libraries?,A) MPI B) Pthreads C) OpenMP D) High Performance Fortran,A
+What is the concept of the Hybrid Model?,A) A single program executed by all tasks B) Combines two or more parallel programming models C) Tasks use their own local memory D) Tasks perform the same operation on different parts of a dataset,B
+What is a high-level model where a single program is executed by all tasks,which may branch or execute different parts of the program?,A) MPMD B) Threads Model C) SPMD D) Data Parallel Model,C
+What is a model where multiple programs are executed by different tasks,each using its own data?,A) SPMD B) Threads Model C) MPMD D) Data Parallel Model,C
+Which model simplifies parallelism by focusing on data distribution?,A) Shared Memory Model B) Data Parallel Model C) Message Passing Model D) Hybrid Model,B
+What kind of systems is the Message Passing Model particularly suitable for?,A) Shared memory systems B) Distributed memory systems C) Hybrid systems D) Data parallel systems,B
+What parallel programming model requires explicit parallel coding?,A) OpenMP B) Pthreads C) High Performance Fortran D) MPI,B
+Which model provides array processing and dynamic memory allocation in Fortran 90/95?,A) Hybrid Model B) Threads Model C) Data Parallel Model D) Message Passing Model,C
+What does the future of computing performance significantly depend on?,A) Data locality B) Message passing C) New production technology for computing devices D) Synchronization,C
+Which programming model uses multiple concurrent execution paths within a single process?,A) Shared Memory Model B) Threads Model C) Message Passing Model D) Data Parallel Model,B
+Which model extends Fortran 90 with data parallel constructs and directives?,A) High Performance Fortran B) Pthreads C) MPI D) OpenMP,A
+What is the primary concept of the Message Passing Model?,A) Tasks use their own local memory and communicate via messages B) Tasks share a common address space C) Tasks perform different operations on the same dataset D) A single program executed by all tasks,A
+What is the main benefit of using JPPF?,A) Reduces processing time by executing on multiple computers B) Simplifies single-threaded applications C) Increases memory usage D) Enhances graphics performance,A
+How does JPPF achieve parallel processing?,A) By using a single-threaded approach B) By splitting an application into smaller parts executed simultaneously on different machines C) By using a single powerful computer D) By reducing the number of tasks,B
+What are the smaller,independent parts of an application called in JPPF?,A) Nodes B) Servers C) Tasks D) Jobs,C
+What is a logical grouping of tasks in JPPF?,A) Node B) Task C) Server D) Job,D
+What is the simplest JPPF grid composed of?,A) A server and multiple nodes B) A client and a server C) Multiple clients D) Multiple tasks,A
+What component distributes tasks to nodes in a JPPF grid?,A) Task B) Server C) Client D) Job,B
+What are the entry points to the JPPF grid called?,A) Servers B) Tasks C) Clients D) Nodes,C
+What do servers in the JPPF architecture do?,A) Only submit tasks B) Only perform tasks C) Manage network connectivity D) Receive work from clients dispatch it to nodes collect results and send them back to clients,D
+What do nodes in the JPPF architecture perform?,A) Actual work execution B) Network management C) Task distribution D) Client connection,A
+What is the smallest unit of work in JPPF?,A) Job B) Task C) Server D) Client,B
+What influences work distribution in JPPF jobs?,A) Only start and expiration schedule B) Only user-defined metadata C) Node filtering,maximum number of nodes,job priority,start and expiration schedule,user-defined metadata D) Only job priority,C
+What do the two channels per connection in JPPF handle?,A) Both handle job data B) Both handle class loader C) One for network management and one for job data D) One for job data and one for distributed class loader,D
+How are network communications in JPPF characterized?,A) All communications are asynchronous B) Only some communications are asynchronous C) All communications are synchronous D) Only some communications are synchronous,A
+What protocol does JPPF use for network communications?,A) Real-time protocol B) Request/response protocol C) Synchronous protocol D) Asynchronous protocol,B
+What can nodes in JPPF process concurrently?,A) Only tasks B) Only metadata C) Multiple jobs D) Only one job at a time,C
+What structure do messages in JPPF follow?,A) Simple text messages B) Only binary data C) Only encrypted data D) Composed of blocks of serialized data each preceded by its size,D
+What does a job data request include in JPPF?,A) Header,data provider,tasks B) Only job metadata C) Only tasks D) Only job SLA,A
+What does the header of a job data request contain?,A) Only the number of tasks B) Job information such as the number of tasks,job SLA,job metadata,additional internal information C) Only job metadata D) Only job SLA,B
+What is the role of the data provider in a job data request?,A) Stores job SLA B) Manages network connections C) A read-only container for data shared among all tasks D) Stores job metadata,C
+What is the primary purpose of JPPF architecture?,A) To execute tasks on a single computer B) To manage network connections C) To simplify single-threaded applications D) To enable high-processing-power applications to run on multiple computers,D
+What component in JPPF collects results from nodes?,A) Server B) Client C) Job D) Task,A
+How can multiple servers connect in JPPF?,A) Only through nodes B) In a peer-to-peer network C) In a hierarchical network D) Only through clients,B
+What does a logical grouping of tasks with a common SLA in JPPF refer to?,A) Task B) Server C) Job D) Node,C
+What is the function of user-defined metadata in JPPF?,A) Simplifies job creation B) Only stores job names C) Manages network connections D) Helps with load balancing,D
+Which component allows developers to submit work via APIs in JPPF?,A) Clients B) Nodes C) Servers D) Tasks,A
+What connectivity options are available for clients and nodes in JPPF?,A) Only peer-to-peer connection B) Various connectivity options C) Only direct connection D) Only through servers,B
+What enables on-demand class deployment in JPPF?,A) Synchronous protocol B) Asynchronous protocol C) Distributed class loader D) Job data channel,C
+What does JPPF's asynchronous networking imply?,A) Nodes can only process one job at a time B) Servers can only handle one job at a time C) Clients can only submit one job at a time D) Nodes can process multiple jobs concurrently,D
+What is the role of the server in the simplest JPPF grid?,A) Distributes tasks to nodes for parallel execution B) Only performs tasks C) Only receives work from clients D) Only sends results back to clients,A
+What is the relationship between tasks and jobs in JPPF?,A) Jobs are smaller than tasks B) Tasks are grouped into jobs C) Jobs are grouped into tasks D) Tasks are independent of jobs,B
+What kind of network communication does JPPF utilize?,A) Only peer-to-peer communication B) Only hierarchical communication C) Asynchronous communication D) Synchronous communication,C
+What does a request message in JPPF involve?,A) Only tasks B) Only job metadata C) Only job SLA D) Serialized data blocks preceded by their size,D
+What is a job priority used for in JPPF?,A) To influence work distribution B) To simplify job creation C) To manage network connections D) To store job names,A
+How does JPPF handle multiple job submissions?,A) Only one job per node B) Multiple jobs per client/server connection C) Only one job per client/server connection D) Only one job per server,B
+What do JPPF nodes process?,A) Only client submissions B) Only job metadata C) Actual work execution D) Network connections,C
+How is job data transported in JPPF?,A) Through a single channel B) Only through servers C) Only through clients D) Through two channels per connection,D
+What is the main advantage of dividing an application into smaller parts in JPPF?,A) Enables parallel execution on different machines B) Reduces memory usage C) Increases complexity D) Simplifies network management,A

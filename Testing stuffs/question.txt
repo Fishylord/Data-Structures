@@ -1,300 +1,400 @@
-Q001,Which data structure follows the Last In First Out (LIFO) principle?, A) Queue B) Stack C) Linked List D) Tree,B,10
-Q002,What is the time complexity of finding an element in a sorted array using binary search?, A) O(1) B) O(log n) C) O(n) D) O(n^2),B,10
-Q003,Which sorting algorithm has the best average-case time complexity?, A) Bubble Sort B) Quick Sort C) Selection Sort D) Merge Sort,B,10
-Q004,In which data structure are elements accessed sequentially?, A) Stack B) Queue C) Array D) Tree,C,10
-Q005,Which data structure is typically used to implement priority queues?, A) Array B) Linked List C) Heap D) Stack,C,10
-Q006,What is the worst-case time complexity of a binary search in a binary search tree?, A) O(1) B) O(log n) C) O(n) D) O(n^2),C,10
-Q007,Which data structure would you use to implement recursion efficiently?, A) Queue B) Stack C) Linked List D) Hash Table,B,10
-Q008,What does FIFO stand for in a queue?, A) First In First Out B) First In Last Out C) First Item First Out D) None of the Above,A,10
-Q009,Which data structure can be used for backtracking algorithms?, A) Queue B) Stack C) Array D) Tree,B,10
-Q010,Which data structure allows the fastest retrieval of data| assuming it is correctly structured and hashed?, A) Queue B) Stack C) Linked List D) Hash Table,D,10
-Q011,What type of tree is used in databases to manage indices?, A) Binary Tree B) B-Tree C) Red-Black Tree D) AVL Tree,B,10
-Q012,Which graph traversal algorithm uses a queue?, A) Depth-First Search (DFS) B) Breadth-First Search (BFS) C) In-Order Traversal D) None of the Above,B,10
-Q013,What is the space complexity of a recursive depth-first search on a tree?, A) O(1) B) O(log n) C) O(n) D) O(n^2),C,10
-Q014,What type of algorithm is used for sorting linked lists efficiently?, A) Bubble Sort B) Insertion Sort C) Merge Sort D) Quick Sort,C,10
-Q015,What data structure would best manage the printer spooler system?, A) Queue B) Stack C) Linked List D) Hash Table,A,10
-Q016,How would you describe an algorithm with O(n log n) time complexity?, A) Constant B) Linear C) Logarithmic D) Linearithmic,D,10
-Q017,What is an underflow condition in a data structure?, A) When it is too full B) When it is empty C) When it has only one element D) None of the Above,B,10
-Q018,What is a balanced tree?, A) A tree with minimal height B) A tree where each node has one child C) A tree where each node has no children D) A tree where each node has two children,A,10
-Q019,Which sorting method is generally stable?, A) Quick Sort B) Selection Sort C) Merge Sort D) Heap Sort,C,10
-Q020,What is the best case time complexity of insertion sort?, A) O(1) B) O(n) C) O(log n) D) O(n^2),B,10
-Q021,In graph theory| which property indicates a graph is bipartite?, A) Connected components B) No odd cycles C) Directed edges D) All vertices connected,B,10
-Q022,What algorithm finds the shortest path from a single source vertex to all other vertices in a weighted graph?, A) Kruskal's Algorithm B) Prim's Algorithm C) Dijkstra's Algorithm D) Bellman-Ford Algorithm,C,10
-Q023,What data structure is particularly efficient for the union-find operation in disjoint set data structures?, A) Array B) Tree C) Graph D) Stack,B,10
-Q024,How is an abstract data type different from a data structure?, A) ADT defines operations| data structure provides implementation B) ADT provides implementation| data structure defines types C) ADT uses only primitive types D) There is no difference,A,10
-Q025,What type of sort is a radix sort?, A) Comparison sort B) Distributive sort C) Bubble sort D) Recursive sort,B,10
-Q026,What is the typical worst-case scenario for a quicksort algorithm?, A) The list is already sorted B) The list is sorted in reverse C) The list has identical elements D) The list has no elements,A,10
-Q027,Which data structure can efficiently support random access as well as dynamic resizing?, A) Linked List B) Array C) Dynamic Array D) Stack,C,10
-Q028,In a binary tree| what is the maximum number of children each node can have?, A) 1 B) 2 C) 3 D) 4,B,10
-Q029,Which algorithm is NOT typically used in cryptography?, A) RSA B) Bubble Sort C) SHA-256 D) AES,B,10
-Q030,What is amortized analysis used for in algorithm design?, A) Predicting worst-case scenario B) Analyzing average-case scenario over a sequence of operations C) Determining best-case scenario D) Comparing two different algorithms,B,10
-Q031,What kind of data structure is typically used to implement an undo feature in a software application?, A) Queue B) Stack C) Array D) Linked List,B,10
-Q032,What is depth-first search primarily used for?, A) Finding shortest paths B) Traversing trees and graphs in a specific order C) Sorting elements D) Searching in sorted arrays,B,10
-Q033,What is a trie used for in computer science?, A) Sorting arrays B) Balancing trees C) Storing strings for efficient retrieval D) Calculating mathematical expressions,C,10
-Q034,Which data structure is primarily used in the implementation of a hash table?, A) Array B) Linked List C) Binary Tree D) Graph,A,10
-Q035,What condition must be met for a binary search to be applicable?, A) The data must be in a hash table B) The data must be in a linked list C) The data must be in a binary search tree D) The data must be sorted,D,10
-Q036,What describes an algorithm with O(n!) complexity?, A) Efficient B) Feasible C) Scalable D) Infeasible,D,10
-Q037,What operation is typically very slow in a singly linked list?, A) Accessing the head B) Accessing the middle C) Deleting the last element D) Adding an element at the end,C,10
-Q038,Which algorithm is best suited for external sorting?, A) Quick Sort B) Bubble Sort C) Merge Sort D) Insertion Sort,C,10
-Q039,What is a graph's vertex degree?, A) The number of edges coming out of the vertex B) The process of labeling vertices C) The maximum distance between any two vertices D) The number of edges connected to the vertex,D,10
-Q040,What is the primary disadvantage of using an array over a linked list?, A) Slower access time B) Less memory efficient C) Difficulty in resizing D) More complex implementation,C,10
-Q041,Which data structure is best for storing elements that need to be processed in a specific order?, A) Stack B) Queue C) Heap D) Array,B,10
-Q042,What is the difference between a stack and a queue?, A) Stack is FIFO| queue is LIFO B) Stack is LIFO| queue is FIFO C) Both are FIFO D) Both are LIFO,B,10
-Q043,What algorithm is typically used for balancing data in a database?, A) Quick Sort B) Merge Sort C) B-Tree Insertion D) Linear Search,C,10
-Q044,What is the purpose of a hash function in a hash table?, A) To sort data B) To delete data C) To distribute data uniformly across an array D) To merge data,C,10
-Q045,What is meant by 'asymptotic complexity' of an algorithm?, A) The complexity when the algorithm doesn’t terminate B) The worst-case complexity under typical conditions C) The behavior of the algorithm as the input size becomes very large D) The initial complexity of the algorithm when the program starts,C,10
-Q046,Which of the following is a disadvantage of using arrays?, A) Fixed size B) Flexible size C) Efficient random access D) Efficient insertion at end,A,10
-Q047,What type of data structure is used for breadth-first search (BFS) in a graph?, A) Stack B) Queue C) Tree D) Graph,B,10
-Q048,How does a circular queue differ from a regular queue?, A) It can only store integers B) It wraps around when the end is reached C) It does not allow dequeue operations D) It is faster in processing,B,10
-Q049,What is a binary heap?, A) A type of binary tree where each parent node has exactly two child nodes B) A complete binary tree used for priority queue implementation C) A binary tree used exclusively for search operations D) A graph used in networking,B,10
-Q050,In an AVL tree| what is the maximum difference in height between the heights of two child subtrees of any node?, A) 1 B) 2 C) 3 D) 4,A,10
-Q051,What is the time complexity for deleting an element from a heap?, A) O(1) B) O(log n) C) O(n) D) O(n log n),B,10
-Q052,Which data structure is efficient for implementing a LRU (Least Recently Used) Cache?, A) Array B) Stack C) Linked List D) Hash Table with Linked List,D,10
-Q053,What does the term 'mutable' refer to in data structures?, A) The structure cannot be changed after it is created B) The structure can be changed after it is created C) The structure uses only primitive data types D) The structure does not use any memory,B,10
-Q054,What is the big-O notation used to describe?, A) The maximum memory used by an algorithm B) The minimum time needed by an algorithm C) The upper bound on the running time of an algorithm D) The exact running time of an algorithm,C,10
-Q055,What is the advantage of a linked list over an array?, A) Better memory utilization B) Faster access time C) Efficient indexing D) Easier element insertion and deletion,D,10
-Q056,Which algorithm is used to find the minimum spanning tree in a graph?, A) Dijkstra’s Algorithm B) Floyd-Warshall Algorithm C) Prim’s Algorithm D) Bellman-Ford Algorithm,C,10
-Q057,What is the primary benefit of using a trie in search applications?, A) Space efficiency B) Quick insertion and deletion C) Fast retrieval of data D) Slow but reliable searches,C,10
-Q058,What is a disadvantage of using singly linked lists?, A) Only forward traversal is possible B) They can store unlimited data C) They are too complex D) They do not use pointers,A,10
-Q059,Which search algorithm is optimal for unsorted data?, A) Binary Search B) Linear Search C) Depth-First Search D) Breadth-First Search,B,10
-Q060,What is memoization in the context of dynamic programming?, A) Storing intermediate results B) Calculating all possible outcomes C) Using recursion to solve problems D) Optimizing recursive algorithms by removing memory overhead,A,10
-Q061,Which algorithm is typically used to detect cycles in a graph?, A) Depth-First Search (DFS) B) Breadth-First Search (BFS) C) Dijkstra's Algorithm D) Floyd-Warshall Algorithm,A,10
-Q062,What does the term 'in-place' mean in the context of sorting algorithms?, A) The algorithm uses no extra space B) The algorithm uses a constant amount of extra space C) The algorithm reuses the input array space D) The algorithm creates a new array for sorting,C,10
-Q063,Which property of a tree indicates that there are no duplicate nodes?, A) Balanced B) Complete C) Binary D) Set-based,D,10
-Q064,What is the main advantage of using a doubly linked list instead of a singly linked list?, A) Faster traversal due to more links B) Bidirectional traversal C) More compact storage D) Simpler implementation,B,10
-Q065,What algorithm would you use for real-time search operations on a constantly changing dataset?, A) Binary Search B) Linear Search C) Hashing D) Selection Sort,C,10
-Q066,Which complexity class do polynomial-time algorithms belong to?, A) P B) NP C) NP-Complete D) NP-Hard,A,10
-Q067,How does the 'Divide and Conquer' strategy work in algorithms?, A) The problem is divided into subproblems of different types B) The problem is divided into similar subproblems that are solved independently C) The problem is solved in a linear step-by-step approach D) The problem is not divided but solved using a loop,B,10
-Q068,What is meant by 'serialization' in the context of data structures?, A) Converting a data structure into a linear form for storage or transmission B) Reordering elements for optimization C) Structuring unordered data D) Creating a hierarchy from a flat data structure,A,10
-Q069,What kind of search is optimized by using a red-black tree?, A) Breadth-first search B) Depth-first search C) Binary search D) Linear search,C,10
-Q070,What is the result of a post-order traversal on a binary tree?, A) Visits the root first| then subtrees B) Visits subtrees first| then the root C) Visits nodes in ascending order D) Visits nodes in descending order,B,10
-Q071,What is the purpose of using a sentinel node in a linked list?, A) To prevent underflow B) To avoid handling special cases for empty lists C) To detect the end of the list D) To add extra storage space,B,10
-Q072,How does a min-heap differ from a max-heap?, A) In a min-heap| the smallest element is at the top; in a max-heap| the largest is at the top B) In a min-heap| the largest element is at the top; in a max-heap| the smallest is at the top C) A min-heap allows duplicate values| a max-heap does not D) A max-heap allows duplicate values| a min-heap does not,A,10
-Q073,What is a spanning tree of a graph?, A) A subtree that includes all the vertices of the graph B) A subgraph that includes all the edges of the graph C) A subtree that includes only the leaf nodes D) A subgraph that includes only the root node,A,10
-Q074,What characteristic of a sorting algorithm makes it 'stable'?, A) It maintains the relative order of records with equal keys B) It uses a minimum amount of memory C) It performs the sort in the fastest time possible D) It does not change the input array unless necessary,A,10
-Q075,What is a 'sparse graph'?, A) A graph with few edges compared to the number of vertices B) A graph with many edges compared to the number of vertices C) A graph where each vertex is connected to every other vertex D) A graph that is disconnected,A,10
-Q076,How is a priority queue implemented efficiently?, A) Using a list B) Using a stack C) Using a heap D) Using a queue,C,10
-Q077,What is tail recursion?, A) A recursive function that calls itself at the beginning B) A recursive function that calls itself at the end C) A recursion that does not use any conditional statements D) A recursion that uses multiple branches,B,10
-Q078,Which data structure is most suitable for a dictionary application?, A) Array B) Stack C) Trie D) Queue,C,10
-Q079,What algorithm is used to compress data efficiently?, A) Insertion Sort B) Huffman Coding C) Quick Sort D) Merge Sort,B,10
-Q080,What is an AVL tree primarily used for?, A) Ensuring quick updates B) Balancing heights to ensure search efficiency C) Sorting large data sets D) Implementing queues,B,10
-Q081,What type of algorithmic design pattern does the Floyd-Warshall algorithm exemplify?, A) Greedy B) Dynamic Programming C) Divide and Conquer D) Backtracking,B,10
-Q082,Which data structure is commonly used to perform recursive programming tasks?, A) Queue B) Stack C) Array D) Linked List,B,10
-Q083,What is an example of a non-linear data structure?, A) Array B) Queue C) Graph D) Stack,C,10
-Q084,Which operation is more efficient on a sorted array compared to an unsorted array?, A) Insertion B) Deletion C) Searching D) Accessing,C,10
-Q085,What is the key operation that can be optimized using a B-tree in database indexing?, A) Multiplication B) Division C) Searching D) Addition,C,10
-Q086,Which type of linked list allows for a fast and efficient way to add and remove nodes from both ends?, A) Singly linked list B) Doubly linked list C) Circular linked list D) Straight linked list,B,10
-Q087,What describes the concept of 'amortized time' in algorithm analysis?, A) Time required to complete a computation without any interruptions B) Time averaged over a sequence of operations| where the worst-case time is rare C) Time taken by a computer to start an operation D) Time taken for one-time computational setup,B,10
-Q088,What feature distinguishes a directed graph from an undirected graph?, A) Nodes in directed graphs are cyclic B) Edges in directed graphs have directions C) Directed graphs do not contain edges D) Directed graphs cannot be weighted,B,10
-Q089,What is the main advantage of using graph data structures?, A) Fixed data storage B) Ease of scalability C) Representation of complex relationships D) Simplified data processing,C,10
-Q090,What is the major drawback of using recursion in programming?, A) High memory usage due to stack frames B) Slow execution speed C) Inflexibility in data manipulation D) Limited functionality,A,10
-Q091,What are the characteristics of a full binary tree?, A) Every node has two children except for the leaves B) There is exactly one path between any two nodes C) Every leaf node is at the same level and all internal nodes have two children, A,10
-Q092,How do depth-first and breadth-first search differ in their handling of nodes?, A) DFS processes all nodes before their children| BFS processes all children before their nodes B) DFS uses a stack| BFS uses a queue C) DFS can only be used on trees| BFS can be used on both trees and graphs, B,10
-Q093,What makes the quicksort algorithm a popular choice despite its worst-case complexity?, A) Its in-place sorting capability B) Its average-case efficiency C) Its recursive nature D) Its stability,B,10
-Q094,What data structure is essential for managing the state space in a game like chess?, A) Queue B) Graph C) Tree D) Array,C,10
-Q095,Which of these is a fundamental operation in computational geometry algorithms?, A) Matrix operations B) Graph traversals C) Geometric hashing D) Coordinate compression,C,10
-Q096,What feature is critical for an algorithm to be classified as online?, A) It must use minimal memory B) It must handle data that arrives in real-time C) It must execute in polynomial time D) It must not use any external storage,B,10
-Q097,What advantage does a doubly linked list have over a singly linked list?, A) Simpler structure B) Less memory usage C) Easier insertion and deletion at both ends D) Higher data integrity,C,10
-Q098,What is the typical use case for using a max-heap data structure?, A) To manage memory allocation B) To schedule processes C) To implement a priority queue D) To balance load on servers,C,10
-Q099,In what scenario is a linear search more advantageous than a binary search?, A) When the list is very large B) When the list is small C) When the data is not sorted D) When the elements are numerically ordered,C,10
-Q100,What is the main characteristic of an array in programming?, A) Dynamic size B) Data elements of different types C) Fixed size D) Non-sequential storage,C,10
-Q101,In C++| a ________ is a linear data structure that stores elements in a contiguous memory location| allowing random access to elements using an ________. It is defined using square brackets and its ________ must be specified at the time of declaration. This data structure is called an ________., A) array B) index C) size D) structure,ABDC,20
-Q102,In C++| a ________ is a collection of elements that allows elements to be inserted and deleted from both ________ (front and back). This data structure is called a ________ and is part of the ________ library., A) deque B) ends C) STL D) collection,ACBD,20
-Q103,In C++| a ________ is a data structure that follows the Last-In-First-Out (LIFO) principle| where the most recently added element is the first one to be ________. It is typically implemented using a ________ or a ________., A) removed B) stack C) vector D) linked list,BACD,20
-Q104,In C++| a ________ is a linear data structure that follows the First-In-First-Out (FIFO) principle| where the ________ element added is the first one to be ________. This data structure is called a ________ and is useful for scheduling tasks., A) queue B) first C) removed D) buffer,ABCD,20
-Q105,In C++| a ________ is a dynamic data structure that consists of ________| each containing a data element and a pointer to the next ________ in the sequence. It allows efficient ________ and deletion of elements and is called a ________., A) linked list B) nodes C) node D) insertion,ACBD,20
-Q106,In C++| a ________ is a non-linear data structure that represents a hierarchical relationship among elements| where each element is called a ________. It has a ________ node at the top and ________ nodes as its children., A) tree B) root C) leaf D) branch,ABCA,20
-Q107,In C++| a ________ is a data structure that uses a key-value pair to store elements| allowing fast retrieval using the ________. This data structure is called a ________ and is part of the ________ library., A) map B) key C) unordered_map D) STL,ABDC,20
-Q108,In C++| a ________ is a collection of unique elements| which are stored in no particular order. This data structure is called a ________ and is implemented using a ________. It is part of the ________ library., A) set B) hash table C) set D) STL,ACBD,20
-Q109,In C++| a ________ is a linear data structure that allows elements to be added and removed from the ________ only. This data structure is called a ________ and is implemented using a ________., A) stack B) top C) LIFO D) linked list,ABCD,20
-Q110,In C++| a ________ is a data structure that contains elements along with a ________ function that defines the order of elements. This data structure is called a ________ and is implemented using a ________., A) priority queue B) comparator C) heap D) queue,ABCA,20
-Q111,In C++| a ________ is a type of linked list where each node points to both its ________ and the ________ node. This data structure is called a ________ linked list., A) doubly B) previous C) next D) circular,ABCA,20
-Q112,In C++| a ________ is a special type of tree where each node has at most ________ children. This data structure is called a ________ tree and is used for efficient ________., A) binary B) two C) binary D) searching,ABDC,20
-Q113,In C++| a ________ is a linear data structure where each element points to the ________ element| forming a sequence. This data structure is called a ________ and is commonly used for ________ management., A) linked list B) next C) linked list D) memory,ABCD,20
-Q114,In C++| a ________ is a data structure that associates keys with ________| allowing for fast retrieval of values. This data structure is called a ________ and is implemented using a ________., A) map B) values C) hash table D) unordered_map,ABDC,20
-Q115,In C++| a ________ is a tree-based data structure that maintains a sorted order of elements| allowing for fast ________| deletion| and ________. This data structure is called a ________., A) binary search tree B) insertion C) searching D) BST,ABDC,20
-Q116,In C++| a ________ is a linear data structure that uses ________ to determine the order of elements. This data structure is called a ________ and is used for tasks like ________ scheduling., A) priority queue B) priority C) queue D) task,ABCA,20
-Q117,In C++| a ________ is a dynamic data structure that consists of ________ nodes| each containing a data element and a ________ to the next node. This data structure is called a ________ linked list., A) singly B) singly C) pointer D) singly,ABCD,20
-Q118,In C++| a ________ is a collection of elements that can grow and shrink dynamically| where elements are stored in a ________ order. This data structure is called a ________ and is implemented using ________., A) vector B) contiguous C) vector D) dynamic array,ABCD,20
-Q119,In C++| a ________ is a type of associative container that stores elements formed by a combination of a ________ and a ________. This data structure is called a ________., A) map B) key C) value D) map,ABCD,20
-Q120,In C++| a ________ is a data structure that uses a ________ function to maintain the order of elements| ensuring that the element with the highest priority is always at the ________. This data structure is called a ________., A) priority queue B) comparator C) top D) priority queue,ABCD,20
-Q121,In C++| a ________ is a collection of elements that allows for efficient insertion and ________ at both ends. This data structure is called a ________ and is part of the ________ library., A) deque B) deletion C) deque D) STL,ABCD,20
-Q122,In C++| a ________ is a linear data structure where each element points to the ________ element| forming a sequence. This data structure is called a ________ linked list and allows for efficient ________ and deletion of elements., A) linked list B) next C) singly D) insertion,ABCD,20
-Q123,In C++| a ________ is a non-linear data structure that represents a hierarchical relationship among elements| where each element is called a ________. This data structure is called a ________ and is used for efficient ________ and retrieval of data., A) tree B) node C) tree D) searching,ABCD,20
-Q124,In C++| a ________ is a type of container that stores elements in a specific order| determined by the ________ used. This data structure is called a ________ and is part of the ________ library., A) priority queue B) comparator C) priority queue D) STL,ABCD,20
-Q125,In C++| a ________ is a data structure that allows elements to be added and removed from both ________ (front and back). This data structure is called a ________ and is implemented using a ________., A) deque B) ends C) deque D) dynamic array,ABCD,20
-Q126,In C++| a ________ is a linear data structure that follows the First-In-First-Out (FIFO) principle| where elements are added at the ________ and removed from the ________. This data structure is called a ________., A) queue B) rear C) front D) queue,ABCD,20
-Q127,In C++| a ________ is a non-linear data structure that consists of nodes connected by ________. This data structure is called a ________ and is used to represent hierarchical relationships among elements., A) tree B) edges C) tree D) nodes,ABCD,20
-Q128,In C++| a ________ is a type of linked list where each node points to both its ________ and the ________ node. This data structure is called a ________ linked list., A) doubly B) previous C) next D) doubly,ABCD,20
-Q129,In C++| a ________ is a dynamic array that can grow and shrink in size. This data structure is called a ________ and is used to store elements in a ________ memory location., A) vector B) vector C) contiguous D) dynamic array,ABCD,20
-Q130,In C++| a ________ is a tree-based data structure that maintains a sorted order of elements| allowing for efficient ________| deletion| and ________. This data structure is called a ________., A) binary search tree B) searching C) insertion D) binary search tree,ABCD,20
-Q131,In C++| a ________ is a type of container that stores elements formed by a combination of a ________ and a ________. This data structure is called a ________., A) map B) key C) value D) map,ABCD,20
-Q132,In C++| a ________ is a collection of elements that can grow and shrink dynamically| where elements are stored in a ________ order. This data structure is called a ________ and is implemented using ________., A) vector B) contiguous C) vector D) dynamic array,ABCD,20
-Q133,In C++| a ________ is a linear data structure where each element points to the ________ element| forming a sequence. This data structure is called a ________ linked list and allows for efficient ________ and deletion of elements., A) linked list B) next C) singly D) insertion,ABCD,20
-Q134,In C++| a ________ is a non-linear data structure that represents a hierarchical relationship among elements| where each element is called a ________. This data structure is called a ________ and is used for efficient ________ and retrieval of data., A) tree B) node C) tree D) searching,ABCD,20
-Q135,In C++| a ________ is a linear data structure that follows the First-In-First-Out (FIFO) principle| where elements are added at the ________ and removed from the ________. This data structure is called a ________., A) queue B) rear C) front D) queue,ABCD,20
-Q136,In C++| a ________ is a non-linear data structure that consists of nodes connected by ________. This data structure is called a ________ and is used to represent hierarchical relationships among elements., A) tree B) edges C) tree D) nodes,ABCD,20
-Q137,In C++| a ________ is a type of linked list where each node points to both its ________ and the ________ node. This data structure is called a ________ linked list., A) doubly B) previous C) next D) doubly,ABCD,20
-Q138,In C++| a ________ is a dynamic array that can grow and shrink in size. This data structure is called a ________ and is used to store elements in a ________ memory location., A) vector B) vector C) contiguous D) dynamic array,ABCD,20
-Q139,In C++| a ________ is a tree-based data structure that maintains a sorted order of elements| allowing for efficient ________| deletion| and ________. This data structure is called a ________., A) binary search tree B) searching C) insertion D) binary search tree,ABCD,20
-Q140,In C++| a ________ is a type of container that stores elements formed by a combination of a ________ and a ________. This data structure is called a ________., A) map B) key C) value D) map,ABCD,20
-Q141,In C++| a ________ is a collection of elements that can grow and shrink dynamically| where elements are stored in a ________ order. This data structure is called a ________ and is implemented using ________., A) vector B) contiguous C) vector D) dynamic array,ABCD,20
-Q142,In C++| a ________ is a linear data structure where each element points to the ________ element| forming a sequence. This data structure is called a ________ linked list and allows for efficient ________ and deletion of elements., A) linked list B) next C) singly D) insertion,ABCD,20
-Q143,In C++| a ________ is a non-linear data structure that represents a hierarchical relationship among elements| where each element is called a ________. This data structure is called a ________ and is used for efficient ________ and retrieval of data., A) tree B) node C) tree D) searching,ABCD,20
-Q144,In C++| a ________ is a linear data structure that follows the First-In-First-Out (FIFO) principle| where elements are added at the ________ and removed from the ________. This data structure is called a ________., A) queue B) rear C) front D) queue,ABCD,20
-Q145,In C++| a ________ is a non-linear data structure that consists of nodes connected by ________. This data structure is called a ________ and is used to represent hierarchical relationships among elements., A) tree B) edges C) tree D) nodes,ABCD,20
-Q146,In C++| a ________ is a type of linked list where each node points to both its ________ and the ________ node. This data structure is called a ________ linked list., A) doubly B) previous C) next D) doubly,ABCD,20
-Q147,In C++| a ________ is a dynamic array that can grow and shrink in size. This data structure is called a ________ and is used to store elements in a ________ memory location., A) vector B) vector C) contiguous D) dynamic array,ABCD,20
-Q148,In C++| a ________ is a tree-based data structure that maintains a sorted order of elements| allowing for efficient ________| deletion| and ________. This data structure is called a ________., A) binary search tree B) searching C) insertion D) binary search tree,ABCD,20
-Q149,In C++| a ________ is a type of container that stores elements formed by a combination of a ________ and a ________. This data structure is called a ________., A) map B) key C) value D) map,ABCD,20
-Q150,In C++| a ________ is a collection of elements that can grow and shrink dynamically| where elements are stored in a ________ order. This data structure is called a ________ and is implemented using ________., A) vector B) contiguous C) vector D) dynamic array,ABCD,20
-Q151,A vector is a dynamic array that can grow and shrink in size during runtime., True or False (T/F),T,10
-Q152,A stack follows the First-In-First-Out (FIFO) principle., True or False (T/F),F,10
-Q153,A queue allows insertion and deletion of elements only from the rear end., True or False (T/F),F,10
-Q154,A set is a collection of unique elements., True or False (T/F),T,10
-Q155,A map is used to store elements as key-value pairs., True or False (T/F),T,10
-Q156,A linked list stores elements in contiguous memory locations., True or False (T/F),F,10
-Q157,A deque allows insertion and deletion of elements from both ends., True or False (T/F),T,10
-Q158,An array's size must be specified at the time of declaration and cannot be changed., True or False (T/F),T,10
-Q159,A priority queue always retrieves the element with the lowest priority first., True or False (T/F),F,10
-Q160,A binary search tree maintains elements in a sorted order., True or False (T/F),T,10
-Q161,A linked list allows efficient insertion and deletion of elements., True or False (T/F),T,10
-Q162,A hash table is used to implement a map for fast key-value pair lookups., True or False (T/F),T,10
-Q163,A tree is a linear data structure., True or False (T/F),F,10
-Q164,A circular linked list has its last node pointing back to the first node., True or False (T/F),T,10
-Q165,A doubly linked list allows traversal in both directions., True or False (T/F),T,10
-Q166,A vector's elements are stored in non-contiguous memory locations., True or False (T/F),F,10
-Q167,A stack is typically implemented using an array or a linked list., True or False (T/F),T,10
-Q168,An unordered_map is a type of associative container that stores elements as key-value pairs., True or False (T/F),T,10
-Q169,A deque is short for double-ended queue., True or False (T/F),T,10
-Q170,A binary tree is a type of graph., True or False (T/F),F,10
-Q171,A linked list's nodes contain data elements and pointers to the next node., True or False (T/F),T,10
-Q172,A map cannot contain duplicate keys., True or False (T/F),T,10
-Q173,A stack allows insertion and deletion of elements from both ends., True or False (T/F),F,10
-Q174,A binary search tree allows efficient searching of elements., True or False (T/F),T,10
-Q175,A queue follows the Last-In-First-Out (LIFO) principle., True or False (T/F),F,10
-Q176,An array is a fixed-size data structure., True or False (T/F),T,10
-Q177,A hash table uses a hash function to map keys to values., True or False (T/F),T,10
-Q178,A vector provides random access to its elements., True or False (T/F),T,10
-Q179,A binary tree node can have at most two children., True or False (T/F),T,10
-Q180,A doubly linked list has nodes that contain pointers to both the next and previous nodes., True or False (T/F),T,10
-Q181,A priority queue can be implemented using a heap., True or False (T/F),T,10
-Q182,A set allows duplicate elements., True or False (T/F),F,10
-Q183,A linked list is more memory efficient than an array for random access., True or False (T/F),F,10
-Q184,A queue can be implemented using a linked list or an array., True or False (T/F),T,10
-Q185,A tree can be traversed in preorder| inorder| or postorder., True or False (T/F),T,10
-Q186,A stack always removes the most recently added element first., True or False (T/F),T,10
-Q187,A binary search tree has elements arranged in a hierarchical structure., True or False (T/F),T,10
-Q188,A map can be implemented using a balanced binary search tree., True or False (T/F),T,10
-Q189,A vector is a non-contiguous memory structure., True or False (T/F),F,10
-Q190,A circular queue is a type of deque., True or False (T/F),F,10
-Q191,A hash table provides average-case O(1) time complexity for insertions and deletions., True or False (T/F),T,10
-Q192,A doubly linked list can be traversed only in one direction., True or False (T/F),F,10
-Q193,A priority queue uses a comparison function to determine the order of elements., True or False (T/F),T,10
-Q194,A tree is always a balanced structure., True or False (T/F),F,10
-Q195,A vector requires less memory overhead than a linked list., True or False (T/F),T,10
-Q196,A binary tree can be empty., True or False (T/F),T,10
-Q197,A stack can be used to implement recursion., True or False (T/F),T,10
-Q198,A queue always removes the least recently added element first., True or False (T/F),T,10
-Q199,A linked list allows random access to its elements., True or False (T/F),F,10
-Q200,A binary search tree can have duplicate elements., True or False (T/F),F,10
-Q201,A deque can function as both a stack and a queue., True or False (T/F),T,10
-Q202,A priority queue is the same as a regular queue., True or False (T/F),F,10
-Q203,A tree can have multiple root nodes., True or False (T/F),F,10
-Q204,A map can have multiple values for the same key., True or False (T/F),F,10
-Q205,A linked list is less efficient than an array for indexed access., True or False (T/F),T,10
-Q206,A set maintains elements in a sorted order., True or False (T/F),T,10
-Q207,A binary tree's height is the length of the longest path from the root to a leaf., True or False (T/F),T,10
-Q208,A vector has a fixed size., True or False (T/F),F,10
-Q209,A queue allows insertion at one end and deletion at the other end., True or False (T/F),T,10
-Q210,A tree is a type of list., True or False (T/F),F,10
-Q211,A stack can be used to reverse the order of elements., True or False (T/F),T,10
-Q212,A hash table can be implemented using an array., True or False (T/F),T,10
-Q213,A binary search tree is a complete binary tree., True or False (T/F),F,10
-Q214,A vector can change its size dynamically., True or False (T/F),T,10
-Q215,A deque supports operations at both ends., True or False (T/F),T,10
-Q216,A circular linked list has no end., True or False (T/F),T,10
-Q217,A binary tree's nodes are arranged in a specific order., True or False (T/F),T,10
-Q218,A map provides O(1) time complexity for insertions., True or False (T/F),F,10
-Q219,A linked list is suitable for random access of elements., True or False (T/F),F,10
-Q220,A queue is typically implemented using a circular buffer., True or False (T/F),T,10
-Q221,A binary search tree's left child is always less than its parent., True or False (T/F),T,10
-Q222,A vector is part of the C++ Standard Template Library (STL)., True or False (T/F),T,10
-Q223,A priority queue retrieves the highest priority element first., True or False (T/F),T,10
-Q224,A tree can have cycles., True or False (T/F),F,10
-Q225,A set in C++ does not allow duplicate elements., True or False (T/F),T,10
-Q226,A doubly linked list uses more memory than a singly linked list., True or False (T/F),T,10
-Q227,A queue can be implemented using two stacks., True or False (T/F),T,10
-Q228,A hash table can experience collisions., True or False (T/F),T,10
-Q229,A binary search tree allows efficient searching of elements., True or False (T/F),T,10
-Q230,A vector supports constant-time random access., True or False (T/F),T,10
-Q231,A stack is an example of a linear data structure., True or False (T/F),T,10
-Q232,A tree's height is always equal to its number of nodes., True or False (T/F),F,10
-Q233,A map provides a way to associate keys with values., True or False (T/F),T,10
-Q234,A binary tree can have more than two children per node., True or False (T/F),F,10
-Q235,A linked list uses more memory than an array for the same number of elements., True or False (T/F),T,10
-Q236,A priority queue allows random access to elements., True or False (T/F),F,10
-Q237,A hash table can be resized dynamically., True or False (T/F),T,10
-Q238,A queue follows the Last-In-First-Out (LIFO) principle., True or False (T/F),F,10
-Q239,A vector is an example of a dynamic array., True or False (T/F),T,10
-Q240,A binary search tree's right child is always greater than its parent., True or False (T/F),T,10
-Q241,A stack can be implemented using a linked list., True or False (T/F),T,10
-Q242,A circular queue is also known as a ring buffer., True or False (T/F),T,10
-Q243,A set in C++ allows random access to its elements., True or False (T/F),F,10
-Q244,A binary tree is a non-linear data structure., True or False (T/F),T,10
-Q245,A hash table uses a linked list to handle collisions., True or False (T/F),T,10
-Q246,A queue supports constant-time insertion and deletion at both ends., True or False (T/F),F,10
-Q247,A vector reallocates its memory when it runs out of space., True or False (T/F),T,10
-Q248,A binary search tree provides efficient searching| insertion| and deletion., True or False (T/F),T,10
-Q249,A stack follows the First-In-First-Out (FIFO) principle., True or False (T/F),F,10
-Q250,A tree's root node has no parent., True or False (T/F),T,10
-Q251,A linked list is more efficient for inserting and deleting elements compared to an array., True or False (T/F),T,10
-Q252,A deque can be used to implement both stacks and queues., True or False (T/F),T,10
-Q253,A binary tree node can have at most two children., True or False (T/F),T,10
-Q254,A hash table's performance can be affected by the load factor., True or False (T/F),T,10
-Q255,A vector's size cannot be changed after it is created., True or False (T/F),F,10
-Q256,A priority queue retrieves elements based on their priority., True or False (T/F),T,10
-Q257,A tree is a hierarchical data structure., True or False (T/F),T,10
-Q258,A linked list can be traversed in reverse order if it is doubly linked., True or False (T/F),T,10
-Q259,A stack allows elements to be accessed in constant time., True or False (T/F),T,10
-Q260,A binary search tree must be balanced to provide efficient operations., True or False (T/F),F,10
-Q261,A hash table uses a hash function to map keys to indices., True or False (T/F),T,10
-Q262,A queue can be implemented using an array., True or False (T/F),T,10
-Q263,A vector supports constant-time insertion at the end., True or False (T/F),T,10
-Q264,A binary tree's left and right subtrees must also be binary trees., True or False (T/F),T,10
-Q265,A linked list's elements are stored in contiguous memory locations., True or False (T/F),F,10
-Q266,A priority queue can be implemented using a sorted array., True or False (T/F),T,10
-Q267,A stack can be used to evaluate expressions., True or False (T/F),T,10
-Q268,A hash table provides O(1) time complexity for search operations., True or False (T/F),T,10
-Q269,A queue always retrieves the least recently added element first., True or False (T/F),T,10
-Q270,A binary search tree can be used to implement a set., True or False (T/F),T,10
-Q271,A vector provides constant-time access to elements by index., True or False (T/F),T,10
-Q272,A tree's nodes are connected by edges., True or False (T/F),T,10
-Q273,A hash table's performance can degrade with a high load factor., True or False (T/F),T,10
-Q274,A linked list provides efficient indexed access to elements., True or False (T/F),F,10
-Q275,A priority queue always removes the highest priority element first., True or False (T/F),T,10
-Q276,A deque allows elements to be added or removed from both ends., True or False (T/F),T,10
-Q277,A binary tree is a type of acyclic graph., True or False (T/F),T,10
-Q278,A vector reallocates memory only when it runs out of space., True or False (T/F),T,10
-Q279,A stack is often used in recursive algorithms., True or False (T/F),T,10
-Q280,A hash table can be used to count the frequency of elements., True or False (T/F),T,10
-Q281,A binary search tree provides average-case O(log n) time complexity for search operations., True or False (T/F),T,10
-Q282,A queue can be implemented using a doubly linked list., True or False (T/F),T,10
-Q283,A tree's leaves are nodes with no children., True or False (T/F),T,10
-Q284,A set in C++ maintains the order of elements., True or False (T/F),F,10
-Q285,A linked list is ideal for applications requiring frequent insertions and deletions., True or False (T/F),T,10
-Q286,A priority queue can be implemented using a binary heap., True or False (T/F),T,10
-Q287,A vector allows insertion and deletion at both ends., True or False (T/F),F,10
-Q288,A binary tree is always a complete binary tree., True or False (T/F),F,10
-Q289,A stack can be implemented using an array., True or False (T/F),T,10
-Q290,A hash table's keys must be unique., True or False (T/F),T,10
-Q291,A queue can be implemented using a singly linked list., True or False (T/F),T,10
-Q292,A binary search tree's height affects its performance., True or False (T/F),T,10
-Q293,A vector can be resized dynamically., True or False (T/F),T,10
-Q294,A stack allows accessing the top element in constant time., True or False (T/F),T,10
-Q295,A tree can be traversed using breadth-first or depth-first search., True or False (T/F),T,10
-Q296,A hash table can handle collisions using chaining., True or False (T/F),T,10
-Q297,A linked list's nodes can be dynamically allocated., True or False (T/F),T,10
-Q298,A priority queue is a special type of queue where each element has a priority., True or False (T/F),T,10
-Q299,A binary search tree's nodes are arranged in a specific order to facilitate search operations., True or False (T/F),T,10
-Q300,A vector's elements are stored in contiguous memory locations., True or False (T/F),T,10
+Q001,Which data structure follows the Last In First Out (LIFO) principle?, A) Queue B) Stack C) Linked List D) Tree,B
+Q002,What is the time complexity of finding an element in a sorted array using binary search?, A) O(1) B) O(log n) C) O(n) D) O(n^2),B
+Q003,Which sorting algorithm has the best average-case time complexity?, A) Bubble Sort B) Quick Sort C) Selection Sort D) Merge Sort,B
+Q004,In which data structure are elements accessed sequentially?, A) Stack B) Queue C) Array D) Tree,C
+Q005,Which data structure is typically used to implement priority queues?, A) Array B) Linked List C) Heap D) Stack,C
+Q006,What is the worst-case time complexity of a binary search in a binary search tree?, A) O(1) B) O(log n) C) O(n) D) O(n^2),C
+Q007,Which data structure would you use to implement recursion efficiently?, A) Queue B) Stack C) Linked List D) Hash Table,B
+Q008,What does FIFO stand for in a queue?, A) First In First Out B) First In Last Out C) First Item First Out D) None of the Above,A
+Q009,Which data structure can be used for backtracking algorithms?, A) Queue B) Stack C) Array D) Tree,B
+Q010,Which data structure allows the fastest retrieval of data, assuming it is correctly structured and hashed?, A) Queue B) Stack C) Linked List D) Hash Table,D
+Q011,What type of tree is used in databases to manage indices?, A) Binary Tree B) B-Tree C) Red-Black Tree D) AVL Tree,B
+Q012,Which graph traversal algorithm uses a queue?, A) Depth-First Search (DFS) B) Breadth-First Search (BFS) C) In-Order Traversal D) None of the Above,B
+Q013,What is the space complexity of a recursive depth-first search on a tree?, A) O(1) B) O(log n) C) O(n) D) O(n^2),C
+Q014,What type of algorithm is used for sorting linked lists efficiently?, A) Bubble Sort B) Insertion Sort C) Merge Sort D) Quick Sort,C
+Q015,What data structure would best manage the printer spooler system?, A) Queue B) Stack C) Linked List D) Hash Table,A
+Q016,How would you describe an algorithm with O(n log n) time complexity?, A) Constant B) Linear C) Logarithmic D) Linearithmic,D
+Q017,What is an underflow condition in a data structure?, A) When it is too full B) When it is empty C) When it has only one element D) None of the Above,B
+Q018,What is a balanced tree?, A) A tree with minimal height B) A tree where each node has one child C) A tree where each node has no children D) A tree where each node has two children,A
+Q019,Which sorting method is generally stable?, A) Quick Sort B) Selection Sort C) Merge Sort D) Heap Sort,C
+Q020,What is the best case time complexity of insertion sort?, A) O(1) B) O(n) C) O(log n) D) O(n^2),B
+Q021,In graph theory, which property indicates a graph is bipartite?, A) Connected components B) No odd cycles C) Directed edges D) All vertices connected,B
+Q022,What algorithm finds the shortest path from a single source vertex to all other vertices in a weighted graph?, A) Kruskal's Algorithm B) Prim's Algorithm C) Dijkstra's Algorithm D) Bellman-Ford Algorithm,C
+Q023,What data structure is particularly efficient for the union-find operation in disjoint set data structures?, A) Array B) Tree C) Graph D) Stack,B
+Q024,How is an abstract data type different from a data structure?, A) ADT defines operations, data structure provides implementation B) ADT provides implementation, data structure defines types C) ADT uses only primitive types D) There is no difference,A
+Q025,What type of sort is a radix sort?, A) Comparison sort B) Distributive sort C) Bubble sort D) Recursive sort,B
+Q026,What is the typical worst-case scenario for a quicksort algorithm?, A) The list is already sorted B) The list is sorted in reverse C) The list has identical elements D) The list has no elements,A
+Q027,Which data structure can efficiently support random access as well as dynamic resizing?, A) Linked List B) Array C) Dynamic Array D) Stack,C
+Q028,In a binary tree, what is the maximum number of children each node can have?, A) 1 B) 2 C) 3 D) 4,B
+Q029,Which algorithm is NOT typically used in cryptography?, A) RSA B) Bubble Sort C) SHA-256 D) AES,B
+Q030,What is amortized analysis used for in algorithm design?, A) Predicting worst-case scenario B) Analyzing average-case scenario over a sequence of operations C) Determining best-case scenario D) Comparing two different algorithms,B
+Q031,What kind of data structure is typically used to implement an undo feature in a software application?, A) Queue B) Stack C) Array D) Linked List,B
+Q032,What is depth-first search primarily used for?, A) Finding shortest paths B) Traversing trees and graphs in a specific order C) Sorting elements D) Searching in sorted arrays,B
+Q033,What is a trie used for in computer science?, A) Sorting arrays B) Balancing trees C) Storing strings for efficient retrieval D) Calculating mathematical expressions,C
+Q034,Which data structure is primarily used in the implementation of a hash table?, A) Array B) Linked List C) Binary Tree D) Graph,A
+Q035,What condition must be met for a binary search to be applicable?, A) The data must be in a hash table B) The data must be in a linked list C) The data must be in a binary search tree D) The data must be sorted,D
+Q036,What describes an algorithm with O(n!) complexity?, A) Efficient B) Feasible C) Scalable D) Infeasible,D
+Q037,What operation is typically very slow in a singly linked list?, A) Accessing the head B) Accessing the middle C) Deleting the last element D) Adding an element at the end,C
+Q038,Which algorithm is best suited for external sorting?, A) Quick Sort B) Bubble Sort C) Merge Sort D) Insertion Sort,C
+Q039,What is a graph's vertex degree?, A) The number of edges coming out of the vertex B) The process of labeling vertices C) The maximum distance between any two vertices D) The number of edges connected to the vertex,D
+Q040,What is the primary disadvantage of using an array over a linked list?, A) Slower access time B) Less memory efficient C) Difficulty in resizing D) More complex implementation,C
+Q041,Which data structure is best for storing elements that need to be processed in a specific order?, A) Stack B) Queue C) Heap D) Array,B
+Q042,What is the difference between a stack and a queue?, A) Stack is FIFO, queue is LIFO B) Stack is LIFO, queue is FIFO C) Both are FIFO D) Both are LIFO,B
+Q043,What algorithm is typically used for balancing data in a database?, A) Quick Sort B) Merge Sort C) B-Tree Insertion D) Linear Search,C
+Q044,What is the purpose of a hash function in a hash table?, A) To sort data B) To delete data C) To distribute data uniformly across an array D) To merge data,C
+Q045,What is meant by 'asymptotic complexity' of an algorithm?, A) The complexity when the algorithm doesn’t terminate B) The worst-case complexity under typical conditions C) The behavior of the algorithm as the input size becomes very large D) The initial complexity of the algorithm when the program starts,C
+Q046,Which of the following is a disadvantage of using arrays?, A) Fixed size B) Flexible size C) Efficient random access D) Efficient insertion at end,A
+Q047,What type of data structure is used for breadth-first search (BFS) in a graph?, A) Stack B) Queue C) Tree D) Graph,B
+Q048,How does a circular queue differ from a regular queue?, A) It can only store integers B) It wraps around when the end is reached C) It does not allow dequeue operations D) It is faster in processing,B
+Q049,What is a binary heap?, A) A type of binary tree where each parent node has exactly two child nodes B) A complete binary tree used for priority queue implementation C) A binary tree used exclusively for search operations D) A graph used in networking,B
+Q050,In an AVL tree, what is the maximum difference in height between the heights of two child subtrees of any node?, A) 1 B) 2 C) 3 D) 4,A
+Q051,What is the time complexity for deleting an element from a heap?, A) O(1) B) O(log n) C) O(n) D) O(n log n),B
+Q052,Which data structure is efficient for implementing a LRU (Least Recently Used) Cache?, A) Array B) Stack C) Linked List D) Hash Table with Linked List,D
+Q053,What does the term 'mutable' refer to in data structures?, A) The structure cannot be changed after it is created B) The structure can be changed after it is created C) The structure uses only primitive data types D) The structure does not use any memory,B
+Q054,What is the big-O notation used to describe?, A) The maximum memory used by an algorithm B) The minimum time needed by an algorithm C) The upper bound on the running time of an algorithm D) The exact running time of an algorithm,C
+Q055,What is the advantage of a linked list over an array?, A) Better memory utilization B) Faster access time C) Efficient indexing D) Easier element insertion and deletion,D
+Q056,Which algorithm is used to find the minimum spanning tree in a graph?, A) Dijkstra’s Algorithm B) Floyd-Warshall Algorithm C) Prim’s Algorithm D) Bellman-Ford Algorithm,C
+Q057,What is the primary benefit of using a trie in search applications?, A) Space efficiency B) Quick insertion and deletion C) Fast retrieval of data D) Slow but reliable searches,C
+Q058,What is a disadvantage of using singly linked lists?, A) Only forward traversal is possible B) They can store unlimited data C) They are too complex D) They do not use pointers,A
+Q059,Which search algorithm is optimal for unsorted data?, A) Binary Search B) Linear Search C) Depth-First Search D) Breadth-First Search,B
+Q060,What is memoization in the context of dynamic programming?, A) Storing intermediate results B) Calculating all possible outcomes C) Using recursion to solve problems D) Optimizing recursive algorithms by removing memory overhead,A
+Q061,Which algorithm is typically used to detect cycles in a graph?, A) Depth-First Search (DFS) B) Breadth-First Search (BFS) C) Dijkstra's Algorithm D) Floyd-Warshall Algorithm,A
+Q062,What does the term 'in-place' mean in the context of sorting algorithms?, A) The algorithm uses no extra space B) The algorithm uses a constant amount of extra space C) The algorithm reuses the input array space D) The algorithm creates a new array for sorting,C
+Q063,Which property of a tree indicates that there are no duplicate nodes?, A) Balanced B) Complete C) Binary D) Set-based,D
+Q064,What is the main advantage of using a doubly linked list instead of a singly linked list?, A) Faster traversal due to more links B) Bidirectional traversal C) More compact storage D) Simpler implementation,B
+Q065,What algorithm would you use for real-time search operations on a constantly changing dataset?, A) Binary Search B) Linear Search C) Hashing D) Selection Sort,C
+Q066,Which complexity class do polynomial-time algorithms belong to?, A) P B) NP C) NP-Complete D) NP-Hard,A
+Q067,How does the 'Divide and Conquer' strategy work in algorithms?, A) The problem is divided into subproblems of different types B) The problem is divided into similar subproblems that are solved independently C) The problem is solved in a linear step-by-step approach D) The problem is not divided but solved using a loop,B
+Q068,What is meant by 'serialization' in the context of data structures?, A) Converting a data structure into a linear form for storage or transmission B) Reordering elements for optimization C) Structuring unordered data D) Creating a hierarchy from a flat data structure,A
+Q069,What kind of search is optimized by using a red-black tree?, A) Breadth-first search B) Depth-first search C) Binary search D) Linear search,C
+Q070,What is the result of a post-order traversal on a binary tree?, A) Visits the root first, then subtrees B) Visits subtrees first, then the root C) Visits nodes in ascending order D) Visits nodes in descending order,B
+Q071,What is the purpose of using a sentinel node in a linked list?, A) To prevent underflow B) To avoid handling special cases for empty lists C) To detect the end of the list D) To add extra storage space,B
+Q072,How does a min-heap differ from a max-heap?, A) In a min-heap, the smallest element is at the top; in a max-heap, the largest is at the top B) In a min-heap, the largest element is at the top; in a max-heap, the smallest is at the top C) A min-heap allows duplicate values; a max-heap does not D) A max-heap allows duplicate values; a min-heap does not,A
+Q073,What is a spanning tree of a graph?, A) A subtree that includes all the vertices of the graph B) A subgraph that includes all the edges of the graph C) A subtree that includes only the leaf nodes D) A subgraph that includes only the root node,A
+Q074,What characteristic of a sorting algorithm makes it 'stable'?, A) It maintains the relative order of records with equal keys B) It uses a minimum amount of memory C) It performs the sort in the fastest time possible D) It does not change the input array unless necessary,A
+Q075,What is a 'sparse graph'?, A) A graph with few edges compared to the number of vertices B) A graph with many edges compared to the number of vertices C) A graph where each vertex is connected to every other vertex D) A graph that is disconnected,A
+Q076,How is a priority queue implemented efficiently?, A) Using a list B) Using a stack C) Using a heap D) Using a queue,C
+Q077,What is tail recursion?, A) A recursive function that calls itself at the beginning B) A recursive function that calls itself at the end C) A recursion that does not use any conditional statements D) A recursion that uses multiple branches,B
+Q078,Which data structure is most suitable for a dictionary application?, A) Array B) Stack C) Trie D) Queue,C
+Q079,What algorithm is used to compress data efficiently?, A) Insertion Sort B) Huffman Coding C) Quick Sort D) Merge Sort,B
+Q080,What is an AVL tree primarily used for?, A) Ensuring quick updates B) Balancing heights to ensure search efficiency C) Sorting large data sets D) Implementing queues,B
+Q081,What type of algorithmic design pattern does the Floyd-Warshall algorithm exemplify?, A) Greedy B) Dynamic Programming C) Divide and Conquer D) Backtracking,B
+Q082,Which data structure is commonly used to perform recursive programming tasks?, A) Queue B) Stack C) Array D) Linked List,B
+Q083,What is an example of a non-linear data structure?, A) Array B) Queue C) Graph D) Stack,C
+Q084,Which operation is more efficient on a sorted array compared to an unsorted array?, A) Insertion B) Deletion C) Searching D) Accessing,C
+Q085,What is the key operation that can be optimized using a B-tree in database indexing?, A) Multiplication B) Division C) Searching D) Addition,C
+Q086,Which type of linked list allows for a fast and efficient way to add and remove nodes from both ends?, A) Singly linked list B) Doubly linked list C) Circular linked list D) Straight linked list,B
+Q087,What describes the concept of 'amortized time' in algorithm analysis?, A) Time required to complete a computation without any interruptions B) Time averaged over a sequence of operations, where the worst-case time is rare C) Time taken by a computer to start an operation D) Time taken for one-time computational setup,B
+Q088,What feature distinguishes a directed graph from an undirected graph?, A) Nodes in directed graphs are cyclic B) Edges in directed graphs have directions C) Directed graphs do not contain edges D) Directed graphs cannot be weighted,B
+Q089,What is the main advantage of using graph data structures?, A) Fixed data storage B) Ease of scalability C) Representation of complex relationships D) Simplified data processing,C
+Q090,What is the major drawback of using recursion in programming?, A) High memory usage due to stack frames B) Slow execution speed C) Inflexibility in data manipulation D) Limited functionality,A
+Q091,What are the characteristics of a full binary tree?, A) Every node has two children except for the leaves B) There is exactly one path between any two nodes C) Every leaf node is at the same level and all internal nodes have two children, A
+Q092,How do depth-first and breadth-first search differ in their handling of nodes?, A) DFS processes all nodes before their children, BFS processes all children before their nodes B) DFS uses a stack, BFS uses a queue C) DFS can only be used on trees, BFS can be used on both trees and graphs, B
+Q093,What makes the quicksort algorithm a popular choice despite its worst-case complexity?, A) Its in-place sorting capability B) Its average-case efficiency C) Its recursive nature D) Its stability,B
+Q094,What data structure is essential for managing the state space in a game like chess?, A) Queue B) Graph C) Tree D) Array,C
+Q095,Which of these is a fundamental operation in computational geometry algorithms?, A) Matrix operations B) Graph traversals C) Geometric hashing D) Coordinate compression,C
+Q096,What feature is critical for an algorithm to be classified as online?, A) It must use minimal memory B) It must handle data that arrives in real-time C) It must execute in polynomial time D) It must not use any external storage,B
+Q097,What advantage does a doubly linked list have over a singly linked list?, A) Simpler structure B) Less memory usage C) Easier insertion and deletion at both ends D) Higher data integrity,C
+Q098,What is the typical use case for using a max-heap data structure?, A) To manage memory allocation B) To schedule processes C) To implement a priority queue D) To balance load on servers,C
+Q099,In what scenario is a linear search more advantageous than a binary search?, A) When the list is very large B) When the list is small C) When the data is not sorted D) When the elements are numerically ordered,C
+Q100,What is the main characteristic of an array in programming?, A) Dynamic size B) Data elements of different types C) Fixed size D) Non-sequential storage,C
+Q101,In C++, a ________ is a linear data structure that stores elements in a contiguous memory location, allowing random access to elements using an ________. It is defined using square brackets and its ________ must be specified at the time of declaration. This data structure is called an ________., A) array B) index C) size D) structure,ABDC
+Q102,In C++, a ________ is a collection of elements that allows elements to be inserted and deleted from both ________ (front and back). This data structure is called a ________ and is part of the ________ library., A) deque B) ends C) STL D) collection,ACBD
+Q103,In C++, a ________ is a data structure that follows the Last-In-First-Out (LIFO) principle, where the most recently added element is the first one to be ________. It is typically implemented using a ________ or a ________., A) removed B) stack C) vector D) linked list,BACD
+Q104,In C++, a ________ is a linear data structure that follows the First-In-First-Out (FIFO) principle, where the ________ element added is the first one to be ________. This data structure is called a ________ and is useful for scheduling tasks., A) queue B) first C) removed D) buffer,ABCD
+Q105,In C++, a ________ is a dynamic data structure that consists of ________, each containing a data element and a pointer to the next ________ in the sequence. It allows efficient ________ and deletion of elements and is called a ________., A) linked list B) nodes C) node D) insertion,ACBD
+Q106,In C++, a ________ is a non-linear data structure that represents a hierarchical relationship among elements, where each element is called a ________. It has a ________ node at the top and ________ nodes as its children., A) tree B) root C) leaf D) branch,ABCA
+Q107,In C++, a ________ is a data structure that uses a key-value pair to store elements, allowing fast retrieval using the ________. This data structure is called a ________ and is part of the ________ library., A) map B) key C) unordered_map D) STL,ABDC
+Q108,In C++, a ________ is a collection of unique elements, which are stored in no particular order. This data structure is called a ________ and is implemented using a ________. It is part of the ________ library., A) set B) hash table C) set D) STL,ACBD
+Q109,In C++, a ________ is a linear data structure that allows elements to be added and removed from the ________ only. This data structure is called a ________ and is implemented using a ________., A) stack B) top C) LIFO D) linked list,ABCD
+Q110,In C++, a ________ is a data structure that contains elements along with a ________ function that defines the order of elements. This data structure is called a ________ and is implemented using a ________., A) priority queue B) comparator C) heap D) queue,ABCA
+Q111,In C++, a ________ is a type of linked list where each node points to both its ________ and the ________ node. This data structure is called a ________ linked list., A) doubly B) previous C) next D) circular,ABCA
+Q112,In C++, a ________ is a special type of tree where each node has at most ________ children. This data structure is called a ________ tree and is used for efficient ________., A) binary B) two C) binary D) searching,ABDC
+Q113,In C++, a ________ is a linear data structure where each element points to the ________ element, forming a sequence. This data structure is called a ________ and is commonly used for ________ management., A) linked list B) next C) linked list D) memory,ABCD
+Q114,In C++, a ________ is a data structure that associates keys with ________, allowing for fast retrieval of values. This data structure is called a ________ and is implemented using a ________., A) map B) values C) hash table D) unordered_map,ABDC
+Q115,In C++, a ________ is a tree-based data structure that maintains a sorted order of elements, allowing for fast ________, deletion, and ________. This data structure is called a ________., A) binary search tree B) insertion C) searching D) BST,ABDC
+Q116,In C++, a ________ is a linear data structure that uses ________ to determine the order of elements. This data structure is called a ________ and is used for tasks like ________ scheduling., A) priority queue B) priority C) queue D) task,ABCA
+Q117,In C++, a ________ is a dynamic data structure that consists of ________ nodes, each containing a data element and a ________ to the next node. This data structure is called a ________ linked list., A) singly B) singly C) pointer D) singly,ABCD
+Q118,In C++, a ________ is a collection of elements that can grow and shrink dynamically, where elements are stored in a ________ order. This data structure is called a ________ and is implemented using ________., A) vector B) contiguous C) vector D) dynamic array,ABCD
+Q119,In C++, a ________ is a type of associative container that stores elements formed by a combination of a ________ and a ________. This data structure is called a ________., A) map B) key C) value D) map,ABCD
+Q120,In C++, a ________ is a data structure that uses a ________ function to maintain the order of elements, ensuring that the element with the highest priority is always at the ________. This data structure is called a ________., A) priority queue B) comparator C) top D) priority queue,ABCD
+Q121,In C++, a ________ is a collection of elements that allows for efficient insertion and ________ at both ends. This data structure is called a ________ and is part of the ________ library., A) deque B) deletion C) deque D) STL,ABCD
+Q122,In C++, a ________ is a linear data structure where each element points to the ________ element, forming a sequence. This data structure is called a ________ linked list and allows for efficient ________ and deletion of elements., A) linked list B) next C) singly D) insertion,ABCD
+Q123,In C++, a ________ is a non-linear data structure that represents a hierarchical relationship among elements, where each element is called a ________. This data structure is called a ________ and is used for efficient ________ and retrieval of data., A) tree B) node C) tree D) searching,ABCD
+Q124,In C++, a ________ is a type of container that stores elements in a specific order, determined by the ________ used. This data structure is called a ________ and is part of the ________ library., A) priority queue B) comparator C) priority queue D) STL,ABCD
+Q125,In C++, a ________ is a data structure that allows elements to be added and removed from both ________ (front and back). This data structure is called a ________ and is implemented using a ________., A) deque B) ends C) deque D) dynamic array,ABCD
+Q126,In C++, a ________ is a linear data structure that follows the First-In-First-Out (FIFO) principle, where elements are added at the ________ and removed from the ________. This data structure is called a ________., A) queue B) rear C) front D) queue,ABCD
+Q127,In C++, a ________ is a non-linear data structure that consists of nodes connected by ________. This data structure is called a ________ and is used to represent hierarchical relationships among elements., A) tree B) edges C) tree D) nodes,ABCD
+Q128,In C++, a ________ is a type of linked list where each node points to both its ________ and the ________ node. This data structure is called a ________ linked list., A) doubly B) previous C) next D) doubly,ABCD
+Q129,In C++, a ________ is a dynamic array that can grow and shrink in size. This data structure is called a ________ and is used to store elements in a ________ memory location., A) vector B) vector C) contiguous D) dynamic array,ABCD
+Q130,In C++, a ________ is a tree-based data structure that maintains a sorted order of elements, allowing for efficient ________, deletion, and ________. This data structure is called a ________., A) binary search tree B) searching C) insertion D) binary search tree,ABCD
+Q131,In C++, a ________ is a type of container that stores elements formed by a combination of a ________ and a ________. This data structure is called a ________., A) map B) key C) value D) map,ABCD
+Q132,In C++, a ________ is a collection of elements that can grow and shrink dynamically, where elements are stored in a ________ order. This data structure is called a ________ and is implemented using ________., A) vector B) contiguous C) vector D) dynamic array,ABCD
+Q133,In C++, a ________ is a linear data structure where each element points to the ________ element, forming a sequence. This data structure is called a ________ linked list and allows for efficient ________ and deletion of elements., A) linked list B) next C) singly D) insertion,ABCD
+Q134,In C++, a ________ is a non-linear data structure that represents a hierarchical relationship among elements, where each element is called a ________. This data structure is called a ________ and is used for efficient ________ and retrieval of data., A) tree B) node C) tree D) searching,ABCD
+Q135,In C++, a ________ is a linear data structure that follows the First-In-First-Out (FIFO) principle, where elements are added at the ________ and removed from the ________. This data structure is called a ________., A) queue B) rear C) front D) queue,ABCD
+Q136,In C++, a ________ is a non-linear data structure that consists of nodes connected by ________. This data structure is called a ________ and is used to represent hierarchical relationships among elements., A) tree B) edges C) tree D) nodes,ABCD
+Q137,In C++, a ________ is a type of linked list where each node points to both its ________ and the ________ node. This data structure is called a ________ linked list., A) doubly B) previous C) next D) doubly,ABCD
+Q138,In C++, a ________ is a dynamic array that can grow and shrink in size. This data structure is called a ________ and is used to store elements in a ________ memory location., A) vector B) vector C) contiguous D) dynamic array,ABCD
+Q139,In C++, a ________ is a tree-based data structure that maintains a sorted order of elements, allowing for efficient ________, deletion, and ________. This data structure is called a ________., A) binary search tree B) searching C) insertion D) binary search tree,ABCD
+Q140,In C++, a ________ is a type of container that stores elements formed by a combination of a ________ and a ________. This data structure is called a ________., A) map B) key C) value D) map,ABCD
+Q141,In C++, a ________ is a collection of elements that can grow and shrink dynamically, where elements are stored in a ________ order. This data structure is called a ________ and is implemented using ________., A) vector B) contiguous C) vector D) dynamic array,ABCD
+Q142,In C++, a ________ is a linear data structure where each element points to the ________ element, forming a sequence. This data structure is called a ________ linked list and allows for efficient ________ and deletion of elements., A) linked list B) next C) singly D) insertion,ABCD
+Q143,In C++, a ________ is a non-linear data structure that represents a hierarchical relationship among elements, where each element is called a ________. This data structure is called a ________ and is used for efficient ________ and retrieval of data., A) tree B) node C) tree D) searching,ABCD
+Q144,In C++, a ________ is a linear data structure that follows the First-In-First-Out (FIFO) principle, where elements are added at the ________ and removed from the ________. This data structure is called a ________., A) queue B) rear C) front D) queue,ABCD
+Q145,In C++, a ________ is a non-linear data structure that consists of nodes connected by ________. This data structure is called a ________ and is used to represent hierarchical relationships among elements., A) tree B) edges C) tree D) nodes,ABCD
+Q146,In C++, a ________ is a type of linked list where each node points to both its ________ and the ________ node. This data structure is called a ________ linked list., A) doubly B) previous C) next D) doubly,ABCD
+Q147,In C++, a ________ is a dynamic array that can grow and shrink in size. This data structure is called a ________ and is used to store elements in a ________ memory location., A) vector B) vector C) contiguous D) dynamic array,ABCD
+Q148,In C++, a ________ is a tree-based data structure that maintains a sorted order of elements, allowing for efficient ________, deletion, and ________. This data structure is called a ________., A) binary search tree B) searching C) insertion D) binary search tree,ABCD
+Q149,In C++, a ________ is a type of container that stores elements formed by a combination of a ________ and a ________. This data structure is called a ________., A) map B) key C) value D) map,ABCD
+Q150,In C++, a ________ is a collection of elements that can grow and shrink dynamically, where elements are stored in a ________ order. This data structure is called a ________ and is implemented using ________., A) vector B) contiguous C) vector D) dynamic array,ABCD
+Q151,A vector is a dynamic array that can grow and shrink in size during runtime., True or False (T/F),T
+Q152,A stack follows the First-In-First-Out (FIFO) principle., True or False (T/F),F
+Q153,A queue allows insertion and deletion of elements only from the rear end., True or False (T/F),F
+Q154,A set is a collection of unique elements., True or False (T/F),T
+Q155,A map is used to store elements as key-value pairs., True or False (T/F),T
+Q156,A linked list stores elements in contiguous memory locations., True or False (T/F),F
+Q157,A deque allows insertion and deletion of elements from both ends., True or False (T/F),T
+Q158,An array's size must be specified at the time of declaration and cannot be changed., True or False (T/F),T
+Q159,A priority queue always retrieves the element with the lowest priority first., True or False (T/F),F
+Q160,A binary search tree maintains elements in a sorted order., True or False (T/F),T
+Q161,A linked list allows efficient insertion and deletion of elements., True or False (T/F),T
+Q162,A hash table is used to implement a map for fast key-value pair lookups., True or False (T/F),T
+Q163,A tree is a linear data structure., True or False (T/F),F
+Q164,A circular linked list has its last node pointing back to the first node., True or False (T/F),T
+Q165,A doubly linked list allows traversal in both directions., True or False (T/F),T
+Q166,A vector's elements are stored in non-contiguous memory locations., True or False (T/F),F
+Q167,A stack is typically implemented using an array or a linked list., True or False (T/F),T
+Q168,An unordered_map is a type of associative container that stores elements as key-value pairs., True or False (T/F),T
+Q169,A deque is short for double-ended queue., True or False (T/F),T
+Q170,A binary tree is a type of graph., True or False (T/F),F
+Q171,A linked list's nodes contain data elements and pointers to the next node., True or False (T/F),T
+Q172,A map cannot contain duplicate keys., True or False (T/F),T
+Q173,A stack allows insertion and deletion of elements from both ends., True or False (T/F),F
+Q174,A binary search tree allows efficient searching of elements., True or False (T/F),T
+Q175,A queue follows the Last-In-First-Out (LIFO) principle., True or False (T/F),F
+Q176,An array is a fixed-size data structure., True or False (T/F),T
+Q177,A hash table uses a hash function to map keys to values., True or False (T/F),T
+Q178,A vector provides random access to its elements., True or False (T/F),T
+Q179,A binary tree node can have at most two children., True or False (T/F),T
+Q180,A doubly linked list has nodes that contain pointers to both the next and previous nodes., True or False (T/F),T
+Q181,A priority queue can be implemented using a heap., True or False (T/F),T
+Q182,A set allows duplicate elements., True or False (T/F),F
+Q183,A linked list is more memory efficient than an array for random access., True or False (T/F),F
+Q184,A queue can be implemented using a linked list or an array., True or False (T/F),T
+Q185,A tree can be traversed in preorder, inorder, or postorder., True or False (T/F),T
+Q186,A stack always removes the most recently added element first., True or False (T/F),T
+Q187,A binary search tree has elements arranged in a hierarchical structure., True or False (T/F),T
+Q188,A map can be implemented using a balanced binary search tree., True or False (T/F),T
+Q189,A vector is a non-contiguous memory structure., True or False (T/F),F
+Q190,A circular queue is a type of deque., True or False (T/F),F
+Q191,A hash table provides average-case O(1) time complexity for insertions and deletions., True or False (T/F),T
+Q192,A doubly linked list can be traversed only in one direction., True or False (T/F),F
+Q193,A priority queue uses a comparison function to determine the order of elements., True or False (T/F),T
+Q194,A tree is always a balanced structure., True or False (T/F),F
+Q195,A vector requires less memory overhead than a linked list., True or False (T/F),T
+Q196,A binary tree can be empty., True or False (T/F),T
+Q197,A stack can be used to implement recursion., True or False (T/F),T
+Q198,A queue always removes the least recently added element first., True or False (T/F),T
+Q199,A linked list allows random access to its elements., True or False (T/F),F
+Q200,A binary search tree can have duplicate elements., True or False (T/F),F
+Q201,A deque can function as both a stack and a queue., True or False (T/F),T
+Q202,A priority queue is the same as a regular queue., True or False (T/F),F
+Q203,A tree can have multiple root nodes., True or False (T/F),F
+Q204,A map can have multiple values for the same key., True or False (T/F),F
+Q205,A linked list is less efficient than an array for indexed access., True or False (T/F),T
+Q206,A set maintains elements in a sorted order., True or False (T/F),T
+Q207,A binary tree's height is the length of the longest path from the root to a leaf., True or False (T/F),T
+Q208,A vector has a fixed size., True or False (T/F),F
+Q209,A queue allows insertion at one end and deletion at the other end., True or False (T/F),T
+Q210,A tree is a type of list., True or False (T/F),F
+Q211,A stack can be used to reverse the order of elements., True or False (T/F),T
+Q212,A hash table can be implemented using an array., True or False (T/F),T
+Q213,A binary search tree is a complete binary tree., True or False (T/F),F
+Q214,A vector can change its size dynamically., True or False (T/F),T
+Q215,A deque supports operations at both ends., True or False (T/F),T
+Q216,A circular linked list has no end., True or False (T/F),T
+Q217,A binary tree's nodes are arranged in a specific order., True or False (T/F),T
+Q218,A map provides O(1) time complexity for insertions., True or False (T/F),F
+Q219,A linked list is suitable for random access of elements., True or False (T/F),F
+Q220,A queue is typically implemented using a circular buffer., True or False (T/F),T
+Q221,A binary search tree's left child is always less than its parent., True or False (T/F),T
+Q222,A vector is part of the C++ Standard Template Library (STL)., True or False (T/F),T
+Q223,A priority queue retrieves the highest priority element first., True or False (T/F),T
+Q224,A tree can have cycles., True or False (T/F),F
+Q225,A set in C++ does not allow duplicate elements., True or False (T/F),T
+Q226,A doubly linked list uses more memory than a singly linked list., True or False (T/F),T
+Q227,A queue can be implemented using two stacks., True or False (T/F),T
+Q228,A hash table can experience collisions., True or False (T/F),T
+Q229,A binary search tree allows efficient searching of elements., True or False (T/F),T
+Q230,A vector supports constant-time random access., True or False (T/F),T
+Q231,A stack is an example of a linear data structure., True or False (T/F),T
+Q232,A tree's height is always equal to its number of nodes., True or False (T/F),F
+Q233,A map provides a way to associate keys with values., True or False (T/F),T
+Q234,A binary tree can have more than two children per node., True or False (T/F),F
+Q235,A linked list uses more memory than an array for the same number of elements., True or False (T/F),T
+Q236,A priority queue allows random access to elements., True or False (T/F),F
+Q237,A hash table can be resized dynamically., True or False (T/F),T
+Q238,A queue follows the Last-In-First-Out (LIFO) principle., True or False (T/F),F
+Q239,A vector is an example of a dynamic array., True or False (T/F),T
+Q240,A binary search tree's right child is always greater than its parent., True or False (T/F),T
+Q241,A stack can be implemented using a linked list., True or False (T/F),T
+Q242,A circular queue is also known as a ring buffer., True or False (T/F),T
+Q243,A set in C++ allows random access to its elements., True or False (T/F),F
+Q244,A binary tree is a non-linear data structure., True or False (T/F),T
+Q245,A hash table uses a linked list to handle collisions., True or False (T/F),T
+Q246,A queue supports constant-time insertion and deletion at both ends., True or False (T/F),F
+Q247,A vector reallocates its memory when it runs out of space., True or False (T/F),T
+Q248,A binary search tree provides efficient searching, insertion, and deletion., True or False (T/F),T
+Q249,A stack follows the First-In-First-Out (FIFO) principle., True or False (T/F),F
+Q250,A tree's root node has no parent., True or False (T/F),T
+Q251,A linked list is more efficient for inserting and deleting elements compared to an array., True or False (T/F),T
+Q252,A deque can be used to implement both stacks and queues., True or False (T/F),T
+Q253,A binary tree node can have at most two children., True or False (T/F),T
+Q254,A hash table's performance can be affected by the load factor., True or False (T/F),T
+Q255,A vector's size cannot be changed after it is created., True or False (T/F),F
+Q256,A priority queue retrieves elements based on their priority., True or False (T/F),T
+Q257,A tree is a hierarchical data structure., True or False (T/F),T
+Q258,A linked list can be traversed in reverse order if it is doubly linked., True or False (T/F),T
+Q259,A stack allows elements to be accessed in constant time., True or False (T/F),T
+Q260,A binary search tree must be balanced to provide efficient operations., True or False (T/F),F
+Q261,A hash table uses a hash function to map keys to indices., True or False (T/F),T
+Q262,A queue can be implemented using an array., True or False (T/F),T
+Q263,A vector supports constant-time insertion at the end., True or False (T/F),T
+Q264,A binary tree's left and right subtrees must also be binary trees., True or False (T/F),T
+Q265,A linked list's elements are stored in contiguous memory locations., True or False (T/F),F
+Q266,A priority queue can be implemented using a sorted array., True or False (T/F),T
+Q267,A stack can be used to evaluate expressions., True or False (T/F),T
+Q268,A hash table provides O(1) time complexity for search operations., True or False (T/F),T
+Q269,A queue always retrieves the least recently added element first., True or False (T/F),T
+Q270,A binary search tree can be used to implement a set., True or False (T/F),T
+Q271,A vector provides constant-time access to elements by index., True or False (T/F),T
+Q272,A tree's nodes are connected by edges., True or False (T/F),T
+Q273,A hash table's performance can degrade with a high load factor., True or False (T/F),T
+Q274,A linked list provides efficient indexed access to elements., True or False (T/F),F
+Q275,A priority queue always removes the highest priority element first., True or False (T/F),T
+Q276,A deque allows elements to be added or removed from both ends., True or False (T/F),T
+Q277,A binary tree is a type of acyclic graph., True or False (T/F),T
+Q278,A vector reallocates memory only when it runs out of space., True or False (T/F),T
+Q279,A stack is often used in recursive algorithms., True or False (T/F),T
+Q280,A hash table can be used to count the frequency of elements., True or False (T/F),T
+Q281,A binary search tree provides average-case O(log n) time complexity for search operations., True or False (T/F),T
+Q282,A queue can be implemented using a doubly linked list., True or False (T/F),T
+Q283,A tree's leaves are nodes with no children., True or False (T/F),T
+Q284,A set in C++ maintains the order of elements., True or False (T/F),F
+Q285,A linked list is ideal for applications requiring frequent insertions and deletions., True or False (T/F),T
+Q286,A priority queue can be implemented using a binary heap., True or False (T/F),T
+Q287,A vector allows insertion and deletion at both ends., True or False (T/F),F
+Q288,A binary tree is always a complete binary tree., True or False (T/F),F
+Q289,A stack can be implemented using an array., True or False (T/F),T
+Q290,A hash table's keys must be unique., True or False (T/F),T
+Q291,A queue can be implemented using a singly linked list., True or False (T/F),T
+Q292,A binary search tree's height affects its performance., True or False (T/F),T
+Q293,A vector can be resized dynamically., True or False (T/F),T
+Q294,A stack allows accessing the top element in constant time., True or False (T/F),T
+Q295,A tree can be traversed using breadth-first or depth-first search., True or False (T/F),T
+Q296,A hash table can handle collisions using chaining., True or False (T/F),T
+Q297,A linked list's nodes can be dynamically allocated., True or False (T/F),T
+Q298,A priority queue is a special type of queue where each element has a priority., True or False (T/F),T
+Q299,A binary search tree's nodes are arranged in a specific order to facilitate search operations., True or False (T/F),T
+Q300,A vector's elements are stored in contiguous memory locations., True or False (T/F),T
+Q301,Choose the CORRECT data structure that has been used for implementing recursion:, A) Stack B) Array C) Tree D) Queue,A
+Q302,Which data structure is essential for implementing function calls in programming?, A) Queue B) Stack C) Linked List D) Hash Table,B
+Q303,Recursion is implemented using which of the following data structures?, A) Queue B) Stack C) Linked List D) Tree,B
+Q304,To implement a recursive algorithm efficiently, you would use a:, A) Stack B) Queue C) Array D) Hash Table,A
+Q305,Which data structure is used internally by the compiler to implement recursion?, A) Stack B) Queue C) Linked List D) Array,A
+Q306,What data structure does a program's call stack use?, A) Queue B) Stack C) Linked List D) Array,B
+Q307,The activation record of a function is stored in which data structure during recursion?, A) Queue B) Stack C) Linked List D) Tree,B
+Q308,Which data structure can cause a stack overflow when using recursion?, A) Queue B) Stack C) Linked List D) Array,B
+Q309,In recursion, the system uses a ____ to keep track of function calls:, A) Queue B) Stack C) Linked List D) Array,B
+Q310,To avoid recursion, you can use which of the following instead?, A) Loop B) Stack C) Tree D) Queue,A
+Q311,Which of the following data structures is a non-linear type?, A) Tree B) Stack C) Array D) Linked List,A
+Q312,Which data structure is non-linear?, A) Array B) Linked List C) Stack D) Graph,D
+Q313,Identify the non-linear data structure:, A) Queue B) Binary Tree C) Stack D) Array,B
+Q314,Which of the following is a hierarchical data structure?, A) Tree B) Stack C) Queue D) Array,A
+Q315,In a non-linear data structure, elements:, A) Have no specific order B) Are in a linear sequence C) Are of the same data type D) Have a last-in-first-out order,A
+Q316,Which data structure is used to represent relationships among a set of objects?, A) Graph B) Stack C) Array D) Queue,A
+Q317,Which of the following is true about non-linear data structures?, A) They have a hierarchical relationship between elements B) They store elements sequentially C) They allow fast random access D) They are implemented using stacks,A
+Q318,An example of a non-linear data structure is:, A) Queue B) Tree C) Stack D) Linked List,B
+Q319,Which of the following data structures allows for efficient searching and sorting?, A) Graph B) Array C) Stack D) Queue,A
+Q320,Which of the following operations is typically not efficient in non-linear data structures?, A) Traversal B) Searching C) Insertion D) Linear indexing,D
+Q321,The time complexity of accessing a specific element in an array is:, A) O(n) B) O(1) C) O(n^2) D) O(log n),B
+Q322,What is the time complexity of accessing an element in an array by index?, A) O(1) B) O(n) C) O(log n) D) O(n^2),A
+Q323,For an array of size n, what is the time complexity to access an element at index k?, A) O(n) B) O(log n) C) O(1) D) O(n^2),C
+Q324,Which data structure provides constant time complexity for access by index?, A) Array B) Linked List C) Stack D) Queue,A
+Q325,The access time for an element in a randomly accessed array is:, A) O(1) B) O(n) C) O(log n) D) O(n log n),A
+Q326,Given an array of integers, what is the time complexity to read the first element?, A) O(n) B) O(1) C) O(log n) D) O(n^2),B
+Q327,In an array, the time complexity for inserting an element at the end is:, A) O(n) B) O(1) C) O(log n) D) O(n^2),B
+Q328,What is the time complexity of updating an element at a specific index in an array?, A) O(1) B) O(n) C) O(log n) D) O(n^2),A
+Q329,For an array, the worst-case time complexity for accessing an element is:, A) O(1) B) O(n) C) O(log n) D) O(n^2),A
+Q330,In terms of time complexity, accessing an element in an array is:, A) O(n) B) O(log n) C) O(1) D) O(n log n),C
+Q331,In a queue data structure, the operation of adding an element is known as:, A) dequeue B) enqueue C) pop D) push,B
+Q332,What is the operation called when you add an element to the back of a queue?, A) dequeue B) enqueue C) pop D) push,B
+Q333,In a queue, the insertion operation is referred to as:, A) dequeue B) enqueue C) insert D) push,B
+Q334,To add an element to a queue, you perform a(n) __ operation:, A) dequeue B) enqueue C) insert D) push,B
+Q335,The process of adding an element to a queue is called:, A) dequeue B) enqueue C) push D) append,B
+Q336,Which operation adds an element to the rear of a queue?, A) dequeue B) enqueue C) push D) pop,B
+Q337,In queue terminology, adding an element is called:, A) dequeue B) enqueue C) push D) pop,B
+Q338,What term is used for inserting an element in a queue?, A) dequeue B) enqueue C) push D) append,B
+Q339,To insert an element in a queue, the operation used is:, A) dequeue B) enqueue C) push D) append,B
+Q340,Adding an element to the end of a queue is called:, A) dequeue B) enqueue C) push D) pop,B
+Q341,Identify the time complexity of the following code snippet in C++:, A) O(log n) B) O(n^2) C) O(n) D) O(1),B
+Q342,The time complexity of the nested loops in the given code is:, A) O(log n) B) O(n^2) C) O(n) D) O(1),B
+Q343,What is the overall time complexity of the given C++ code?, A) O(log n) B) O(n^2) C) O(n) D) O(1),B
+Q344,Determine the time complexity for the provided C++ function:, A) O(log n) B) O(n^2) C) O(n) D) O(1),B
+Q345,Given the code, what is the time complexity of the outer and inner loops combined?, A) O(log n) B) O(n^2) C) O(n) D) O(1),B
+Q346,Analyze the time complexity of the displayed C++ code snippet:, A) O(log n) B) O(n^2) C) O(n) D) O(1),B
+Q347,For the provided code, what is the overall time complexity?, A) O(log n) B) O(n^2) C) O(n) D) O(1),B
+Q348,The given code's time complexity is:, A) O(log n) B) O(n^2) C) O(n) D) O(1),B
+Q349,What is the combined time complexity of all loops in the code snippet?, A) O(log n) B) O(n^2) C) O(n) D) O(1),B
+Q350,For the nested loops, the time complexity is:, A) O(log n) B) O(n^2) C) O(n) D) O(1),B
+Q351,Choose the CORRECT sorting algorithm that provides the best time complexity in the worst-case scenario:, A) bubble sort B) quick sort C) selection sort D) merge sort,D
+Q352,Which sorting algorithm has the optimal worst-case time complexity?, A) bubble sort B) quick sort C) selection sort D) merge sort,D
+Q353,Identify the sorting algorithm with the best worst-case time complexity:, A) bubble sort B) quick sort C) selection sort D) merge sort,D
+Q354,Which algorithm offers the best worst-case performance for sorting?, A) bubble sort B) quick sort C) selection sort D) merge sort,D
+Q355,The sorting algorithm with the best worst-case time complexity is:, A) bubble sort B) quick sort C) selection sort D) merge sort,D
+Q356,Among the following, which has the best worst-case time complexity?, A) bubble sort B) quick sort C) selection sort D) merge sort,D
+Q357,For sorting, which algorithm provides the best worst-case time complexity?, A) bubble sort B) quick sort C) selection sort D) merge sort,D
+Q358,Which sorting algorithm performs best in the worst-case scenario?, A) bubble sort B) quick sort C) selection sort D) merge sort,D
+Q359,The best worst-case time complexity for sorting is achieved by:, A) bubble sort B) quick sort C) selection sort D) merge sort,D
+Q360,Choose the sorting algorithm with the best worst-case time complexity:, A) bubble sort B) quick sort C) selection sort D) merge sort,D
+Q361,How many edges does a complete graph with n vertices have?, A) n-1 B) n C) n(n-1)/2 D) n^2,C
+Q362,A complete graph with n vertices has how many edges?, A) n-1 B) n C) n(n-1)/2 D) n^2,C
+Q363,The number of edges in a complete graph with n vertices is:, A) n-1 B) n C) n(n-1)/2 D) n^2,C
+Q364,Identify the edge count for a complete graph with n vertices:, A) n-1 B) n C) n(n-1)/2 D) n^2,C
+Q365,For a complete graph with n vertices, the edge count is:, A) n-1 B) n C) n(n-1)/2 D) n^2,C
+Q366,How many edges exist in a complete graph with n vertices?, A) n-1 B) n C) n(n-1)/2 D) n^2,C
+Q367,The edge number in a complete graph with n vertices is:, A) n-1 B) n C) n(n-1)/2 D) n^2,C
+Q368,Complete graph edge count for n vertices is:, A) n-1 B) n C) n(n-1)/2 D) n^2,C
+Q369,Number of edges in complete graph with n vertices:, A) n-1 B) n C) n(n-1)/2 D) n^2,C
+Q370,Edges in a complete graph with n vertices:, A) n-1 B) n C) n(n-1)/2 D) n^2,C
+Q371,Which of the following is true for an adjacency matrix of an undirected graph?, A) It is always symmetric B) It contains only 0s and 1s C) It is a sparse matrix D) It contains edge weights,A
+Q372,In an adjacency matrix, the entry at row i and column j represents:, A) The number of edges between vertices i and j B) The weight of the edge between vertices i and j C) Whether there is an edge between vertices i and j D) The distance between vertices i and j,C
+Q373,For a graph with n vertices, the size of its adjacency matrix is:, A) n x n B) n x (n-1) C) (n-1) x (n-1) D) n x 2,A
+Q374,The space complexity of an adjacency matrix for a graph with V vertices is:, A) O(V) B) O(V^2) C) O(E) D) O(V + E),B
+Q375,In an adjacency matrix, if the graph is unweighted, the matrix contains:, A) Only positive integers B) Only 0s C) Only 1s D) Only 0s and 1s,D
+Q376,How is an adjacency matrix used to represent a directed graph?, A) It is always symmetric B) It contains only 0s and 1s C) Entry (i, j) is 1 if there is a directed edge from vertex i to vertex j D) It uses edge lists,C
+Q377,What value is stored in an adjacency matrix for a directed graph with weights?, A) 1 B) 0 C) The weight of the edge D) -1 if there is no edge,C
+Q378,What is the main disadvantage of using an adjacency matrix?, A) It cannot represent directed graphs B) It cannot represent edge weights C) It requires O(V^2) space D) It is not suitable for sparse graphs,C
+Q379,Which of the following is NOT true for an adjacency matrix?, A) It is efficient for dense graphs B) It requires less memory for sparse graphs C) It provides constant-time access to check for the presence of an edge D) It can be used for both directed and undirected graphs,B
+Q380,In an adjacency matrix representation, which of the following indicates there is no edge between vertex i and vertex j?, A) A positive integer B) A negative integer C) 1 D) 0,D
+Q381,An adjacency matrix is preferred over an adjacency list when:, A) The graph is sparse B) The graph is dense C) The graph has weighted edges D) The graph has many vertices and few edges,B
+Q382,For a graph with V vertices and E edges, what is the space complexity of an adjacency matrix?, A) O(V + E) B) O(E) C) O(V^2) D) O(V),C
+Q383,What does the adjacency matrix entry at row 3 and column 4 represent in an unweighted graph?, A) The number of edges between vertices 3 and 4 B) The presence of an edge between vertices 3 and 4 C) The weight of the edge between vertices 3 and 4 D) The total degree of vertex 4,B
+Q384,In the adjacency matrix of an undirected graph, if the entry (i, j) is 1, what is the entry (j, i)?, A) 0 B) 1 C) It can be either 0 or 1 D) It depends on the weight of the edge,B
+Q385,Which of the following graphs can be efficiently represented using an adjacency matrix?, A) A sparse graph B) A dense graph C) A tree D) A graph with a large number of vertices but few edges,B
+Q386,If a graph has 5 vertices, what is the size of its adjacency matrix?, A) 5 x 5 B) 4 x 4 C) 5 x 4 D) 4 x 5,A
+Q387,For an undirected graph, the adjacency matrix is:, A) Asymmetric B) Diagonal C) Upper triangular D) Symmetric,D
+Q388,What does an entry of 0 in an adjacency matrix indicate?, A) There is no vertex B) There is no edge between the corresponding vertices C) The vertices are connected D) The edge weight is zero,B
+Q389,What is a disadvantage of representing a graph using an adjacency matrix?, A) Difficulty in adding new vertices B) Inefficiency in finding adjacent vertices for sparse graphs C) Complexity in deleting edges D) Complexity in traversing all edges,B
+Q390,For a graph with n vertices, the adjacency matrix has:, A) n rows and n columns B) n rows and n-1 columns C) n-1 rows and n columns D) n rows and 2n columns,A
+Q391,Which of the following algorithms is used to search a binary search tree (BST)?, A) Breadth-First Search B) Depth-First Search C) Linear Search D) Binary Search,D
+Q392,In a binary search tree, searching for an element has a time complexity of:, A) O(1) B) O(log n) C) O(n) D) O(n log n),B
+Q393,What is the worst-case time complexity of searching an element in a binary search tree (BST)?, A) O(1) B) O(log n) C) O(n) D) O(n^2),C
+Q394,Which of the following is true for a binary search tree (BST)?, A) All nodes have two children B) Left child nodes are greater than their parent node C) Right child nodes are smaller than their parent node D) In-order traversal results in sorted order,D
+Q395,Which search algorithm is most suitable for finding the minimum element in a BST?, A) Breadth-First Search B) Depth-First Search C) Binary Search D) In-order Traversal,D
+Q396,For a balanced binary search tree (BST), the height is:, A) O(n) B) O(log n) C) O(n log n) D) O(1),B
+Q397,What is the average-case time complexity for searching in a balanced binary search tree?, A) O(1) B) O(log n) C) O(n) D) O(n log n),B
+Q398,Which algorithm is used for searching in a self-balancing binary search tree like an AVL tree?, A) Depth-First Search B) Breadth-First Search C) Linear Search D) Binary Search,D
+Q399,In a binary search tree, the right subtree of a node contains:, A) Only nodes with keys less than the node's key B) Only nodes with keys greater than the node's key C) Both nodes with keys greater and less than the node's key D) No nodes,B
+Q400,What is the best-case time complexity of searching in a binary search tree?, A) O(1) B) O(log n) C) O(n) D) O(n log n),A
